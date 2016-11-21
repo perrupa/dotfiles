@@ -1,0 +1,39 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/christophermarlow/.oh-my-zsh
+
+export PATH="$PATH:/path/to/elixir/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOME/.yarn/bin:$PATH"
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+ZSH_THEME="agnoster"
+DEV_ALLOW_ITERM2_INTEGRATION=1
+
+# Plugins
+# (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+plugins=(
+  git
+  colored-man
+  colorize
+  github
+  virtualenv
+  brew
+  osx
+  zsh-syntax-highlighting
+  zsh-completions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# runs rails tests with a relative path
+# eg: `t test/models/listing_category_test.rb`
+t () {
+    noglob bundle exec rake test "$@"
+}
+
+# Shopify's dev resource
+source /opt/dev/dev.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

@@ -1,0 +1,49 @@
+[user]
+	email = christopher.marlow@shopify.com
+	name = Chris Marlow
+
+[github]
+	# https://github.com/blog/180-local-github-config
+	user = perrupa
+
+[push]
+	default = simple
+
+[alias]
+	# git flags are weird
+	branches = branch -a
+	tags = tag -l
+	remotes = remote -v
+
+	# most commonly used
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+
+	a  = add
+
+	s  = status -s -u
+	st = status
+
+	d  = diff --color-words --ignore-all-space
+	dc = diff --staged
+
+	lg  = log --graph --decorate
+	l1  = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	l2  = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lgo = log #typos are for suckers
+
+[core]
+	excludesfile = ~/.gitignore_global
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	editor = vim
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+
+[rerere]
+	enabled = true

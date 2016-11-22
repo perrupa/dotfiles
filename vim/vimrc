@@ -7,3 +7,19 @@ filetype plugin indent on
 set cursorline
 set noswapfile
 
+" Plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'airblade/vim-gitgutter'
+
+call plug#end()
+
+
+" Shortcuts
+source ~/.vim/alias
+

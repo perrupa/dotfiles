@@ -1,0 +1,6 @@
+" Alias file
+
+" navigate line wraps
+nnoremap k gk
+nnoremap j gj
+

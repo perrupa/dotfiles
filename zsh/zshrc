@@ -21,6 +21,7 @@ plugins=(
   virtualenv
   brew
   osx
+  z
   zsh-syntax-highlighting
   zsh-completions
 )

@@ -1,0 +1,9 @@
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+syntax on
+set nocompatible
+set hidden
+filetype plugin indent on
+
+set cursorline
+set noswapfile
+

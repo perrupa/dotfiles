@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'kchmck/vim-coffee-script'
 	Plug 'vim-syntastic/syntastic'
 	Plug 'roman/golden-ratio'
+	Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " Ctrl + P

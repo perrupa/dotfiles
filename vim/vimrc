@@ -1,4 +1,3 @@
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 syntax on
 set nocompatible
 set hidden
@@ -9,20 +8,39 @@ set noswapfile
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-
-" Git
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
-Plug 'airblade/vim-gitgutter'
-
+	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+	Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-rhubarb'
+	Plug 'airblade/vim-gitgutter'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+	Plug 'kchmck/vim-coffee-script'
+	Plug 'vim-syntastic/syntastic'
 call plug#end()
 
+" Ctrl + P
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 " Shortcuts
 source ~/.vim/alias
 
 " ctrlp ignore
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+" Dictionary
+set dictionary=/usr/share/dict/words
+
+
+set mouse=a
+if has("mouse_sgr") && !has('nvim')
+	set ttyfast
+	set ttymouse=sgr
+endif
+
+set autoread
+
 

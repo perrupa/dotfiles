@@ -1,6 +1,21 @@
 " Alias file
 
-" navigate line wraps
+" Leader stuff
+let mapleader = ","
+
+" vimrc edits
+nnoremap <leader>sv :source ~/.vim/vimrc<cr>
+
+" remap ; to :
+noremap ; :
+
+" wrapped line movement 
 nnoremap k gk
 nnoremap j gj
 
+" Arrow keys
+nnoremap <Up> ddP
+
+" Buffers
+nnoremap bn :bnext<cr>
+nnoremap bp :bprevious<cr>

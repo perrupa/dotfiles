@@ -36,6 +36,19 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " Dictionary
 set dictionary=/usr/share/dict/words
 
+" Session Management
+" ...?
+
+" Indentation
+setl expandtab ts=2 shiftwidth=2 softtabstop=2
+
+" Highlight curr line (only active window)
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END
+
 
 set mouse=a
 if has("mouse_sgr") && !has('nvim')

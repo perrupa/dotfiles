@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'kchmck/vim-coffee-script'
 	Plug 'vim-syntastic/syntastic'
+	Plug 'roman/golden-ratio'
 call plug#end()
 
 " Ctrl + P

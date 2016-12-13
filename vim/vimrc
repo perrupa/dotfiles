@@ -8,16 +8,18 @@ set noswapfile
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-	Plug 'tpope/vim-fugitive'
-	Plug 'tpope/vim-rhubarb'
-	Plug 'airblade/vim-gitgutter'
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
-	Plug 'kchmck/vim-coffee-script'
-	Plug 'vim-syntastic/syntastic'
-	Plug 'roman/golden-ratio'
-	Plug 'christoomey/vim-tmux-navigator'
+  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-rhubarb'
+  Plug 'tpope/vim-surround'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'kchmck/vim-coffee-script'
+  Plug 'vim-syntastic/syntastic'
+  Plug 'roman/golden-ratio'
+  Plug 'vim-ctrlspace/vim-ctrlspace'
+  Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " Ctrl + P
@@ -44,9 +46,9 @@ setl expandtab ts=2 shiftwidth=2 softtabstop=2
 
 " Highlight curr line (only active window)
 augroup CursorLine
-  au!
-  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-  au WinLeave * setlocal nocursorline
+	au!
+	au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+	au WinLeave * setlocal nocursorline
 augroup END
 
 

@@ -14,7 +14,8 @@ nnoremap k gk
 nnoremap j gj
 
 " Arrow keys
-nnoremap <Up> ddP
+nnoremap <Up> :m .-2<cr>
+nnoremap <Down> ddp
 
 " Buffers
 nnoremap bn :bnext<cr>
@@ -27,3 +28,5 @@ set splitright
 " Autocomplete
 imap <Tab> <C-P>
 
+" Ctrl+P
+nnoremap <C-b> :CtrlPBuffer<cr>

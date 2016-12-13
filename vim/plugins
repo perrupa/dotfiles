@@ -1,10 +1,3 @@
-syntax on
-set nocompatible
-set hidden
-filetype plugin indent on
-
-set cursorline
-set noswapfile
 
 " Plugins
 call plug#begin('~/.vim/plugged')
@@ -33,38 +26,6 @@ let g:airline_powerline_fonts = 1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 
-" Shortcuts
-source ~/.vim/alias
-
-" Plugins
-source ~/.vim/plugins
-
 " ctrlp ignore
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-
-" Dictionary
-set dictionary=/usr/share/dict/words
-
-" Session Management
-" ...?
-
-" Indentation
-setl expandtab ts=2 shiftwidth=2 softtabstop=2
-
-" Highlight curr line (only active window)
-augroup CursorLine
-	au!
-	au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-	au WinLeave * setlocal nocursorline
-augroup END
-
-
-set mouse=a
-if has("mouse_sgr") && !has('nvim')
-	set ttyfast
-	set ttymouse=sgr
-endif
-
-set autoread
-
 

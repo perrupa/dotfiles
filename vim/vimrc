@@ -2,9 +2,13 @@ syntax on
 set nocompatible
 set hidden
 filetype plugin indent on
-
+set backspace=indent,eol,start
 set cursorline
 set noswapfile
+
+filetype off
+let &runtimepath.=',~/.vim/bundle/ale'
+filetype plugin on
 
 " Plugins
 call plug#begin('~/.vim/plugged')
@@ -21,6 +25,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'roman/golden-ratio'
   Plug 'vim-ctrlspace/vim-ctrlspace'
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'w0rp/ale'
 call plug#end()
 
 " Ctrl + P
@@ -49,7 +54,7 @@ set dictionary=/usr/share/dict/words
 " ...?
 
 " Indentation
-setl expandtab ts=2 shiftwidth=2 softtabstop=2
+set expandtab ts=2 shiftwidth=2 softtabstop=2
 
 " Highlight curr line (only active window)
 augroup CursorLine

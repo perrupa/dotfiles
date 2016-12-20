@@ -6,6 +6,15 @@ set backspace=indent,eol,start
 set cursorline
 set noswapfile
 
+" Theme
+" TODO get 24 bit color in tmux + iterm
+" https://deductivelabs.com/en/2016/03/using-true-color-vim-tmux/
+" https://www.reddit.com/r/vim/comments/2ozwe4/24_bit_vim_in_osx_iterm2_a_reality/
+" set guicolors
+" set background=dark
+" colorscheme boa
+
+
 filetype off
 let &runtimepath.=',~/.vim/bundle/ale'
 filetype plugin on
@@ -26,6 +35,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-ctrlspace/vim-ctrlspace'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'w0rp/ale'
+  Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
 " Ctrl + P

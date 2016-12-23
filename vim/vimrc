@@ -5,6 +5,7 @@ filetype plugin indent on
 set backspace=indent,eol,start
 set cursorline
 set noswapfile
+set number
 
 " Theme
 " TODO get 24 bit color in tmux + iterm

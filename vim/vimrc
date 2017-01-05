@@ -65,7 +65,11 @@ set dictionary=/usr/share/dict/words
 " ...?
 
 " Indentation
+" keep selection when reindenting
 set expandtab ts=2 shiftwidth=2 softtabstop=2
+vnoremap > >gv
+vnoremap < <gv
+
 
 " Highlight curr line (only active window)
 augroup CursorLine

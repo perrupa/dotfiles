@@ -6,6 +6,7 @@ set backspace=indent,eol,start
 set cursorline
 set noswapfile
 set number
+set encoding=utf-8
 
 " Theme
 " TODO get 24 bit color in tmux + iterm
@@ -13,7 +14,7 @@ set number
 " https://www.reddit.com/r/vim/comments/2ozwe4/24_bit_vim_in_osx_iterm2_a_reality/
 " set guicolors
 " set background=dark
-" colorscheme boa
+colorscheme boa
 
 
 filetype off
@@ -21,39 +22,14 @@ let &runtimepath.=',~/.vim/bundle/ale'
 filetype plugin on
 
 " Plugins
-call plug#begin('~/.vim/plugged')
-  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-  Plug 'tpope/vim-fugitive'
-  Plug 'tpope/vim-rhubarb'
-  Plug 'tpope/vim-surround'
-  Plug 'tpope/vim-eunuch'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
-  Plug 'kchmck/vim-coffee-script'
-  Plug 'vim-syntastic/syntastic'
-  Plug 'roman/golden-ratio'
-  Plug 'vim-ctrlspace/vim-ctrlspace'
-  Plug 'christoomey/vim-tmux-navigator'
-  Plug 'w0rp/ale'
-  Plug 'scrooloose/nerdcommenter'
-call plug#end()
+execute pathogen#infect()
 
 " Ctrl + P
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:CtrlSpaceSymbols = { "File": "◯", "CTab": "▣", "Tabs": "▢" }
-
-" Airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep=''
-let g:airline_right_sep=''
 
 " Shortcuts
-source ~/.vim/alias
-
-" Plugins
-source ~/.vim/plugins
+source ~/.vim/alias.vim
+source ~/.vim/plugins.vim
 
 " ctrlp ignore
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
@@ -65,26 +41,26 @@ set dictionary=/usr/share/dict/words
 " ...?
 
 " Indentation
-" keep selection when reindenting
 set expandtab ts=2 shiftwidth=2 softtabstop=2
-vnoremap > >gv
-vnoremap < <gv
-
 
 " Highlight curr line (only active window)
 augroup CursorLine
-	au!
-	au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-	au WinLeave * setlocal nocursorline
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
 augroup END
 
 
 set mouse=a
 if has("mouse_sgr") && !has('nvim')
-	set ttyfast
-	set ttymouse=sgr
+  set ttyfast
+  set ttymouse=sgr
 endif
 
 set autoread
 
+set wildignore+=.DS_Store
+set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js
+set wildignore+=*/bower_components/*,*/node_modules/*
+set wildignore+=*/smarty/*,*/vendor/*,*/.git/*,*/.hg/*,*/.svn/*,*/.sass-cache/*,*/log/*,*/tmp/*,*/build/*,*/ckeditor/*,*/doc/*,*/source_maps/*,*/dist/*
 

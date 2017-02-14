@@ -31,3 +31,9 @@ imap <Tab> <C-P>
 " Ctrl+P
 nnoremap <C-b> :CtrlPBuffer<cr>
 
+" keep selection when reindenting
+vnoremap > >gv
+vnoremap < <gv
+
+
+

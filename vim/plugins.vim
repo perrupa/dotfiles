@@ -1,6 +1,6 @@
+" Plugins 
 
-" Plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/bundle')
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb'
@@ -14,7 +14,23 @@ call plug#begin('~/.vim/plugged')
   Plug 'roman/golden-ratio'
   Plug 'vim-ctrlspace/vim-ctrlspace'
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'w0rp/ale'
+  Plug 'scrooloose/nerdcommenter'
+  Plug 'sickill/vim-monokai'
+  Plug 'rafi/awesome-vim-colorschemes'
+  Plug 'mxw/vim-jsx'
+  " Syntaxes
+  Plug 'neomake/neomake'
+  Plug 'sorin-ionescu/python.vim', { 'for': 'python' }
+  Plug 'othree/html5.vim'
+  Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+  Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+  Plug 'isRuslan/vim-es6', { 'for': 'javascript' }
+  Plug 'avakhov/vim-yaml', { 'for': 'yaml' }
+  Plug 'mtscout6/vim-cjsx', { 'for': 'jsx' }
+  Plug 'elmcast/elm-vim', { 'for': 'elm' }
 call plug#end()
+
 
 " Ctrl + P
 set runtimepath^=~/.vim/bundle/ctrlp.vim

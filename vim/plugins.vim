@@ -2,10 +2,13 @@
 
 call plug#begin('~/.vim/bundle')
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+  " tpope time
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-eunuch'
+
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
@@ -19,6 +22,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'sickill/vim-monokai'
   Plug 'rafi/awesome-vim-colorschemes'
   Plug 'mxw/vim-jsx'
+
   " Syntaxes
   Plug 'neomake/neomake'
   Plug 'sorin-ionescu/python.vim', { 'for': 'python' }
@@ -29,6 +33,11 @@ call plug#begin('~/.vim/bundle')
   Plug 'avakhov/vim-yaml', { 'for': 'yaml' }
   Plug 'mtscout6/vim-cjsx', { 'for': 'jsx' }
   Plug 'elmcast/elm-vim', { 'for': 'elm' }
+
+  " color schemes
+  Plug 'tylerball/vim-hypertint'
+  Plug 'chriskempson/base16-vim'
+
 call plug#end()
 
 

@@ -8,28 +8,22 @@ set noswapfile
 set number
 set encoding=utf-8
 
+" Imports
+execute pathogen#infect()
+source ~/.vim/plugins.vim
+source ~/.vim/alias.vim
+
 " Theme
-" TODO get 24 bit color in tmux + iterm
-" https://deductivelabs.com/en/2016/03/using-true-color-vim-tmux/
-" https://www.reddit.com/r/vim/comments/2ozwe4/24_bit_vim_in_osx_iterm2_a_reality/
-" set guicolors
-" set background=dark
-colorscheme industry
+set background=dark
+colorscheme hypertint
 
 
 filetype off
 let &runtimepath.=',~/.vim/bundle/ale'
 filetype plugin on
 
-" Plugins
-execute pathogen#infect()
-
 " Ctrl + P
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" Shortcuts
-source ~/.vim/alias.vim
-source ~/.vim/plugins.vim
 
 " ctrlp ignore
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'

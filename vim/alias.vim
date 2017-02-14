@@ -31,4 +31,3 @@ set splitright
 
 " Ctrl+P
 nnoremap <C-b> :CtrlPBuffer<cr>
-

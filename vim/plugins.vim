@@ -22,6 +22,8 @@ call plug#begin('~/.vim/bundle')
   Plug 'sickill/vim-monokai'
   Plug 'rafi/awesome-vim-colorschemes'
   Plug 'mxw/vim-jsx'
+  Plug 'rking/ag.vim'
+  
 
   " Syntaxes
   Plug 'neomake/neomake'
@@ -40,7 +42,6 @@ call plug#begin('~/.vim/bundle')
 
 call plug#end()
 
-
 " Ctrl + P
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:CtrlSpaceSymbols = { "File": "◯", "CTab": "▣", "Tabs": "▢" }
@@ -52,13 +53,63 @@ let g:airline_left_sep=''
 let g:airline_right_sep=''
 
 " ctrlp ignore
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+augroup ctrlp_config
+  autocmd!
+  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+  let g:ctrlp_clear_cache_on_exit = 0 " Do not clear filenames cache, to improve CtrlP startup
+  let g:ctrlp_lazy_update = 350 " Set delay to prevent extra search
+  " let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' } " Use python fuzzy matcher for better performance
+  " let g:ctrlp_match_window_bottom = 0 " Show at top of window
+  let g:ctrlp_max_files = 0 " Set no file limit, we are building a big project
+  let g:ctrlp_switch_buffer = 'Et' " Jump to tab AND buffer if already open
+  let g:ctrlp_open_new_file = 'r' " Open newly created files in the current window
+  let g:ctrlp_open_multiple_files = 'ij' " Open multiple files in hidden buffers, and jump to the first one
+augroup END
+
 
 " CtrlSpace
 let g:CtrlSpaceLoadLastWorkspaceOnStart = 1
 let g:CtrlSpaceSaveWorkspaceOnSwitch = 1
 let g:CtrlSpaceSaveWorkspaceOnExit = 1
+
+" Silver Searcher
+augroup ag_config
+  autocmd!
+  if executable("ag")
+    " Note we extract the column as well as the file and line number
+    set grepprg=ag\ --nogroup\ --nocolor\ --column
+    set grepformat=%f:%l:%c%m
+
+    " Have the silver searcher ignore all the same things as wilgignore
+    let b:ag_command = 'ag %s -i --nocolor --nogroup'
+
+    for i in split(&wildignore, ",")
+      let i = substitute(i, '\*/\(.*\)/\*', '\1', 'g')
+      let b:ag_command = b:ag_command . ' --ignore "' . substitute(i, '\*/\(.*\)/\*', '\1', 'g') . '"'
+    endfor
+
+    let b:ag_command = b:ag_command . ' --hidden -g ""'
+    let g:ctrlp_user_command = b:ag_command
+  endif
+augroup END
+
+
 if executable("ag")
-    let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
+  " Note we extract the column as well as the file and line number
+  set grepprg=ag\ --nogroup\ --nocolor\ --column
+  set grepformat=%f:%l:%c%m
+
+  " Have the silver searcher ignore all the same things as wilgignore
+  let b:ag_command = 'ag %s -i --nocolor --nogroup'
+
+  for i in split(&wildignore, ",")
+    let i = substitute(i, '\*/\(.*\)/\*', '\1', 'g')
+    let b:ag_command = b:ag_command . ' --ignore "' . substitute(i, '\*/\(.*\)/\*', '\1', 'g') . '"'
+  endfor
+
+  let b:ag_command = b:ag_command . ' --hidden -g ""'
+  let g:ctrlp_user_command = b:ag_command
+
 endif
 

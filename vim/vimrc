@@ -14,7 +14,7 @@ set encoding=utf-8
 " https://www.reddit.com/r/vim/comments/2ozwe4/24_bit_vim_in_osx_iterm2_a_reality/
 " set guicolors
 " set background=dark
-colorscheme boa
+colorscheme industry
 
 
 filetype off

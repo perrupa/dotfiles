@@ -31,3 +31,11 @@ set splitright
 
 " Ctrl+P
 nnoremap <C-b> :CtrlPBuffer<cr>
+
+" EasyMotion
+nmap <leader>f <Plug>(easymotion-overwin-f)
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
+

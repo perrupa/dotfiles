@@ -42,8 +42,9 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 " Git Aliases
-nnoremap gs :Gstatus<cr> " Status
-nnoremap ga :Gwrite<cr>  " Add
-nnoremap gc :Gcommit<cr> " Commit
-nnoremap gd :Gdiff<cr>   " Diff
-
+command! Greview :Git! diff --staged
+nnoremap <Leader>gs :Gstatus<cr>   " Status
+nnoremap <Leader>ga :Gwrite<cr>    " Add
+nnoremap <Leader>gc :Gcommit<cr>   " Commit
+nnoremap <Leader>gd :Gdiff<cr>     " Diff
+nnoremap <Leader>gr :Greview<cr>   " Diff

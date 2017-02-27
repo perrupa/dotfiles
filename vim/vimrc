@@ -8,7 +8,10 @@ set noswapfile
 set number
 set encoding=utf-8
 
+" Share OSX's clipboard
+set clipboard=unnamed
 " Imports
+
 execute pathogen#infect()
 source ~/.vim/plugins.vim
 source ~/.vim/alias.vim
@@ -22,12 +25,6 @@ colorscheme hypertint
 filetype off
 let &runtimepath.=',~/.vim/bundle/ale'
 filetype plugin on
-
-" Ctrl + P
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" ctrlp ignore
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " Dictionary
 set dictionary=/usr/share/dict/words

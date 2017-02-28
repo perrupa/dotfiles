@@ -22,8 +22,8 @@ nnoremap bn :bnext<cr>
 nnoremap bp :bprevious<cr>
 
 " Tabs
-nnoremap gt :tabNext<cr>
-nnoremap gT :tabPrev<cr>
+nnoremap gt :tabnext<cr>
+nnoremap gT :tabprevious<cr>
 " Rename tabs
 nnoremap g, :TabooRename<space> 
 

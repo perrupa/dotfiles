@@ -8,18 +8,18 @@ set noswapfile
 set number
 set encoding=utf-8
 
+" Wildignore
+set wildignore+=.DS_Store
+set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js
+set wildignore+=*/bower_components/*,*/node_modules/*
+set wildignore+=*/smarty/*,*/vendor/*,*/.git/*,*/.hg/*,*/.svn/*,*/.sass-cache/*,*/log/*,*/tmp/*,*/build/*,*/ckeditor/*,*/doc/*,*/source_maps/*,*/dist/*
+
 " Share OSX's clipboard
 set clipboard=unnamed
-" Imports
-
-execute pathogen#infect()
-source ~/.vim/plugins.vim
-source ~/.vim/alias.vim
 
 " Theme
 set t_Co=256
 set background=dark
-colorscheme hypertint
 
 
 filetype off
@@ -52,9 +52,10 @@ endif
 set autoread
 
 " Search
-:set incsearch
+set incsearch
 
-set wildignore+=.DS_Store
-set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js
-set wildignore+=*/bower_components/*,*/node_modules/*
-set wildignore+=*/smarty/*,*/vendor/*,*/.git/*,*/.hg/*,*/.svn/*,*/.sass-cache/*,*/log/*,*/tmp/*,*/build/*,*/ckeditor/*,*/doc/*,*/source_maps/*,*/dist/*
+" Imports
+source ~/.vim/plugins.vim
+source ~/.vim/alias.vim
+
+colorscheme hypertint

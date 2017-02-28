@@ -48,3 +48,7 @@ nnoremap <Leader>ga :Gwrite<cr>    " Add
 nnoremap <Leader>gc :Gcommit<cr>   " Commit
 nnoremap <Leader>gd :Gdiff<cr>     " Diff
 nnoremap <Leader>gr :Greview<cr>   " Diff
+
+" NERD Tree
+
+nnoremap <Leader>kb :NERDTreeToggle<cr>

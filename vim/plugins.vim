@@ -50,6 +50,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'chriskempson/base16-vim'
 
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'FelikZ/ctrlp-py-matcher'
   Plug 'gcmt/taboo.vim'
 
   Plug 'michaeljsmith/vim-indent-object'
@@ -71,7 +72,7 @@ augroup ctrlp_config
   let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
   let g:ctrlp_clear_cache_on_exit = 0 " Do not clear filenames cache, to improve CtrlP startup
   let g:ctrlp_lazy_update = 150 " Set delay to prevent extra search
-  " let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' } " Use python fuzzy matcher for better performance
+  let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' } " Use python fuzzy matcher for better performance
   let g:ctrlp_max_files = 0 " Set no file limit, we are building a big project
   let g:ctrlp_switch_buffer = 'Et' " Jump to tab AND buffer if already open
   let g:ctrlp_open_new_file = 'r' " Open newly created files in the current window

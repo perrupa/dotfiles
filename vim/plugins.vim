@@ -28,7 +28,8 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/rainbow_parentheses.vim'
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-repeat'
-
+  Plug 'wesQ3/vim-windowswap'
+  Plug 'terryma/vim-multiple-cursors'
   " FZF
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'

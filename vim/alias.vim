@@ -31,8 +31,10 @@ nnoremap g, :TabooRename<space>
 set splitbelow
 set splitright
 
-" Ctrl+P
-nnoremap <C-b> :CtrlPBuffer<cr>
+" FZF
+nnoremap <C-p> :FZF<cr>
+nnoremap <C-b> :FZFBuffers<cr>
+nnoremap <C-f> :FZFLines<cr>
 
 " EasyMotion
 " https://github.com/easymotion/vim-easymotion#n-character-search-motion
@@ -40,6 +42,7 @@ nmap <leader>f <Plug>(easymotion-overwin-f)
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+
 
 " Git Aliases
 command! Greview :Git! diff --staged

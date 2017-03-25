@@ -3,6 +3,8 @@
 
 let g:fzf_command_prefix = 'FZF'
 
+" Open in same window/buffer
+let g:fzf_buffers_jump = 1
 
 " Override Colors command
 command! -bang Colors

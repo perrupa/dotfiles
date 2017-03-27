@@ -10,7 +10,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-dispatch'
   Plug 'tpope/vim-commentary'
-  Plug 'tpope/vim-obsession'
 
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
@@ -34,6 +33,9 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
 
+  " Autosave stuff
+  Plug '907th/vim-auto-save'
+  Plug 'tpope/vim-obsession'
 
   " Syntaxes
   Plug 'neomake/neomake'
@@ -62,7 +64,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'yssl/QFEnter' 
   Plug 'Valloric/YouCompleteMe'
   Plug 'SirVer/ultisnips'
-  Plug 'garbas/snipmate'
   Plug 'honza/vim-snippets'
 call plug#end()
 

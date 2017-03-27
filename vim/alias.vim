@@ -44,7 +44,6 @@ nmap <leader>f <Plug>(easymotion-overwin-f)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
-
 " Git Aliases
 command! Greview :Git! diff --staged
 nnoremap <Leader>gs :Gstatus<cr>   " Status

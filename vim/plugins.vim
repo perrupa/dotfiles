@@ -62,6 +62,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'yssl/QFEnter' 
   Plug 'Valloric/YouCompleteMe'
   Plug 'SirVer/ultisnips'
+  Plug 'garbas/snipmate'
   Plug 'honza/vim-snippets'
 call plug#end()
 
@@ -72,6 +73,8 @@ let g:airline_powerline_fonts = 1
 " let g:airline_left_sep=''
 " let g:airline_right_sep=''
 
+" GoldenRatio off by default
+let g:loaded_golden_ratio = 0
 
 " Use ripgrep
 set grepprg=rg\ --vimgrep

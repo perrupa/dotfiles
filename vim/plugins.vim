@@ -19,7 +19,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'vim-syntastic/syntastic'
   Plug 'roman/golden-ratio'
   Plug 'christoomey/vim-tmux-navigator'
-  Plug 'w0rp/ale'
   Plug 'scrooloose/nerdcommenter'
   Plug 'sickill/vim-monokai'
   Plug 'sheerun/vim-polyglot'
@@ -29,6 +28,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-repeat'
   Plug 'wesQ3/vim-windowswap'
   Plug 'terryma/vim-multiple-cursors'
+  Plug 'mattn/emmet-vim'
   " FZF
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'

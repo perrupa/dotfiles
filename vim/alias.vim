@@ -1,7 +1,7 @@
 " Alias file
 
 " Leader stuff
-let mapleader = ","
+let mapleader = " "
 
 " vimrc edits
 nnoremap <leader>sv :source ~/.vim/vimrc<cr>

@@ -35,7 +35,7 @@ set splitright
 nnoremap <C-p> :FZF<cr>
 nnoremap <C-b> :FZFBuffers<cr>
 nnoremap <C-f> :FZFLines<cr>
-nnoremap <C-g> :FZFAg<cr>
+nnoremap <C-g> :Rg<cr>
 
 " EasyMotion
 " https://github.com/easymotion/vim-easymotion#n-character-search-motion

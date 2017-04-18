@@ -36,6 +36,8 @@ nnoremap <C-p> :FZF<cr>
 nnoremap <C-b> :FZFBuffers<cr>
 nnoremap <C-f> :FZFLines<cr>
 nnoremap <C-g> :Rg<cr>
+nnoremap <C-t> :FZFBTags<cr>
+nnoremap <C-T> :FZFTags<cr>
 
 " EasyMotion
 " https://github.com/easymotion/vim-easymotion#n-character-search-motion

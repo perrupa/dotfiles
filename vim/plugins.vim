@@ -50,23 +50,23 @@ call plug#begin('~/.vim/bundle')
 
   Plug 'Shougo/vimshell.vim'
   Plug 'craigemery/vim-autotag'
+  Plug 'gcmt/taboo.vim'
 
   " color schemes
   Plug 'tylerball/vim-hypertint'
   Plug 'chriskempson/base16-vim'
 
-  Plug 'gcmt/taboo.vim'
-
   " Vim Objects
   Plug 'wellle/targets.vim'
   Plug 'michaeljsmith/vim-indent-object'
 
+  "Completion
   Plug 'yssl/QFEnter' 
   Plug 'Valloric/YouCompleteMe'
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
+  Plug 'ervandew/supertab'
 call plug#end()
-
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1

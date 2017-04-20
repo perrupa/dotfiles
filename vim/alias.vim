@@ -30,6 +30,7 @@ nnoremap g, :TabooRename<space>
 " Splits
 set splitbelow
 set splitright
+nnoremap <C-w> :q<cr>
 
 " FZF
 nnoremap <C-p> :FZF<cr>

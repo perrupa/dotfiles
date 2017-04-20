@@ -24,7 +24,7 @@
 	a  = add
 
 	s  = status -s -u
-	st = status
+	st =! clear && git status
 
 	d  = diff --color-words --ignore-all-space
 	dc = diff --staged

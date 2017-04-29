@@ -20,17 +20,21 @@ nnoremap <Down> ddp
 " Buffers
 nnoremap bn :bnext<cr>
 nnoremap bp :bprevious<cr>
+nnoremap <leader>bd :bd<cr>
+nnoremap <C-w> :q<cr>
+nnoremap <C-s> :w<cr>
+nnoremap <Leader>m :MaximizerToggle<CR>
 
 " Tabs
 nnoremap gt :tabnext<cr>
 nnoremap gT :tabprevious<cr>
+
 " Rename tabs
 nnoremap g, :TabooRename<space> 
 
 " Splits
 set splitbelow
 set splitright
-nnoremap <C-w> :q<cr>
 
 " FZF
 nnoremap <C-p> :FZF<cr>
@@ -56,5 +60,4 @@ nnoremap <Leader>gd :Gdiff<cr>     " Diff
 nnoremap <Leader>gr :Greview<cr>   " Diff
 
 " NERD Tree
-
 nnoremap <Leader>kb :NERDTreeToggle<cr>

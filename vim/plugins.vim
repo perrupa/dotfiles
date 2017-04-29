@@ -11,6 +11,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-dispatch'
   Plug 'tpope/vim-commentary'
 
+  Plug 'vim-ruby/vim-ruby'
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
@@ -51,6 +52,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'Shougo/vimshell.vim'
   Plug 'craigemery/vim-autotag'
   Plug 'gcmt/taboo.vim'
+  Plug 'szw/vim-maximizer'
 
   " color schemes
   Plug 'tylerball/vim-hypertint'
@@ -87,3 +89,5 @@ augroup rainbow_parenthesis_config
   let g:rainbow#blacklist = ['#F4CF86', '#FFFFFF']
 augroup END
 
+" Lang tweaks
+let g:ruby_indent_assignment_style = 'variable'

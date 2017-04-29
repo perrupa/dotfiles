@@ -49,10 +49,12 @@ call plug#begin('~/.vim/bundle')
   Plug 'mtscout6/vim-cjsx', { 'for': 'jsx' }
   Plug 'elmcast/elm-vim', { 'for': 'elm' }
 
+  " Misc
   Plug 'Shougo/vimshell.vim'
   Plug 'craigemery/vim-autotag'
   Plug 'gcmt/taboo.vim'
   Plug 'szw/vim-maximizer'
+  Plug 'kana/vim-arpeggio'
 
   " color schemes
   Plug 'tylerball/vim-hypertint'

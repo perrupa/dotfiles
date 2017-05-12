@@ -58,7 +58,7 @@ set incsearch
 source ~/.vim/plugins.vim
 source ~/.vim/alias.vim
 
-colorscheme hypertint
+colorscheme base16-eighties
 
 set omnifunc=syntaxcomplete#Complete
 

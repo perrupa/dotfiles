@@ -27,6 +27,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-completions
   fzf-zsh
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh

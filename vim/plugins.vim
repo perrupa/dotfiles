@@ -66,9 +66,7 @@ call plug#begin('~/.vim/bundle')
 
   "Completion
   Plug 'yssl/QFEnter' 
-  Plug 'Valloric/YouCompleteMe'
-  Plug 'SirVer/ultisnips'
-  Plug 'honza/vim-snippets'
+  " Plug 'Valloric/YouCompleteMe'
   Plug 'ervandew/supertab'
 call plug#end()
 

@@ -50,6 +50,7 @@ if has("mouse_sgr") && !has('nvim')
 endif
 
 set autoread
+set autowrite
 
 " Search
 set incsearch

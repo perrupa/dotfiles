@@ -44,6 +44,12 @@ nnoremap <C-g> :Rg<cr>
 nnoremap <C-t> :FZFBTags<cr>
 nnoremap <C-T> :FZFTags<cr>
 
+nnoremap <leader>p :FZF<cr>
+nnoremap <leader>b :FZFBuffers<cr>
+nnoremap <leader>f :FZFLines<cr>
+nnoremap <leader>g :Rg<cr>
+nnoremap <leader>t :FZFBTags<cr>
+nnoremap <leader>T :FZFTags<cr>
 " EasyMotion
 " https://github.com/easymotion/vim-easymotion#n-character-search-motion
 nmap <leader>f <Plug>(easymotion-overwin-f)

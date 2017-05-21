@@ -9,7 +9,7 @@ nnoremap <leader>sv :source ~/.vim/vimrc<cr>
 " remap ; to :
 noremap ; :
 
-" wrapped line movement 
+" wrapped line movement
 nnoremap k gk
 nnoremap j gj
 
@@ -30,7 +30,7 @@ nnoremap gt :tabnext<cr>
 nnoremap gT :tabprevious<cr>
 
 " Rename tabs
-nnoremap g, :TabooRename<space> 
+nnoremap g, :TabooRename<space>
 
 " Splits
 set splitbelow

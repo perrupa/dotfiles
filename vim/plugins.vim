@@ -73,6 +73,7 @@ call plug#begin('~/.vim/bundle')
   " Completions
   Plug 'yssl/QFEnter' 
   Plug 'ervandew/supertab'
+  Plug 'benmills/vimux'
 call plug#end()
 
 " Airline

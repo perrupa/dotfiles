@@ -64,9 +64,14 @@ call plug#begin('~/.vim/bundle')
   Plug 'wellle/targets.vim'
   Plug 'michaeljsmith/vim-indent-object'
 
-  "Completion
+  " Snippets
+  Plug 'MarcWeber/vim-addon-mw-utils'
+  Plug 'tomtom/tlib_vim'
+  Plug 'garbas/vim-snipmate'
+  Plug 'honza/vim-snippets'
+
+  " Completions
   Plug 'yssl/QFEnter' 
-  " Plug 'Valloric/YouCompleteMe'
   Plug 'ervandew/supertab'
 call plug#end()
 

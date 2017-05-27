@@ -16,27 +16,23 @@
 	remotes = remote -v
 
 	# most commonly used
-	st = status
+	s  = status -s -u
+	st =! clear && git status
+	a  = add
 	ci = commit
 	co = checkout
 	br = branch
-
-	a  = add
-
-	s  = status -s -u
-	st =! clear && git status
-
 	d  = diff --color-words --ignore-all-space
-	dc = diff --staged
+	dc = diff --color-words --staged
 
 	lg  = log --graph --decorate
-	l1  = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-	l2  = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lg1 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lg2 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	lgo = log #typos are for suckers
 
 [core]
 	excludesfile = ~/.gitignore_global
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = diff-so-fancy | less --tabs=2 -RFX
 	editor = vim
 
 [color "diff-highlight"]

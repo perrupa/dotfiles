@@ -1,4 +1,6 @@
-" Plugins 
+" Plugins
+
+let g:ale_emit_conflict_warnings = 0
 
 call plug#begin('~/.vim/bundle')
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -17,7 +19,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'vim-airline/vim-airline-themes'
   Plug 'edkolev/tmuxline.vim'
   Plug 'kchmck/vim-coffee-script'
-  Plug 'vim-syntastic/syntastic'
   Plug 'roman/golden-ratio'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'scrooloose/nerdcommenter'
@@ -55,10 +56,13 @@ call plug#begin('~/.vim/bundle')
   Plug 'gcmt/taboo.vim'
   Plug 'szw/vim-maximizer'
   Plug 'kana/vim-arpeggio'
+  Plug 'w0rp/ale'
 
   " color schemes
   Plug 'tylerball/vim-hypertint'
   Plug 'chriskempson/base16-vim'
+  Plug 'nightsense/vim-crunchbang'
+  Plug 'jakwings/vim-colors'
 
   " Vim Objects
   Plug 'wellle/targets.vim'
@@ -71,22 +75,20 @@ call plug#begin('~/.vim/bundle')
   Plug 'honza/vim-snippets'
 
   " Completions
-  Plug 'yssl/QFEnter' 
+  Plug 'yssl/QFEnter'
   Plug 'ervandew/supertab'
   Plug 'benmills/vimux'
 call plug#end()
-
-" Airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-" let g:airline_left_sep=''
-" let g:airline_right_sep=''
 
 " GoldenRatio off by default
 let g:loaded_golden_ratio = 0
 
 " Use ripgrep
 set grepprg=rg\ --vimgrep
+
+" enable AutoSave on Vim startup
+let g:auto_save = 1
+
 
 augroup rainbow_parenthesis_config
   autocmd!

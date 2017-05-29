@@ -7,6 +7,7 @@ set cursorline
 set noswapfile
 set number
 set encoding=utf-8
+set t_Co=256
 
 " Wildignore
 set wildignore+=.DS_Store
@@ -59,7 +60,11 @@ set incsearch
 source ~/.vim/plugins.vim
 source ~/.vim/alias.vim
 
-colorscheme base16-eighties
+" Theme
+colorscheme base16-google-dark
+let g:airline_theme='base16_google'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 set omnifunc=syntaxcomplete#Complete
 

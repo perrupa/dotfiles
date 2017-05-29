@@ -21,7 +21,8 @@ nnoremap <Down> ddp
 nnoremap bn :bnext<cr>
 nnoremap bp :bprevious<cr>
 nnoremap <leader>bd :bd<cr>
-nnoremap <C-w> :bd<cr>
+nnoremap <C-w> :q<cr>
+nnoremap <C-W> :bd<cr>
 nnoremap <C-s> :w<cr>
 nnoremap <Leader>m :MaximizerToggle<CR>
 

@@ -57,6 +57,8 @@ call plug#begin('~/.vim/bundle')
   Plug 'szw/vim-maximizer'
   Plug 'kana/vim-arpeggio'
   Plug 'w0rp/ale'
+  Plug 'wincent/terminus'
+  Plug 'ntpeters/vim-better-whitespace'
 
   " color schemes
   Plug 'tylerball/vim-hypertint'

@@ -24,7 +24,9 @@ nnoremap <leader>bd :bd<cr>
 nnoremap <C-w> :q<cr>
 nnoremap <C-W> :bd<cr>
 nnoremap <C-s> :w<cr>
+nnoremap <C-S> :wa<cr>
 nnoremap <Leader>m :MaximizerToggle<CR>
+nnoremap <C-\> :edit %:h<cr>
 
 " Tabs
 nnoremap gt :tabnext<cr>

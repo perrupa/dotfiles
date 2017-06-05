@@ -67,4 +67,5 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 set omnifunc=syntaxcomplete#Complete
+autocmd BufEnter * EnableStripWhitespaceOnSave
 

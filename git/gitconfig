@@ -19,9 +19,10 @@
 	s  = status -s -u
 	st =! clear && git status
 	a  = add
+	a  = add .
 	ci = commit
 	co = checkout
-	br = branch
+	br =! clear && git branch
 	d  = diff --color-words --ignore-all-space
 	dc = diff --color-words --staged
 

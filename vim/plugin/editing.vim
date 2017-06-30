@@ -8,5 +8,8 @@ vnoremap > >gv
 vnoremap < <gv
 
 
-
+" Show trailing whitespace
+set lcs=tab:›\ ,trail:·,eol:¬,nbsp:_
+set fcs=fold:-
+nnoremap <silent> <leader>c :set nolist!<CR>
 

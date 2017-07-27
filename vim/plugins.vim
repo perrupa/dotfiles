@@ -62,9 +62,9 @@ call plug#begin('~/.vim/bundle')
 
   " color schemes
   Plug 'tylerball/vim-hypertint'
-  Plug 'chriskempson/base16-vim'
   Plug 'nightsense/vim-crunchbang'
   Plug 'jakwings/vim-colors'
+  Plug 'flazz/vim-colorschemes'
 
   " Vim Objects
   Plug 'wellle/targets.vim'

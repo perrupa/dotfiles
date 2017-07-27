@@ -22,9 +22,9 @@ nnoremap bn :bnext<cr>
 nnoremap bp :bprevious<cr>
 nnoremap <leader>bd :bd<cr>
 nnoremap <C-w> :q<cr>
-nnoremap <C-W> :bd<cr>
+nnoremap <C-S-w> :bd<cr>
 nnoremap <C-s> :w<cr>
-nnoremap <C-S> :wa<cr>
+nnoremap <C-S-s> :wa<cr>
 nnoremap <Leader>m :MaximizerToggle<CR>
 nnoremap <C-\> :edit %:h<cr>
 
@@ -42,7 +42,7 @@ set splitright
 " FZF
 nnoremap <C-p> :FZF<cr>
 nnoremap <C-b> :FZFBuffers<cr>
-nnoremap <C-f> :FZFLines<cr>
+nnoremap <C-F> :Rg<space>
 nnoremap <C-g> :Rg<cr>
 nnoremap <C-t> :FZFBTags<cr>
 nnoremap <C-T> :FZFTags<cr>

@@ -19,7 +19,6 @@
 	s  = status -s -u
 	st =! clear && git status
 	a  = add
-	a  = add .
 	ci = commit
 	co = checkout
 	br =! clear && git branch

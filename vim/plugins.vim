@@ -34,6 +34,7 @@ call plug#begin('~/.vim/bundle')
   " FZF
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
+  Plug 'kshenoy/vim-signature'
 
   " Autosave stuff
   Plug '907th/vim-auto-save'

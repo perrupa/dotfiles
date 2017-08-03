@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/christophermarlow/.oh-my-zsh
+export DOTFILES=/Users/christophermarlow/Projects/dotfiles
 
 export PATH="$PATH:/path/to/elixir/bin"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -31,21 +32,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# runs rails tests with a relative path
-# eg: `t test/models/listing_category_test.rb`
-t () {
-    noglob bundle exec rake test "$@"
-}
-
-# tmux session creation/loading with FZF
-tm() {
-  local session
-  newsession=${1:-new}
-  session=$(tmux list-sessions -F "#{session_name}" | \
-    fzf --query="$1" --select-1 --exit-0) &&
-    tmux attach-session -t "$session" || tmux new-session -s $newsession
-}
+source $DOTFILES/zsh/functions.zsh
 
 # Shopify's dev resource
 source /opt/dev/dev.sh
@@ -54,4 +41,3 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias gco='git checkout $(git branch | grep -v "\*" | fzf)'

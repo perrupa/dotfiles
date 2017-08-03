@@ -15,5 +15,9 @@ tm() {
     tmux attach-session -t "$session" || tmux new-session -s $newsession
 }
 
+function diff {
+  colordiff -u "$@" | less
+}
+
 ## Aliases
 alias gco='git checkout $(git branch | grep -v "\*" | fzf)'

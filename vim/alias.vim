@@ -18,9 +18,6 @@ nnoremap <Up> :m .-2<cr>
 nnoremap <Down> ddp
 
 " Buffers
-nnoremap bn :bnext<cr>
-nnoremap bp :bprevious<cr>
-nnoremap <leader>bd :bd<cr>
 nnoremap <C-w> :q<cr>
 nnoremap <C-S-w> :bd<cr>
 nnoremap <C-s> :w<cr>

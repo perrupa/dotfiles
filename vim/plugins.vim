@@ -31,6 +31,8 @@ call plug#begin('~/.vim/bundle')
   Plug 'wesQ3/vim-windowswap'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'mattn/emmet-vim'
+  Plug 'gcmt/wildfire.vim'
+
   " FZF
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
@@ -68,6 +70,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'flazz/vim-colorschemes'
 
   " Vim Objects
+  Plug 'jiangmiao/auto-pairs'
   Plug 'wellle/targets.vim'
   Plug 'michaeljsmith/vim-indent-object'
 

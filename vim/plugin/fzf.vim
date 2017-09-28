@@ -1,6 +1,7 @@
 " FZF Config
 " https://medium.com/@crashybang/supercharge-vim-with-fzf-and-ripgrep-d4661fc853d2#.7tq6fyynl
 
+" prefixes all FZF commands; Buffers -> FZFBuffers
 let g:fzf_command_prefix = 'FZF'
 
 " Open in same window/buffer

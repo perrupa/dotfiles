@@ -19,7 +19,6 @@ nnoremap <Down> ddp
 
 " Buffers
 nnoremap <C-w> :q<cr>
-nnoremap <C-S-w> :bd<cr>
 nnoremap <C-s> :w<cr>
 nnoremap <C-S-s> :wa<cr>
 nnoremap <Leader>m :MaximizerToggle<CR>
@@ -46,6 +45,7 @@ nnoremap <C-S-t> :FZFTags<cr>
 nnoremap <C-m> :FZFMarks<cr>
 
 nnoremap <leader>p :FZF<cr>
+nnoremap <leader><leader> :FZFBuffers<cr>
 nnoremap <leader>b :FZFBuffers<cr>
 nnoremap <leader>f :FZFLines<cr>
 nnoremap <leader>g :Rg<cr>

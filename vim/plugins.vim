@@ -46,6 +46,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'neomake/neomake'
   Plug 'sorin-ionescu/python.vim', { 'for': 'python' }
   Plug 'othree/html5.vim'
+  Plug 'jparise/vim-graphql'
   Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
   Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
   Plug 'isRuslan/vim-es6', { 'for': 'javascript' }
@@ -62,6 +63,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'w0rp/ale'
   Plug 'wincent/terminus'
   Plug 'ntpeters/vim-better-whitespace'
+  Plug 'junegunn/vim-peekaboo'
 
   " color schemes
   Plug 'tylerball/vim-hypertint'

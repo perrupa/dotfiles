@@ -51,12 +51,15 @@ nnoremap <leader>f :FZFLines<cr>
 nnoremap <leader>g :Rg<cr>
 nnoremap <leader>t :FZFBTags<cr>
 nnoremap <leader>T :FZFTags<cr>
+
+" Registers
+nnoremap <leader>@ :registers<cr>
+
 " EasyMotion
 " https://github.com/easymotion/vim-easymotion#n-character-search-motion
 nmap <leader>f <Plug>(easymotion-overwin-f)
-" JK motions: Line motions
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
+map  <Leader>j <Plug>(easymotion-j)
+map  <Leader>k <Plug>(easymotion-k)
 
 " Git Aliases
 command! Greview :Git! diff --staged
@@ -68,6 +71,7 @@ nnoremap <Leader>gr :Greview<cr>   " Diff
 
 " NERD Tree
 nnoremap <Leader>kb :NERDTreeToggle<cr>
+nnoremap <Leader>kf :NERDTreeFind<cr>
 
 " Arpeggios
 call arpeggio#load()

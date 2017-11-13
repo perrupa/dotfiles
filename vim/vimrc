@@ -65,10 +65,13 @@ source ~/.vim/plugins.vim
 source ~/.vim/alias.vim
 
 " Theme
-colorscheme monokai
-let g:airline_theme='wombat'
+colorscheme softblue
+let g:airline_theme='minimalist'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+" Grey line numbers
+highlight LineNr ctermfg=grey
 
 set omnifunc=syntaxcomplete#Complete
 autocmd BufEnter * EnableStripWhitespaceOnSave

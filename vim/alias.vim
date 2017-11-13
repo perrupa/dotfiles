@@ -17,6 +17,10 @@ nnoremap j gj
 nnoremap <Up> :m .-2<cr>
 nnoremap <Down> ddp
 
+" Yank Consistency
+nnoremap Y y$
+
+
 " Buffers
 nnoremap <C-w> :q<cr>
 nnoremap <C-s> :w<cr>

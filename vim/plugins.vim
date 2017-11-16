@@ -39,7 +39,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'kshenoy/vim-signature'
 
   " Autosave stuff
-  Plug '907th/vim-auto-save'
   Plug 'tpope/vim-obsession'
 
   " Syntaxes
@@ -53,10 +52,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'avakhov/vim-yaml', { 'for': 'yaml' }
   Plug 'mtscout6/vim-cjsx', { 'for': 'jsx' }
   Plug 'elmcast/elm-vim', { 'for': 'elm' }
-  Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql']
-  \}
+  Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 
   " Misc
   Plug 'Shougo/vimshell.vim'

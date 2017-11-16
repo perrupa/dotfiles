@@ -38,8 +38,6 @@ source $DOTFILES/zsh/functions.zsh
 # Shopify's dev resource
 source /opt/dev/dev.sh
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # ctrl+z in zsh types fg then hits enter to jump back to the last job.

@@ -23,6 +23,7 @@
 	a  = add
 	ci = commit
 	co = checkout
+	cp = cherry-pick
 	br =! clear && git branch
 	d  = diff --color-words --ignore-all-space
 	dc = diff --color-words --staged

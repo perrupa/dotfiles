@@ -75,10 +75,3 @@ nnoremap <Leader>gr :Greview<cr>   " Diff
 nnoremap <Leader>kb :NERDTreeToggle<cr>
 nnoremap <Leader>kf :NERDTreeFind<cr>
 
-" Arpeggios
-call arpeggio#load()
-Arpeggio inoremap fd <Esc><Esc>
-Arpeggio inoremap df <Esc><Esc>
-Arpeggio inoremap jk <Esc><Esc>
-Arpeggio inoremap kj <Esc><Esc>
-

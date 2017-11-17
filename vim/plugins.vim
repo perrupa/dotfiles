@@ -59,7 +59,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'craigemery/vim-autotag'
   Plug 'gcmt/taboo.vim'
   Plug 'szw/vim-maximizer'
-  Plug 'kana/vim-arpeggio'
   Plug 'w0rp/ale'
   Plug 'wincent/terminus'
   Plug 'ntpeters/vim-better-whitespace'

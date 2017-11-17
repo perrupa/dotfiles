@@ -11,8 +11,6 @@ set t_Co=256
 set wildmenu
 set lazyredraw
 
-
-
 " Wildignore
 set wildignore+=.DS_Store
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js

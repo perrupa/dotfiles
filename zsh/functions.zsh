@@ -22,3 +22,14 @@ function diff {
 ## Aliases
 alias gco='git checkout $(git branch | grep -v "\*" | fzf)'
 alias vim='nvim'
+
+
+function fkill() {
+  pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
+
+  if [ "x$pid" != "x" ]
+  then
+    kill -${1:-9} $pid
+  fi
+}
+

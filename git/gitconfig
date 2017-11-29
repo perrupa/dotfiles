@@ -21,7 +21,7 @@
 	s  = status -s -u
 	st =! clear && git status
 	a  = add
-	ci = commit
+	ci = commit -v
 	co = checkout
 	cp = cherry-pick
 	br =! clear && git branch

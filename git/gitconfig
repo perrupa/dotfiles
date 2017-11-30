@@ -19,6 +19,7 @@
 
 	# most commonly used
 	s  = status -s -u
+	t =! clear && git status # support typos like `gits t`
 	st =! clear && git status
 	a  = add
 	ci = commit -v

@@ -19,11 +19,6 @@ function diff {
   colordiff -u "$@" | less
 }
 
-## Aliases
-alias gco='git checkout $(git branch | grep -v "\*" | fzf)'
-alias vim='nvim'
-
-
 function fkill() {
   pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
 

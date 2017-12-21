@@ -74,3 +74,5 @@ highlight LineNr ctermfg=grey
 set omnifunc=syntaxcomplete#Complete
 autocmd BufEnter * EnableStripWhitespaceOnSave
 
+" Use Deoplete
+let g:deoplete#enable_at_startup = 1

@@ -33,6 +33,16 @@ call plug#begin('~/.vim/bundle')
   Plug 'mattn/emmet-vim'
   Plug 'gcmt/wildfire.vim'
 
+  " Autocomplete
+  " Taken from https://github.com/Shougo/deoplete.nvim
+  if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+  endif
+
   " FZF
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'

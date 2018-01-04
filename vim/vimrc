@@ -36,6 +36,7 @@ set dictionary=/usr/share/dict/words
 " ...?
 
 " Indentation
+filetype plugin indent on
 set expandtab ts=2 shiftwidth=2 softtabstop=2
 
 " Highlight curr line (only active window)

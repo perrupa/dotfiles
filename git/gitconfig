@@ -1,49 +1,50 @@
 [user]
-	email = christopher.marlow@shopify.com
-	name = Chris Marlow
+  email = christopher.marlow@shopify.com
+  name = Chris Marlow
 
 [github]
-	# https://github.com/blog/180-local-github-config
-	user = perrupa
+  # https://github.com/blog/180-local-github-config
+  user = perrupa
 
 [push]
-	default = simple
+  default = simple
 
 [alias]
-	# git flags are weird
-	branches = branch -a
-	tags = tag -l
-	remotes = remote -v
+  # git flags are weird
+  branches = branch -a
+  tags = tag -l
+  remotes = remote -v
 
   mybranches = "!f() { if test $# = 0 ; then set -- refs/remotes ; fi ; git for-each-ref --format='%(authordate:relative)\t%(refname:short)\t%(authoremail)' --sort=authordate \"$@\" | sed -ne \"s/\t<$(git config user.email)>//p\" | column -s '\t' -t ; } ; f"
 
-	# most commonly used
-	s  = status -s -u
-	t =! clear && git status # support typos like `gits t`
-	st =! clear && git status
-	a  = add
-	ci = commit -v
-	co = checkout
-	cp = cherry-pick
-	br =! clear && git branch
-	d  = diff --color-words --ignore-all-space
-	dc = diff --color-words --staged
+  # most commonly used
+  s  = status -s -u
+  t =! clear && git status # support typos like `gits t`
+  st =! clear && git status
+  a  = add
+  ci = commit -v
+  cia = commit --amend -C HEAD
+  co = checkout
+  cp = cherry-pick
+  br =! clear && git branch
+  d  = diff --color-words --ignore-all-space
+  dc = diff --color-words --staged
 
-	lg  = log --graph --decorate
-	lg1 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-	lg2 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	lgo = log #typos are for suckers
+  lg  = log --graph --decorate
+  lg1 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lg2 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lgo = log #typos are for suckers
 
 [core]
-	excludesfile = ~/.gitignore_global
-	pager = diff-so-fancy | less --tabs=2 -RFX
-	editor = vim
+  excludesfile = ~/.gitignore_global
+  pager = diff-so-fancy | less --tabs=2 -RFX
+  editor = vim
 
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 
 [rerere]
-	enabled = true
+  enabled = true

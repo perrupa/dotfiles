@@ -20,13 +20,13 @@ nnoremap <Down> ddp
 " Yank Consistency
 nnoremap Y y$
 
-
 " Buffers
 nnoremap <C-w> :q<cr>
 nnoremap <C-s> :w<cr>
 nnoremap <C-S-s> :wa<cr>
 nnoremap <Leader>m :MaximizerToggle<CR>
 nnoremap <C-\> :edit %:h<cr>
+nnoremap <Leader><Leader> <C-^>
 
 " Tabs
 nnoremap gt :tabnext<cr>

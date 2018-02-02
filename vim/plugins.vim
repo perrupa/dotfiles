@@ -65,7 +65,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 
   " Misc
-  Plug 'Shougo/vimshell.vim'
   Plug 'craigemery/vim-autotag'
   Plug 'gcmt/taboo.vim'
   Plug 'szw/vim-maximizer'
@@ -75,10 +74,13 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/vim-peekaboo'
 
   " color schemes
+  Plug 'altercation/vim-colors-solarized'
   Plug 'tylerball/vim-hypertint'
   Plug 'nightsense/vim-crunchbang'
   Plug 'jakwings/vim-colors'
   Plug 'flazz/vim-colorschemes'
+  Plug 'rafi/awesome-vim-colorschemes'
+  Plug 'dracula/vim'
 
   " Vim Objects
   Plug 'jiangmiao/auto-pairs'

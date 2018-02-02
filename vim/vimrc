@@ -20,11 +20,6 @@ set wildignore+=*/smarty/*,*/vendor/*,*/.git/*,*/.hg/*,*/.svn/*,*/.sass-cache/*,
 " Share OSX's clipboard
 set clipboard=unnamed
 
-" Theme
-set t_Co=256
-set background=dark
-
-
 filetype off
 let &runtimepath.=',~/.vim/bundle/ale'
 filetype plugin on
@@ -64,7 +59,10 @@ source ~/.vim/plugins.vim
 source ~/.vim/alias.vim
 
 " Theme
- colorscheme Tomorrow-Night-Eighties
+set t_Co=256
+set background=dark
+" colorscheme monoacc
+colorscheme dracula
 let g:airline_theme='base16_eighties'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1

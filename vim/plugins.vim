@@ -48,6 +48,9 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/fzf.vim'
   Plug 'kshenoy/vim-signature'
 
+  " Denite/Unite
+  Plug 'Shougo/denite.nvim'
+
   " Autosave stuff
   Plug 'tpope/vim-obsession'
 

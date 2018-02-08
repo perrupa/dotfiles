@@ -26,7 +26,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'sheerun/vim-polyglot'
   Plug 'mxw/vim-jsx'
   Plug 'junegunn/rainbow_parentheses.vim'
-  Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-repeat'
   Plug 'wesQ3/vim-windowswap'
   Plug 'terryma/vim-multiple-cursors'

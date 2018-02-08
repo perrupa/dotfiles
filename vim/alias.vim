@@ -57,12 +57,6 @@ nnoremap <leader>T :FZFTags<cr>
 " Registers
 nnoremap <leader>@ :registers<cr>
 
-" EasyMotion
-" https://github.com/easymotion/vim-easymotion#n-character-search-motion
-nmap <leader>f <Plug>(easymotion-overwin-f)
-map  <Leader>j <Plug>(easymotion-j)
-map  <Leader>k <Plug>(easymotion-k)
-
 " Git Aliases
 command! Greview :Git! diff --staged
 nnoremap <Leader>gs :Gstatus<cr>   " Status

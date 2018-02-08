@@ -29,3 +29,37 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0
   \ )
+
+" Returns the word under cursor.
+function! GetWordUnderCursor()
+    let isOnKeyword = matchstr(getline('.'), '\%'.col('.').'c.') =~# '\k'
+    if isOnKeyword
+        return expand("<cword>")
+    else
+        return ""
+    endif
+endfunction
+
+" Use Ag with word under cursor
+function! SearchProject()
+    call CmdLine("Ag " . GetWordUnderCursor())
+endfunction
+
+" Returns the visual selection
+function! VisualSelection()
+    try
+        let a_save = @a
+        silent normal! gv"ay
+        return @a
+    finally
+        let @a = a_save
+    endtry
+endfunction
+
+" Search the project for the visual selection
+function! SearchProjectVisual()
+    call CmdLine("Ag " . VisualSelection())
+endfunction
+
+nnoremap <leader>s :call SearchProject()<CR>
+vnoremap <leader>s :call SearchProjectVisual()<CR>

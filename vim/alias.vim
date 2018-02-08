@@ -75,3 +75,5 @@ nnoremap <Leader>gr :Greview<cr>   " Diff
 nnoremap <Leader>kb :NERDTreeToggle<cr>
 nnoremap <Leader>kf :NERDTreeFind<cr>
 
+" Comments
+nnoremap <C-_> :Commentary<cr> " vim sees ctrl+/ as ctrl+_ for some reason

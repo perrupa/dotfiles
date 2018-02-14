@@ -77,3 +77,9 @@ nnoremap <Leader>kf :NERDTreeFind<cr>
 
 " Comments
 nnoremap <C-_> :Commentary<cr> " vim sees ctrl+/ as ctrl+_ for some reason
+
+" Neovim terminal
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+endif
+

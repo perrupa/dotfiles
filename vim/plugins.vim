@@ -17,10 +17,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-  Plug 'edkolev/tmuxline.vim'
-  Plug 'kchmck/vim-coffee-script'
   Plug 'roman/golden-ratio'
-  Plug 'christoomey/vim-tmux-navigator'
   Plug 'scrooloose/nerdcommenter'
   Plug 'sickill/vim-monokai'
   Plug 'sheerun/vim-polyglot'
@@ -32,6 +29,13 @@ call plug#begin('~/.vim/bundle')
   Plug 'terryma/vim-multiple-cursors'
   Plug 'mattn/emmet-vim'
   Plug 'gcmt/wildfire.vim'
+
+  " Tmux stuff
+  Plug 'edkolev/tmuxline.vim'
+  Plug 'christoomey/vim-tmux-navigator'
+  Plug 'benmills/vimux'
+  Plug 'tyewang/vimux-jest-test'
+  Plug 'pgr0ss/vimux-ruby-test'
 
   " Autocomplete
   " Taken from https://github.com/Shougo/deoplete.nvim

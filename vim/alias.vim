@@ -26,11 +26,15 @@ nnoremap <C-s> :w<cr>
 nnoremap <C-S-s> :wa<cr>
 nnoremap <Leader>m :MaximizerToggle<CR>
 nnoremap <C-\> :edit %:h<cr>
-nnoremap <Leader><Leader> <C-^>
+noremap <Leader><Leader> <C-^>
 
 " Tabs
 nnoremap gt :tabnext<cr>
 nnoremap gT :tabprevious<cr>
+
+" Searching
+nnoremap <Leader>sW :execute ":Rg  " . expand("<cWORD>")<CR>
+nnoremap <Leader>sw :execute ":Rg  " . expand("<cword>")<CR>
 
 " Rename tabs
 nnoremap g, :TabooRename<space>

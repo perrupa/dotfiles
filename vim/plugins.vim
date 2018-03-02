@@ -12,6 +12,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-dispatch'
   Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-vinegar'
 
   Plug 'vim-ruby/vim-ruby'
   Plug 'airblade/vim-gitgutter'
@@ -79,7 +80,6 @@ call plug#begin('~/.vim/bundle')
 
   " color schemes
   Plug 'altercation/vim-colors-solarized'
-  Plug 'tylerball/vim-hypertint'
   Plug 'nightsense/vim-crunchbang'
   Plug 'jakwings/vim-colors'
   Plug 'flazz/vim-colorschemes'

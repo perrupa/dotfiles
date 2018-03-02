@@ -1,5 +1,5 @@
 " Prompt for a command to run
-nnoremap <C-t> :PromptVimTmuxCommand
+nnoremap <leader>tm :PromptVimTmuxCommand
 " Run last command executed by RunVimTmuxCommand
 nnoremap <leader>rl :RunLastVimTmuxCommand
 " Inspect runner pane

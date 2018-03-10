@@ -41,6 +41,11 @@ call plug#begin('~/.vim/bundle')
   " Completion Framework for Neovim
   Plug 'roxma/python-support.nvim'
   Plug 'roxma/nvim-completion-manager'
+  Plug 'roxma/nvim-cm-tern',  {'do': 'npm install'}
+  Plug 'roxma/ncm-rct-complete'
+  Plug 'mhartington/nvim-typescript'
+  Plug 'othree/csscomplete.vim'
+  Plug 'SirVer/ultisnips'
 
   " FZF
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }

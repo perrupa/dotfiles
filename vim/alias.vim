@@ -26,8 +26,24 @@ nnoremap <C-s> :w<cr>
 nnoremap <C-S-s> :wa<cr>
 nnoremap <Leader>m :MaximizerToggle<CR>
 nnoremap <C-\> :edit %:h<cr>
-noremap <Leader><Leader> <C-^>
 
+" Ctrl-^ is very handy command in normal mode. Ctrl-^
+" switches to "alternate file". When there is no "alternate file",
+" I wanted Ctrl-^ to jump to next file in the list.
+" Insert following commands into your vimrc, then
+" Ctrl-^ will be enhanced so that when there is no alternate file
+" but there is next file, it will jump to the next buffer.
+" My remapping of <C-^>. If there is no alternate file, then switch to next file.
+function! MySwitch()
+  if expand('#')==""
+    silent! bnext
+  else
+    exe "normal! \<c-^>"
+  endif
+endfu
+map <C-^> :call MySwitch()<CR>
+" noremap <Leader><Leader> :call MySwitch()<CR>
+noremap <Leader><Leader> <C-^>
 " Tabs
 nnoremap gt :tabnext<cr>
 nnoremap gT :tabprevious<cr>
@@ -57,15 +73,10 @@ nnoremap <leader>b :FZFBuffers<cr>
 nnoremap <leader>g :Rg<cr>
 nnoremap <leader>t :FZFBTags<cr>
 nnoremap <leader>T :FZFTags<cr>
+nnoremap <leader>cs :FZFColors<cr>
 
 " Registers
 nnoremap <leader>@ :registers<cr>
-
-" EasyMotion
-" https://github.com/easymotion/vim-easymotion#n-character-search-motion
-nmap <leader>f <Plug>(easymotion-overwin-f)
-map  <Leader>j <Plug>(easymotion-j)
-map  <Leader>k <Plug>(easymotion-k)
 
 " Git Aliases
 command! Greview :Git! diff --staged

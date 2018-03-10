@@ -10,6 +10,9 @@ set encoding=utf-8
 set t_Co=256
 set wildmenu
 set lazyredraw
+if has('nvim-0.1.5')        " True color in neovim wasn't added until 0.1.5
+    set termguicolors
+endif
 
 " Wildignore
 set wildignore+=.DS_Store
@@ -61,17 +64,12 @@ source ~/.vim/alias.vim
 " Theme
 set t_Co=256
 set background=dark
-" colorscheme monoacc
-colorscheme dracula
-let g:airline_theme='base16_eighties'
+let g:gruvbox_italic=1
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
+
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-" Grey line numbers
-highlight LineNr ctermfg=grey
-
 set omnifunc=syntaxcomplete#Complete
 autocmd BufEnter * EnableStripWhitespaceOnSave
-
-" Use Deoplete
-let g:deoplete#enable_at_startup = 1

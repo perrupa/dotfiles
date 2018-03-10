@@ -18,7 +18,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-  Plug 'roman/golden-ratio'
+  Plug 'morhetz/gruvbox'
   Plug 'scrooloose/nerdcommenter'
   Plug 'sickill/vim-monokai'
   Plug 'sheerun/vim-polyglot'
@@ -32,11 +32,12 @@ call plug#begin('~/.vim/bundle')
   Plug 'gcmt/wildfire.vim'
 
   " Tmux stuff
-  Plug 'edkolev/tmuxline.vim'
+  " Plug 'edkolev/tmuxline.vim'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'benmills/vimux'
   Plug 'tyewang/vimux-jest-test'
   Plug 'pgr0ss/vimux-ruby-test'
+  Plug 'janko-m/vim-test'
 
   " Autocomplete
   " Taken from https://github.com/Shougo/deoplete.nvim
@@ -103,15 +104,11 @@ call plug#begin('~/.vim/bundle')
   Plug 'benmills/vimux'
 call plug#end()
 
-" GoldenRatio off by default
-let g:loaded_golden_ratio = 0
-
 " Use ripgrep
 set grepprg=rg\ --vimgrep
 
 " enable AutoSave on Vim startup
 let g:auto_save = 1
-
 
 augroup rainbow_parenthesis_config
   autocmd!
@@ -120,5 +117,3 @@ augroup rainbow_parenthesis_config
   let g:rainbow#blacklist = ['#F4CF86', '#FFFFFF']
 augroup END
 
-" Lang tweaks
-let g:ruby_indent_assignment_style = 'variable'

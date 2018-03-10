@@ -22,3 +22,4 @@ func! Multiple_cursors_after()
     call deoplete#init#_enable()
 endfunc
 
+let g:wildfire_objects = ["iw", "i'", 'i"', "i)", "i]", "i}", "ip", "it"]

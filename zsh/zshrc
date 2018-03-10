@@ -2,7 +2,10 @@
 export ZSH=/Users/christophermarlow/.oh-my-zsh
 export DOTFILES=/Users/christophermarlow/Projects/dotfiles
 
-export PATH="$PATH:/path/to/elixir/bin"
+# PyEnv stuff
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$HOME/.yarn/bin:$PATH"
 
@@ -43,3 +46,5 @@ source /opt/dev/dev.sh
 
 # ctrl+z in zsh types fg then hits enter to jump back to the last job.
 bindkey -s '^z' "fg\n"
+
+eval "$(pyenv init -)"

@@ -38,6 +38,10 @@ call plug#begin('~/.vim/bundle')
   Plug 'pgr0ss/vimux-ruby-test'
   Plug 'janko-m/vim-test'
 
+  " Completion Framework for Neovim
+  Plug 'roxma/python-support.nvim'
+  Plug 'roxma/nvim-completion-manager'
+
   " FZF
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'

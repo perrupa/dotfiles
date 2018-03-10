@@ -38,16 +38,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'pgr0ss/vimux-ruby-test'
   Plug 'janko-m/vim-test'
 
-  " Autocomplete
-  " Taken from https://github.com/Shougo/deoplete.nvim
-  if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  else
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-  endif
-
   " FZF
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'

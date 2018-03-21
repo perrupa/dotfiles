@@ -45,7 +45,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'roxma/ncm-rct-complete'
   Plug 'mhartington/nvim-typescript'
   Plug 'othree/csscomplete.vim'
-  Plug 'SirVer/ultisnips'
 
   " FZF
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }

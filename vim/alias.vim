@@ -53,6 +53,7 @@ nnoremap gT :tabprevious<cr>
 " Searching
 nnoremap <Leader>sW :execute ":Rg  " . expand("<cWORD>")<CR>
 nnoremap <Leader>sw :execute ":Rg  " . expand("<cword>")<CR>
+nnoremap <Leader>nhl :nohlsearch<CR>
 
 " Rename tabs
 nnoremap g, :TabooRename<space>

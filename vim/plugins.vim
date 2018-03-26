@@ -21,6 +21,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'morhetz/gruvbox'
   Plug 'scrooloose/nerdcommenter'
   Plug 'sickill/vim-monokai'
+  Plug 'gf3/molotov'
   Plug 'sheerun/vim-polyglot'
   Plug 'mxw/vim-jsx'
   Plug 'junegunn/rainbow_parentheses.vim'

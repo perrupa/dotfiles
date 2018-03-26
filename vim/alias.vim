@@ -51,8 +51,8 @@ nnoremap gt :tabnext<cr>
 nnoremap gT :tabprevious<cr>
 
 " Searching
-nnoremap <Leader>sW :execute ":Rg  " . expand("<cWORD>")<CR>
-nnoremap <Leader>sw :execute ":Rg  " . expand("<cword>")<CR>
+nnoremap <Leader>sW :execute ":Rg! " . expand("<cWORD>")<CR>
+nnoremap <Leader>sw :execute ":Rg! " . expand("<cword>")<CR>
 nnoremap <Leader>nhl :nohlsearch<CR>
 
 " Rename tabs
@@ -65,8 +65,7 @@ set splitright
 " FZF
 nnoremap <C-p> :FZF<cr>
 nnoremap <C-b> :FZFBuffers<cr>
-nnoremap <C-F> :Rg<space>
-nnoremap <C-g> :Rg<cr>
+nnoremap <C-F> :Rg!<space>
 nnoremap <C-t> :FZFBTags<cr>
 nnoremap <C-S-t> :FZFTags<cr>
 nnoremap <C-m> :FZFMarks<cr>

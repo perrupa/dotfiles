@@ -7,6 +7,11 @@ setlocal comments+=f://
 vnoremap > >gv
 vnoremap < <gv
 
+" Moving by word
+" Option+h
+nnoremap ˙ b
+" Option+l
+nnoremap ¬ w
 
 " Show trailing whitespace
 set lcs=tab:›\ ,trail:·,eol:¬,nbsp:_

@@ -1,5 +1,4 @@
 " Plugins
-
 let g:ale_emit_conflict_warnings = 0
 
 call plug#begin('~/.vim/bundle')
@@ -30,21 +29,16 @@ call plug#begin('~/.vim/bundle')
   Plug 'mattn/emmet-vim'
   Plug 'gcmt/wildfire.vim'
 
-  " Tmux stuff
-  " Plug 'edkolev/tmuxline.vim'
+  " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'benmills/vimux'
   Plug 'tyewang/vimux-jest-test'
   Plug 'pgr0ss/vimux-ruby-test'
   Plug 'janko-m/vim-test'
 
-  " Completion Framework for Neovim
-  Plug 'roxma/python-support.nvim'
-  Plug 'roxma/nvim-completion-manager'
-  Plug 'roxma/nvim-cm-tern',  {'do': 'npm install'}
-  Plug 'roxma/ncm-rct-complete'
-  Plug 'mhartington/nvim-typescript'
-  Plug 'othree/csscomplete.vim'
+
+  " Quickfix wizardy
+  Plug 'yssl/QFEnter'
 
   " FZF
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
@@ -54,7 +48,14 @@ call plug#begin('~/.vim/bundle')
   " Autosave stuff
   Plug 'tpope/vim-obsession'
 
+  " Completion
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+  Plug 'mhartington/nvim-typescript'
+  Plug 'othree/csscomplete.vim'
+
   " Syntaxes
+  Plug 'roxma/python-support.nvim'
   Plug 'neomake/neomake'
   Plug 'sorin-ionescu/python.vim', { 'for': 'python' }
   Plug 'othree/html5.vim'
@@ -90,15 +91,9 @@ call plug#begin('~/.vim/bundle')
   Plug 'michaeljsmith/vim-indent-object'
 
   " Snippets
-  Plug 'MarcWeber/vim-addon-mw-utils'
-  Plug 'tomtom/tlib_vim'
-  Plug 'garbas/vim-snipmate'
+  Plug 'sirver/ultisnips'
   Plug 'honza/vim-snippets'
-
-  " Completions
-  Plug 'yssl/QFEnter'
   Plug 'ervandew/supertab'
-  Plug 'benmills/vimux'
 call plug#end()
 
 " Use ripgrep
@@ -113,4 +108,3 @@ augroup rainbow_parenthesis_config
   let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
   let g:rainbow#blacklist = ['#F4CF86', '#FFFFFF']
 augroup END
-

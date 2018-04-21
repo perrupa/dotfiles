@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/christophermarlow/.oh-my-zsh
-export DOTFILES=/Users/christophermarlow/Projects/dotfiles
+export ZSH=~/.oh-my-zsh
+export DOTFILES=~/Projects/dotfiles
 
 # PyEnv stuff
 export PYENV_ROOT="$HOME/.pyenv"

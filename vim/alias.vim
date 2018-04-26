@@ -13,10 +13,6 @@ noremap ; :
 nnoremap k gk
 nnoremap j gj
 
-" Arrow keys
-nnoremap <Up> :m .-2<cr>
-nnoremap <Down> ddp
-
 " Yank Consistency
 nnoremap Y y$
 
@@ -94,6 +90,7 @@ nnoremap <Leader>kf :NERDTreeFind<cr>
 
 " Comments
 nnoremap <C-_> :Commentary<cr> " vim sees ctrl+/ as ctrl+_ for some reason
+vnoremap <C-_> :Commentary<cr>gv " Comments out selection, keeping it selected
 
 " Neovim terminal
 if has('nvim')

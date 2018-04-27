@@ -53,6 +53,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
   Plug 'mhartington/nvim-typescript'
   Plug 'othree/csscomplete.vim'
+  Plug 'wellle/tmux-complete.vim'
 
   " Syntaxes
   Plug 'roxma/python-support.nvim'

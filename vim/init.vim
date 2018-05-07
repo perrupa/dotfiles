@@ -1,14 +1,8 @@
-syntax on
 set nocompatible
 set hidden
 filetype plugin indent on
-set backspace=indent,eol,start
-set cursorline
 set noswapfile
-set number
-set encoding=utf-8
 set t_Co=256
-set wildmenu
 set lazyredraw
 if has('nvim-0.1.5')        " True color in neovim wasn't added until 0.1.5
     set termguicolors

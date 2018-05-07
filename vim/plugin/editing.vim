@@ -1,3 +1,10 @@
+syntax on
+set cursorline
+set number
+set encoding=utf-8
+set backspace=indent,eol,start
+set wildmenu
+
 " Arrow keys
 nnoremap <Up> :m .-2<cr>
 nnoremap <Down> ddp

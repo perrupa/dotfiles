@@ -4,7 +4,7 @@
 let mapleader = " "
 
 " vimrc edits
-nnoremap <leader>sv :source ~/.vim/vimrc<cr>
+nnoremap <leader>sv :source ~/.vimrc<cr>
 
 " remap ; to :
 noremap ; :

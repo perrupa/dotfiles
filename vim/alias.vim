@@ -66,11 +66,12 @@ nnoremap <C-t> :FZFBTags<cr>
 nnoremap <C-S-t> :FZFTags<cr>
 nnoremap <C-m> :FZFMarks<cr>
 
-nnoremap <leader>p :FZF<cr>
-nnoremap <leader>b :FZFBuffers<cr>
-nnoremap <leader>g :Rg<cr>
-nnoremap <leader>t :FZFBTags<cr>
-nnoremap <leader>T :FZFTags<cr>
+nnoremap <leader>p  :FZF<cr>
+nnoremap <leader>b  :FZFBuffers<cr>
+nnoremap <leader>bb :FZFBuffers<cr>
+nnoremap <leader>g  :Rg<cr>
+nnoremap <leader>t  :FZFBTags<cr>
+nnoremap <leader>T  :FZFTags<cr>
 nnoremap <leader>cs :FZFColors<cr>
 
 " Registers

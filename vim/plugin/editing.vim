@@ -22,6 +22,9 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 setlocal comments-=://
 setlocal comments+=f://
 
+" Tab completion from the top down
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
 " keep selection when reindenting
 vnoremap > >gv
 vnoremap < <gv

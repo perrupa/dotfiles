@@ -13,6 +13,10 @@ noremap ; :
 nnoremap k gk
 nnoremap j gj
 
+" word-wise H & L
+nnoremap H B
+nnoremap L w
+
 " Yank Consistency
 nnoremap Y y$
 

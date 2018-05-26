@@ -12,7 +12,7 @@ export PATH="$HOME/.yarn/bin:$PATH"
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # ZSH_THEME="agnoster"
-ZSH_THEME="lambda"
+ZSH_THEME="avit"
 DEV_ALLOW_ITERM2_INTEGRATION=1
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/*'"
 

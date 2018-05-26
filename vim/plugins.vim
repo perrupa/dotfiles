@@ -92,7 +92,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'michaeljsmith/vim-indent-object'
 
   " Snippets
-  Plug 'sirver/ultisnips'
   Plug 'honza/vim-snippets'
   Plug 'ervandew/supertab'
 call plug#end()

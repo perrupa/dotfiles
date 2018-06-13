@@ -40,9 +40,11 @@ call plug#begin('~/.vim/bundle')
   " Quickfix wizardy
   Plug 'yssl/QFEnter'
 
-  " FZF
+  " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
+  Plug 'roman/golden-ratio'
+  Plug 'gcmt/taboo.vim'
   Plug 'kshenoy/vim-signature'
 
   " Autosave stuff
@@ -71,7 +73,6 @@ call plug#begin('~/.vim/bundle')
 
   " Misc
   Plug 'craigemery/vim-autotag'
-  Plug 'gcmt/taboo.vim'
   Plug 'szw/vim-maximizer'
   Plug 'w0rp/ale'
   Plug 'wincent/terminus'

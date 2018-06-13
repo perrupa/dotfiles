@@ -1,7 +1,7 @@
 set nocompatible
 set hidden
 filetype plugin indent on
-set lisp
+set lisp " `-` doens't break words + more :)
 set noswapfile
 set t_Co=256
 set lazyredraw

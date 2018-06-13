@@ -30,6 +30,7 @@
   d  = diff --color-words --ignore-all-space
   dc = diff --color-words --staged
 
+  ll = -c core.pager='less -p^commit.*$' log -p
   lg  = log --graph --decorate
   lg1 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   lg2 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative

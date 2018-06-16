@@ -58,6 +58,8 @@ nnoremap <Leader>nhl :nohlsearch<CR>
 " Rename tabs
 nnoremap g, :TabooRename<space>
 
+nnoremap grt :GoldenRatioToggle<CR>
+
 " Splits
 set splitbelow
 set splitright
@@ -70,12 +72,13 @@ nnoremap <C-t> :FZFBTags<cr>
 nnoremap <C-S-t> :FZFTags<cr>
 nnoremap <C-m> :FZFMarks<cr>
 
-nnoremap <leader>p  :FZF<cr>
-nnoremap <leader>b  :FZFBuffers<cr>
-nnoremap <leader>bb :FZFBuffers<cr>
-nnoremap <leader>g  :Rg<cr>
-nnoremap <leader>t  :FZFBTags<cr>
-nnoremap <leader>T  :FZFTags<cr>
+nnoremap ;f  :FZF<cr>
+nnoremap ;<space>  :FZFBuffers<cr>
+nnoremap ;b  :FZFBuffers<cr>
+nnoremap ;t  :FZFBTags<cr>
+nnoremap ;T  :FZFTags<cr>
+nnoremap ;g  :Rg<cr>
+
 nnoremap <leader>cs :FZFColors<cr>
 
 " Registers

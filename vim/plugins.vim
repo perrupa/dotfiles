@@ -78,6 +78,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'wincent/terminus'
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'junegunn/vim-peekaboo'
+  Plug 'Asheq/close-buffers.vim'
 
   " color schemes
   Plug 'altercation/vim-colors-solarized'

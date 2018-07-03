@@ -69,7 +69,10 @@ call plug#begin('~/.vim/bundle')
   Plug 'avakhov/vim-yaml', { 'for': 'yaml' }
   Plug 'mtscout6/vim-cjsx', { 'for': 'jsx' }
   Plug 'elmcast/elm-vim', { 'for': 'elm' }
-  Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
+  Plug 'prettier/vim-prettier', {
+    \    'do': 'yarn install',
+    \    'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql']
+    \  }
 
   " Misc
   Plug 'craigemery/vim-autotag'
@@ -87,6 +90,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'flazz/vim-colorschemes'
   Plug 'rafi/awesome-vim-colorschemes'
   Plug 'dracula/vim'
+  Plug 'szw/seoul256.vim'
 
   " Vim Objects
   Plug 'jiangmiao/auto-pairs'

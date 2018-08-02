@@ -54,6 +54,8 @@ nnoremap gT :tabprevious<cr>
 nnoremap <Leader>sW :execute ":Rg! " . expand("<cWORD>")<CR>
 nnoremap <Leader>sw :execute ":Rg! " . expand("<cword>")<CR>
 nnoremap <Leader>nhl :nohlsearch<CR>
+nnoremap n nzz " Centers the cursor vertically after jumping to the next result
+nnoremap N Nzz
 
 " Rename tabs
 nnoremap g, :TabooRename<space>

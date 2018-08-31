@@ -6,6 +6,7 @@ call plug#begin('~/.vim/bundle')
 
   " tpope time
   Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-rails'
   Plug 'tpope/vim-rhubarb'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-eunuch'
@@ -27,7 +28,9 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-repeat'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'mattn/emmet-vim'
-  Plug 'gcmt/wildfire.vim'
+  Plug 'kana/vim-textobj-user'
+  Plug 'kana/vim-textobj-line'
+  Plug 'terryma/vim-expand-region'
 
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'
@@ -51,9 +54,12 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-obsession'
 
   " Completion
+  Plug 'autozimu/LanguageClient-neovim', {
+  \   'branch': 'next',
+  \   'do': 'bash install.sh',
+  \ }
   Plug 'Shougo/deoplete.nvim'
   Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-  Plug 'mhartington/nvim-typescript'
   Plug 'othree/csscomplete.vim'
   Plug 'wellle/tmux-complete.vim'
 
@@ -114,3 +120,19 @@ augroup rainbow_parenthesis_config
   let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
   let g:rainbow#blacklist = ['#F4CF86', '#FFFFFF']
 augroup END
+
+
+" Include word expanding with `terryma/vim-expand-region`
+" Default settings. (NOTE: Remove comments in dictionary before sourcing)
+let g:expand_region_text_objects = {
+      \ 'iw'  :0,
+      \ 'iW'  :0,
+      \ 'i"'  :0,
+      \ 'i''' :0,
+      \ 'i]'  :1,
+      \ 'ib'  :1,
+      \ 'iB'  :1,
+      \ 'il'  :0,
+      \ 'ip'  :0,
+      \ }
+

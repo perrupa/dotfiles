@@ -4,7 +4,7 @@
 let mapleader = " "
 
 " vimrc edits
-nnoremap <leader>sv :source ~/.vimrc<cr>
+nnoremap <leader>sv :source ~/.vimrc<CR>
 
 " remap ; to :
 noremap ; :
@@ -21,13 +21,13 @@ nnoremap L w
 nnoremap Y y$
 
 " Buffers
-nnoremap <C-w> :q<cr>
-nnoremap <leader>bd :bd<cr>
-" nnoremap <C-S-w> :bd<cr>
-" nnoremap <C-s> :w<cr>
-nnoremap <C-S-s> :wa<cr>
+nnoremap <C-w> :q<CR>
+nnoremap <leader>bd :bd<CR>
+" nnoremap <C-S-w> :bd<CR>
+" nnoremap <C-s> :w<CR>
+nnoremap <C-S-s> :wa<CR>
 nnoremap <Leader>m :MaximizerToggle<CR>
-nnoremap <C-\> :edit %:h<cr>
+nnoremap <C-\> :edit %:h<CR>
 
 " Ctrl-^ is very handy command in normal mode. Ctrl-^
 " switches to "alternate file". When there is no "alternate file",
@@ -47,12 +47,14 @@ map <C-^> :call MySwitch()<CR>
 " noremap <Leader><Leader> :call MySwitch()<CR>
 noremap <Leader><Leader> <C-^>
 " Tabs
-nnoremap gt :tabnext<cr>
-nnoremap gT :tabprevious<cr>
+nnoremap gt :tabnext<CR>
+nnoremap gT :tabprevious<CR>
 
 " Searching
 nnoremap <Leader>sW :execute ":Rg! " . expand("<cWORD>")<CR>
 nnoremap <Leader>sw :execute ":Rg! " . expand("<cword>")<CR>
+" vnoremap <Leader>s :execute ":Rg! " . expand("<cword>")<CR>
+
 nnoremap <Leader>nhl :nohlsearch<CR>
 nnoremap n nzz " Centers the cursor vertically after jumping to the next result
 nnoremap N Nzz
@@ -67,40 +69,45 @@ set splitbelow
 set splitright
 
 " FZF
-nnoremap <C-p> :FZF<cr>
-nnoremap <C-b> :FZFBuffers<cr>
+nnoremap <C-p> :FZF<CR>
+nnoremap <C-b> :FZFBuffers<CR>
 nnoremap <C-F> :Rg!<space>
-nnoremap <C-t> :FZFBTags<cr>
-nnoremap <C-S-t> :FZFTags<cr>
-nnoremap <C-m> :FZFMarks<cr>
+nnoremap <C-t> :FZFBTags<CR>
+nnoremap <C-S-t> :FZFTags<CR>
+nnoremap <C-m> :FZFMarks<CR>
 
-nnoremap ;f  :FZF<cr>
-nnoremap ;<space>  :FZFBuffers<cr>
-nnoremap ;b  :FZFBuffers<cr>
-nnoremap ;t  :FZFBTags<cr>
-nnoremap ;T  :FZFTags<cr>
-nnoremap ;g  :Rg<cr>
+nnoremap ;f  :FZF<CR>
+nnoremap ;<space>  :FZFBuffers<CR>
+nnoremap ;b  :FZFBuffers<CR>
+nnoremap ;t  :FZFBTags<CR>
+nnoremap ;T  :FZFTags<CR>
+nnoremap ;g  :Rg<CR>
 
-nnoremap <leader>cs :FZFColors<cr>
+nnoremap <leader>cs :FZFColors<CR>
 
 " Registers
-nnoremap <leader>@ :registers<cr>
+nnoremap <leader>@ :registers<CR>
 
 " Git Aliases
 command! Greview :Git! diff --staged
-nnoremap <Leader>gs :Gstatus<cr>   " Status
-nnoremap <Leader>ga :Gwrite<cr>    " Add
-nnoremap <Leader>gc :Gcommit<cr>   " Commit
-nnoremap <Leader>gd :Gdiff<cr>     " Diff
-nnoremap <Leader>gr :Greview<cr>   " Diff
+nnoremap <Leader>gs :Gstatus<CR>   " Status
+nnoremap <Leader>ga :Gwrite<CR>    " Add
+nnoremap <Leader>gc :Gcommit<CR>   " Commit
+nnoremap <Leader>gd :Gdiff<CR>     " Diff
+nnoremap <Leader>gr :Greview<CR>   " Diff
 
 " NERD Tree
-nnoremap <Leader>kb :NERDTreeToggle<cr>
-nnoremap <Leader>kf :NERDTreeFind<cr>
+nnoremap <Leader>kb :NERDTreeToggle<CR>
+nnoremap <Leader>kf :NERDTreeFind<CR>
 
 " Comments
-nnoremap <C-_> :Commentary<cr> " vim sees ctrl+/ as ctrl+_ for some reason
-vnoremap <C-_> :Commentary<cr>gv " Comments out selection, keeping it selected
+nnoremap <C-_> :Commentary<CR> " vim sees ctrl+/ as ctrl+_ for some reason
+vnoremap <C-_> :Commentary<CR>gv " Comments out selection, keeping it selected
+
+" vim-expand-region bindings
+map <CR>   <Plug>(expand_region_expand)
+map <S-CR> <Plug>(expand_region_shrink)
+
 
 " Neovim terminal
 if has('nvim')

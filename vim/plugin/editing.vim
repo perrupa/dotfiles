@@ -42,6 +42,3 @@ nnoremap <silent> <leader>c :set nolist!<CR>
 
 " Search highlighting with bold + underline
 highlight Search guibg=guifg guifg=guibg gui=bold,italic,underline,standout
-
-" Include word expanding with Wildfire
-let g:wildfire_objects = ["iw", "i'", 'i"', "i)", "i]", "i}", "ip", "it"]

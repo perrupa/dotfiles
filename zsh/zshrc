@@ -43,6 +43,7 @@ source /opt/dev/dev.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Vi mode for zsh input
 bindkey -v
 export KEYTIMEOUT=1
 

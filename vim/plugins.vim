@@ -35,8 +35,6 @@ call plug#begin('~/.vim/bundle')
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'benmills/vimux'
-  Plug 'tyewang/vimux-jest-test'
-  Plug 'pgr0ss/vimux-ruby-test'
   Plug 'janko-m/vim-test'
 
 
@@ -81,7 +79,6 @@ call plug#begin('~/.vim/bundle')
     \  }
 
   " Misc
-  Plug 'craigemery/vim-autotag'
   Plug 'szw/vim-maximizer'
   Plug 'w0rp/ale'
   Plug 'wincent/terminus'

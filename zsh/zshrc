@@ -28,7 +28,6 @@ plugins=(
   brew
   osx
   z
-  zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-completions
   fzf-zsh

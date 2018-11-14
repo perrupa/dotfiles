@@ -51,3 +51,5 @@
   enabled = true
 [diff]
 	algorithm = patience
+[protocol]
+	version = 2

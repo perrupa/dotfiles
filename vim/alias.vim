@@ -22,7 +22,7 @@ nnoremap Y y$
 
 " Buffers
 nnoremap <C-w> :q<CR>
-nnoremap <leader>bd :bd<CR>
+nnoremap <leader>bd :bdelete<CR>
 " nnoremap <C-S-w> :bd<CR>
 " nnoremap <C-s> :w<CR>
 nnoremap <C-S-s> :wa<CR>

@@ -15,7 +15,7 @@ nnoremap j gj
 
 " word-wise H & L
 nnoremap H B
-nnoremap L w
+nnoremap L E
 
 " Yank Consistency
 nnoremap Y y$

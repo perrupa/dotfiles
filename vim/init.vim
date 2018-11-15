@@ -64,8 +64,13 @@ source ~/.vim/alias.vim
 set t_Co=256
 set background=dark
 let g:gruvbox_italic=1
-colorscheme molotov
-let g:airline_theme='molotov'
+colorscheme ayu
+let g:airline_theme='ayu'
+
+let g:indentLine_char = '┆'
+let g:indentLine_first_char = '┆'
+let g:indentLine_showFirstIndentLevel = 1
+let g:indentLine_setColors = 0
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1

@@ -12,12 +12,13 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-dispatch'
   Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-vinegar'
+  Plug 'tpope/vim-obsession'
 
   Plug 'vim-ruby/vim-ruby'
   Plug 'airblade/vim-gitgutter'
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
+  Plug 'itchyny/lightline.vim'
   Plug 'morhetz/gruvbox'
   Plug 'scrooloose/nerdcommenter'
   Plug 'sickill/vim-monokai'
@@ -25,7 +26,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'sheerun/vim-polyglot'
   Plug 'mxw/vim-jsx'
   Plug 'junegunn/rainbow_parentheses.vim'
-  Plug 'tpope/vim-repeat'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'mattn/emmet-vim'
   Plug 'kana/vim-textobj-user'
@@ -48,9 +48,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'roman/golden-ratio'
   Plug 'gcmt/taboo.vim'
   Plug 'kshenoy/vim-signature'
-
-  " Autosave stuff
-  Plug 'tpope/vim-obsession'
 
   " Completion
   Plug 'autozimu/LanguageClient-neovim', {

@@ -1,5 +1,11 @@
 let g:lightline = {
   \   'colorscheme': 'default',
+  \   'tabline': {
+  \     'left': [['buffers']],
+  \     'right': [['close']]
+  \   },
+  \   'component_type': {'buffers': 'tabsel'},
+  \   'component_expand': {'buffers': 'lightline#bufferline#buffers'},
   \   'active': {
   \     'left':[ [ 'mode', 'paste' ],
   \              [ 'gitbranch', 'readonly', 'filename', 'modified' ]

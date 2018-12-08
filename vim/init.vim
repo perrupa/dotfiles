@@ -65,15 +65,12 @@ set t_Co=256
 set background=dark
 let g:gruvbox_italic=1
 colorscheme ayu
-let g:airline_theme='ayu'
+set showtabline=2
 
 let g:indentLine_char = '┆'
 let g:indentLine_first_char = '┆'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_setColors = 0
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
 
 set omnifunc=syntaxcomplete#Complete
 autocmd BufEnter * EnableStripWhitespaceOnSave

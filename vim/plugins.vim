@@ -18,7 +18,6 @@ call plug#begin('~/.vim/bundle')
 
   Plug 'vim-ruby/vim-ruby'
   Plug 'airblade/vim-gitgutter'
-  Plug 'itchyny/lightline.vim'
   Plug 'morhetz/gruvbox'
   Plug 'scrooloose/nerdcommenter'
   Plug 'sickill/vim-monokai'
@@ -32,6 +31,10 @@ call plug#begin('~/.vim/bundle')
   Plug 'kana/vim-textobj-line'
   Plug 'terryma/vim-expand-region'
   Plug 'Yggdroot/indentLine'
+
+  " Vim UI
+  Plug 'itchyny/lightline.vim'
+  Plug 'mengelbrecht/lightline-bufferline'
 
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'

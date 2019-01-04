@@ -119,6 +119,8 @@ augroup rainbow_parenthesis_config
   let g:rainbow#blacklist = ['#F4CF86', '#FFFFFF']
 augroup END
 
+" Don't GoldenRatio NERDtree/non-modifiables
+let g:golden_ratio_exclude_nonmodifiable = 1
 
 " Include word expanding with `terryma/vim-expand-region`
 " Default settings. (NOTE: Remove comments in dictionary before sourcing)

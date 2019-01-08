@@ -34,7 +34,7 @@ call plug#begin('~/.vim/bundle')
 
   " Vim UI
   Plug 'itchyny/lightline.vim'
-  Plug 'bling/vim-bufferline'
+  Plug 'mgee/lightline-bufferline'
 
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'
@@ -49,7 +49,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
   Plug 'roman/golden-ratio'
-  Plug 'gcmt/taboo.vim'
+  " Plug 'gcmt/taboo.vim'
   Plug 'kshenoy/vim-signature'
 
   " Completion

@@ -29,11 +29,12 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 vnoremap > >gv
 vnoremap < <gv
 
-" Moving by word
-" Option+h
-nnoremap ˙ b
-" Option+l
-nnoremap ¬ w
+" Option + hjkl
+" hjkl = ˙∆˚¬
+nnoremap ˙ ^
+nnoremap ¬ $
+nnoremap ˚ {
+nnoremap ∆ }
 
 " Show trailing whitespace
 set lcs=tab:›\ ,trail:·,eol:¬,nbsp:_

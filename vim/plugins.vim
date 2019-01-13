@@ -41,7 +41,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'benmills/vimux'
   Plug 'janko-m/vim-test'
 
-
   " Quickfix wizardy
   Plug 'yssl/QFEnter'
 
@@ -80,6 +79,7 @@ call plug#begin('~/.vim/bundle')
     \  }
 
   " Misc
+  Plug 'icatalina/vim-case-change'
   Plug 'szw/vim-maximizer'
   Plug 'w0rp/ale'
   Plug 'wincent/terminus'

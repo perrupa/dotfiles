@@ -36,6 +36,10 @@ nnoremap ¬ $
 nnoremap ˚ {
 nnoremap ∆ }
 
+" word-wise jumping in insert mode
+inoremap ˙ <C-o>b
+inoremap ¬ <C-o>e
+
 " Show trailing whitespace
 set lcs=tab:›\ ,trail:·,eol:¬,nbsp:_
 set fcs=fold:-

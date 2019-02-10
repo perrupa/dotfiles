@@ -23,9 +23,8 @@ nnoremap Y y$
 " Buffers
 nnoremap <C-w> :q<CR>
 nnoremap <leader>bd :bdelete<CR>
-" nnoremap <C-S-w> :bd<CR>
-" nnoremap <C-s> :w<CR>
-nnoremap <C-S-s> :wa<CR>
+nnoremap <leader>BD :bdelete!<CR>
+nnoremap <C-s> :wa<CR>
 nnoremap <Leader>m :MaximizerToggle<CR>
 nnoremap <C-\> :edit %:h<CR>
 

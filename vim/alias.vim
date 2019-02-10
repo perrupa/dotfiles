@@ -26,6 +26,7 @@ nnoremap <leader>bd :bdelete<CR>
 nnoremap <leader>BD :bdelete!<CR>
 nnoremap <C-s> :wa<CR>
 nnoremap <Leader>m :MaximizerToggle<CR>
+nnoremap <Leader>z :MaximizerToggle<CR>
 nnoremap <C-\> :edit %:h<CR>
 
 " Ctrl-^ is very handy command in normal mode. Ctrl-^
@@ -89,14 +90,6 @@ nnoremap <leader>cs :FZFColors<CR>
 " Registers
 nnoremap <leader>@ :registers<CR>
 
-" Git Aliases
-command! Greview :Git! diff --staged
-nnoremap <Leader>gs :Gstatus<CR>   " Status
-nnoremap <Leader>ga :Gwrite<CR>    " Add
-nnoremap <Leader>gc :Gcommit<CR>   " Commit
-nnoremap <Leader>gd :Gdiff<CR>     " Diff
-nnoremap <Leader>gr :Greview<CR>   " Diff
-
 " NERD Tree
 nnoremap <Leader>kb :NERDTreeToggle<CR>
 nnoremap <Leader>kf :NERDTreeFind<CR>
@@ -109,9 +102,4 @@ vnoremap <C-_> :Commentary<CR>gv " Comments out selection, keeping it selected
 map <CR>   <Plug>(expand_region_expand)
 map <S-CR> <Plug>(expand_region_shrink)
 
-
-" Neovim terminal
-if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-endif
 

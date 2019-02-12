@@ -9,3 +9,6 @@ alias gco='git checkout $(git branch | grep -v "\*" | fzf)'
 
 alias cat='bat' # Better cat
 alias help='tldr' # Better help
+
+alias mux="tmuxinator"
+

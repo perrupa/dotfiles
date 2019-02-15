@@ -25,6 +25,9 @@ setlocal comments+=f://
 " Tab completion from the top down
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
+" Don't confirm when stripping whitespace
+let g:strip_whitespace_confirm=0
+
 " keep selection when reindenting
 vnoremap > >gv
 vnoremap < <gv

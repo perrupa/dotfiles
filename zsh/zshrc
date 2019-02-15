@@ -16,6 +16,9 @@ ZSH_THEME="avit"
 DEV_ALLOW_ITERM2_INTEGRATION=1
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/*'"
 
+export SHELL='zsh'
+export EDITOR='nvim'
+
 # Plugins
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/

@@ -9,10 +9,6 @@ if has('nvim-0.1.5')        " True color in neovim wasn't added until 0.1.5
     set termguicolors
 endif
 
-" Python bullshit
-let g:python_host_prog = '~/.pyenv/shims/python'
-let g:python3_host_prog = '~/.pyenv/shims/python'
-
 " Wildignore
 set wildignore+=.DS_Store
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js

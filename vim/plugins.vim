@@ -45,6 +45,9 @@ call plug#begin('~/.vim/bundle')
   " Quickfix wizardy
   Plug 'yssl/QFEnter'
 
+  " Editing
+  Plug 'gcmt/wildfire.vim'
+
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
@@ -53,14 +56,13 @@ call plug#begin('~/.vim/bundle')
   Plug 'kshenoy/vim-signature'
 
   " Completion
-  Plug 'autozimu/LanguageClient-neovim', {
-  \   'branch': 'next',
-  \   'do': 'bash install.sh',
-  \ }
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+  Plug 'mhartington/nvim-typescript'
+  Plug 'HerringtonDarkholme/yats.vim'
   Plug 'othree/csscomplete.vim'
   Plug 'wellle/tmux-complete.vim'
+  Plug 'Shougo/neco-vim'
+  Plug 'neoclide/coc-neco'
 
   " Syntaxes
   Plug 'roxma/python-support.nvim'
@@ -103,8 +105,8 @@ call plug#begin('~/.vim/bundle')
   Plug 'michaeljsmith/vim-indent-object'
 
   " Snippets
+  Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
-  Plug 'ervandew/supertab'
 call plug#end()
 
 " Use ripgrep

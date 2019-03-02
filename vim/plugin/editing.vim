@@ -50,3 +50,7 @@ nnoremap <silent> <leader>c :set nolist!<CR>
 
 " Search highlighting with bold + underline
 highlight Search guibg=guifg guifg=guibg gui=bold,italic,underline,standout
+
+" Wildfire Config
+let g:wildfire_objects = ["iw", "iW", "i'", 'i"', "i>", "i)", "i]", "i}", "it", "ip"]
+

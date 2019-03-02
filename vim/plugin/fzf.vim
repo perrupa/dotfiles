@@ -36,7 +36,6 @@ nnoremap <C-b> :FZFBuffers<CR>
 nnoremap <C-F> :Rg!<space>
 nnoremap <C-t> :FZFBTags<CR>
 nnoremap <C-S-t> :FZFTags<CR>
-nnoremap <C-m> :FZFMarks<CR>
 
 nnoremap ;f  :FZF<CR>
 nnoremap ;<space>  :FZFBuffers<CR>

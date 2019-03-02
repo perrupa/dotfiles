@@ -45,6 +45,9 @@ call plug#begin('~/.vim/bundle')
   " Quickfix wizardy
   Plug 'yssl/QFEnter'
 
+  " Editing
+  Plug 'gcmt/wildfire.vim'
+
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'

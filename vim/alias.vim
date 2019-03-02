@@ -70,23 +70,6 @@ nnoremap grt :GoldenRatioToggle<CR>
 set splitbelow
 set splitright
 
-" FZF
-nnoremap <C-p> :FZF<CR>
-nnoremap <C-b> :FZFBuffers<CR>
-nnoremap <C-F> :Rg!<space>
-nnoremap <C-t> :FZFBTags<CR>
-nnoremap <C-S-t> :FZFTags<CR>
-nnoremap <C-m> :FZFMarks<CR>
-
-nnoremap ;f  :FZF<CR>
-nnoremap ;<space>  :FZFBuffers<CR>
-nnoremap ;b  :FZFBuffers<CR>
-nnoremap ;t  :FZFBTags<CR>
-nnoremap ;T  :FZFTags<CR>
-nnoremap ;g  :Rg<CR>
-
-nnoremap <leader>cs :FZFColors<CR>
-
 " Registers
 nnoremap <leader>@ :registers<CR>
 
@@ -99,7 +82,7 @@ nnoremap <C-_> :Commentary<CR> " vim sees ctrl+/ as ctrl+_ for some reason
 vnoremap <C-_> :Commentary<CR>gv " Comments out selection, keeping it selected
 
 " vim-expand-region bindings
-map <CR>   <Plug>(expand_region_expand)
-map <S-CR> <Plug>(expand_region_shrink)
+" map <CR>   <Plug>(expand_region_expand)
+" map <S-CR> <Plug>(expand_region_shrink)
 
 

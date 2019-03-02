@@ -60,11 +60,13 @@ source ~/.vim/alias.vim
 set t_Co=256
 set background=dark
 let g:gruvbox_italic=1
-colorscheme ayu
+colorscheme onedark
 set showtabline=2
 
-let g:indentLine_char = '┆'
-let g:indentLine_first_char = '┆'
+" let g:indentLine_char = '┆'
+" let g:indentLine_first_char = '┆'
+let g:indentLine_char = '.'
+let g:indentLine_first_char = '.'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_setColors = 0
 

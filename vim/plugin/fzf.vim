@@ -30,3 +30,21 @@ command! -bang -nargs=* Rg
   \   <bang>0
   \ )
 
+" FZF
+nnoremap <C-p> :FZF<CR>
+nnoremap <C-b> :FZFBuffers<CR>
+nnoremap <C-F> :Rg!<space>
+nnoremap <C-t> :FZFBTags<CR>
+nnoremap <C-S-t> :FZFTags<CR>
+nnoremap <C-m> :FZFMarks<CR>
+
+nnoremap ;f  :FZF<CR>
+nnoremap ;<space>  :FZFBuffers<CR>
+nnoremap ;b  :FZFBuffers<CR>
+nnoremap ;c  :FZFColors<CR>
+nnoremap ;l  :FZFLines<CR>
+nnoremap ;t  :FZFBTags<CR>
+nnoremap ;T  :FZFTags<CR>
+nnoremap ;g  :Rg<CR>
+
+nnoremap <leader>cs :FZFColors<CR>

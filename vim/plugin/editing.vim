@@ -22,10 +22,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 setlocal comments-=://
 setlocal comments+=f://
 
-" Tab completion from the top down
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
-" Don't confirm when stripping whitespace
+" Don't confirm when stripping whitespace on save
 let g:strip_whitespace_confirm=0
 
 " keep selection when reindenting

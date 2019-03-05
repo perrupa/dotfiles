@@ -1,6 +1,9 @@
 ## Aliases
 alias e='nvim'
 alias vim='nvim'
+# 🤦
+alias bim='nvim'
+alias cim='nvim'
 
 alias gs='git st'
 alias ga='git a'

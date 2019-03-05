@@ -6,7 +6,7 @@ function! GalaxyUrl(opts, ...) abort
     return ''
   endif
 
-  let remote = matchlist(a:opts.remote, '\v^galaxy::(.{-1,})(\.git)?$')
+  let remote = matchlist(a:opts.remote, '\v^https:\/\/git-mirror.shopifycloud.com\/(.{-1,})(\.git)?$')
   if empty(remote)
     return ''
   end

@@ -55,6 +55,3 @@
 	version = 2
 [credential]
 	helper = osxkeychain
-[http "https://git-mirror.shopifycloud.com"]
-	cookieFile = /tmp/galaxy.cookies
-	saveCookies = true

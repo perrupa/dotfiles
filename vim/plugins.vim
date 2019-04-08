@@ -30,7 +30,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'kana/vim-textobj-user'
   Plug 'kana/vim-textobj-line'
   Plug 'terryma/vim-expand-region'
-  Plug 'Yggdroot/indentLine'
 
   " Vim UI
   Plug 'itchyny/lightline.vim'

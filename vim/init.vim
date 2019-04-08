@@ -63,13 +63,6 @@ let g:gruvbox_italic=1
 colorscheme onedark
 set showtabline=2
 
-" let g:indentLine_char = '┆'
-" let g:indentLine_first_char = '┆'
-let g:indentLine_char = '.'
-let g:indentLine_first_char = '.'
-let g:indentLine_showFirstIndentLevel = 1
-let g:indentLine_setColors = 0
-
 set omnifunc=syntaxcomplete#Complete
 autocmd BufEnter * EnableStripWhitespaceOnSave
 

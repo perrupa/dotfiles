@@ -34,7 +34,7 @@ call plug#begin('~/.vim/bundle')
   " Vim UI
   Plug 'itchyny/lightline.vim'
   Plug 'mgee/lightline-bufferline'
-  Plug 'TaDaa/vimade'
+  " Plug 'TaDaa/vimade'
 
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'

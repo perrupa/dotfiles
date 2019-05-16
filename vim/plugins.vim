@@ -34,6 +34,7 @@ call plug#begin('~/.vim/bundle')
   " Vim UI
   Plug 'itchyny/lightline.vim'
   Plug 'mgee/lightline-bufferline'
+  Plug 'junegunn/goyo.vim'         " Focus Mode (Goyo)
   " Plug 'TaDaa/vimade'
 
   " Tmux integration
@@ -55,8 +56,10 @@ call plug#begin('~/.vim/bundle')
   Plug 'kshenoy/vim-signature'
 
   " Completion
-  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
-  Plug 'mhartington/nvim-typescript'
+  " Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+
+  " Plug 'mhartington/nvim-typescript'
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'othree/csscomplete.vim'
   Plug 'wellle/tmux-complete.vim'
@@ -75,6 +78,10 @@ call plug#begin('~/.vim/bundle')
   Plug 'avakhov/vim-yaml', { 'for': 'yaml' }
   Plug 'mtscout6/vim-cjsx', { 'for': 'jsx' }
   Plug 'elmcast/elm-vim', { 'for': 'elm' }
+
+  Plug 'othree/yajs.vim'
+  Plug 'mxw/vim-jsx'
+
   Plug 'prettier/vim-prettier', {
     \    'do': 'yarn install',
     \    'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql']

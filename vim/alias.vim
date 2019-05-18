@@ -80,9 +80,3 @@ nnoremap <Leader>kf :NERDTreeFind<CR>
 " Comments
 nnoremap <C-_> :Commentary<CR> " vim sees ctrl+/ as ctrl+_ for some reason
 vnoremap <C-_> :Commentary<CR>gv " Comments out selection, keeping it selected
-
-" vim-expand-region bindings
-" map <CR>   <Plug>(expand_region_expand)
-" map <S-CR> <Plug>(expand_region_shrink)
-
-

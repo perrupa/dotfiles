@@ -34,7 +34,3 @@ function SetupCoc()
   " CocInstall coc-css coc-json coc-html coc-snippets coc-yaml coc-tsserver
 endfunction
 
-" Use <C-j/k> to jump to forward/backward through completion areas
-let g:coc_snippet_next = '<c-j>'
-let g:coc_snippet_prev = '<c-k>'
-

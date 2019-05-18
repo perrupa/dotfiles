@@ -59,8 +59,7 @@ source ~/.vim/alias.vim
 " Theme
 set t_Co=256
 set background=dark
-let g:gruvbox_italic=1
-colorscheme onedark
+colorscheme hybrid_material
 set showtabline=2
 
 set omnifunc=syntaxcomplete#Complete

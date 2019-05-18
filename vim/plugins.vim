@@ -97,13 +97,13 @@ call plug#begin('~/.vim/bundle')
   Plug 'Asheq/close-buffers.vim'
 
   " color schemes
-  Plug 'altercation/vim-colors-solarized'
-  Plug 'nightsense/vim-crunchbang'
-  Plug 'jakwings/vim-colors'
-  Plug 'flazz/vim-colorschemes'
+  " Plug 'flazz/vim-colorschemes'
   Plug 'rafi/awesome-vim-colorschemes'
   Plug 'dracula/vim'
   Plug 'szw/seoul256.vim'
+  Plug 'lifepillar/vim-gruvbox8'
+  Plug 'nightsense/carbonized'
+  Plug 'larssmit/vim-getafe'
 
   " Vim Objects
   Plug 'jiangmiao/auto-pairs'

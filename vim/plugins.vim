@@ -35,7 +35,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'itchyny/lightline.vim'
   Plug 'mgee/lightline-bufferline'
   Plug 'junegunn/goyo.vim'         " Focus Mode (Goyo)
-  " Plug 'TaDaa/vimade'
+  Plug 'yuttie/comfortable-motion.vim'
 
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'

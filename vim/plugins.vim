@@ -134,14 +134,16 @@ let g:golden_ratio_exclude_nonmodifiable = 1
 " Include word expanding with `terryma/vim-expand-region`
 " Default settings. (NOTE: Remove comments in dictionary before sourcing)
 let g:expand_region_text_objects = {
-      \ 'iw'  :0,
-      \ 'iW'  :0,
-      \ 'i"'  :0,
-      \ 'i''' :0,
-      \ 'i]'  :1,
-      \ 'ib'  :1,
-      \ 'iB'  :1,
-      \ 'il'  :0,
-      \ 'ip'  :0,
-      \ }
+    \ 'iw'  :0,
+    \ 'iW'  :0,
+    \ 'i"'  :0,
+    \ 'i''' :0,
+    \ 'i]'  :1,
+    \ 'ib'  :1,
+    \ 'iB'  :1,
+    \ 'il'  :0,
+    \ 'ip'  :0,
+    \ }
 
+" Prevent <C-F> remapping
+let g:comfortable_motion_no_default_key_mappings = 1

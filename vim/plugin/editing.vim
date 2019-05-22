@@ -47,6 +47,8 @@ nnoremap ∆ }
 " word-wise jumping in insert mode
 inoremap ˙ <C-o>b
 inoremap ¬ <C-o>e
+inoremap ˚ <C-o><up>
+inoremap ∆ <C-o><down>
 
 " Show trailing whitespace
 set lcs=tab:›\ ,trail:·,eol:¬,nbsp:_

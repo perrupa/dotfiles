@@ -56,10 +56,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'kshenoy/vim-signature'
 
   " Completion
-  " Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
   Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
-
-  " Plug 'mhartington/nvim-typescript'
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'othree/csscomplete.vim'
   Plug 'wellle/tmux-complete.vim'
@@ -67,6 +64,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'neoclide/coc-neco'
 
   " Syntaxes
+  Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}
   Plug 'roxma/python-support.nvim'
   Plug 'neomake/neomake'
   Plug 'sorin-ionescu/python.vim', { 'for': 'python' }

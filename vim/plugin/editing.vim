@@ -60,3 +60,7 @@ highlight Search guibg=guibg guifg=guifg gui=bold,italic,underline
 
 " Wildfire Config
 let g:wildfire_objects = ["iw", "iW", "i'", 'i"', "i>", "i)", "i]", "i}", "it", "ip"]
+
+" Maintain undo history between sessions
+set undofile
+set undodir=~/.vim/undodir

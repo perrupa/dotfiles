@@ -56,6 +56,9 @@ source /opt/dev/dev.sh
 # Vi mode for zsh input
 bindkey -v
 export KEYTIMEOUT=1
+# Backspace over insert start point
+bindkey "^?" backward-delete-char
+
 
 # ctrl+z in zsh types fg then hits enter to jump back to the last job.
 bindkey -s '^z' "fg\n"

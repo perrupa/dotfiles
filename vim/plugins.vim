@@ -6,6 +6,7 @@ call plug#begin('~/.vim/bundle')
 
   " tpope time
   Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-abolish'
   Plug 'tpope/vim-rails'
   Plug 'tpope/vim-rhubarb'
   Plug 'tpope/vim-surround'

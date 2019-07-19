@@ -47,3 +47,6 @@ nnoremap ;T  :FZFTags<CR>
 nnoremap ;g  :Rg<CR>
 
 nnoremap <leader>cs :FZFColors<CR>
+
+" Open last search
+nnoremap <leader>f :Rg <Up><CR>

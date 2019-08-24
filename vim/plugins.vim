@@ -83,8 +83,11 @@ call plug#begin('~/.vim/bundle')
 
   Plug 'prettier/vim-prettier', {
     \    'do': 'yarn install',
+    \    'branch': 'release/1.x',
     \    'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql']
     \  }
+  let g:prettier#config#config_precedence = 'file-override'
+
 
   " Misc
   Plug 'icatalina/vim-case-change'

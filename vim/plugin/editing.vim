@@ -39,10 +39,10 @@ vnoremap < <gv
 
 " Option + hjkl
 " hjkl = ˙∆˚¬
-nnoremap ˙ ^
-nnoremap ¬ $
-nnoremap ˚ {
-nnoremap ∆ }
+noremap ˙ ^
+noremap ¬ $
+noremap ˚ {
+noremap ∆ }
 
 " word-wise jumping in insert mode
 inoremap ˙ <C-o>b

@@ -40,6 +40,7 @@
   excludesfile = ~/.gitignore_global
   pager = diff-so-fancy | less --tabs=2 -RFX
   editor = nvim
+	commitGraph = true
 
 [color "diff-highlight"]
   oldNormal = red bold
@@ -55,3 +56,5 @@
 	version = 2
 [credential]
 	helper = osxkeychain
+[gc]
+	writeCommitGraph = true

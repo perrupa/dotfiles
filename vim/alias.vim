@@ -3,8 +3,9 @@
 " Leader stuff
 let mapleader = " "
 
-" vimrc edits
-nnoremap <leader>sv :source ~/.vimrc<CR>
+" Sourcing files/vimrc
+nnoremap <leader>sv :source ~/.config/nvim/init.vim<CR>
+nnoremap <leader>sf :source <C-r>%<CR>
 
 " remap ; to :
 noremap ; :

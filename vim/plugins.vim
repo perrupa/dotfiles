@@ -2,52 +2,41 @@
 let g:ale_emit_conflict_warnings = 0
 
 call plug#begin('~/.vim/bundle')
+  " Vim UI
   Plug 'scrooloose/nerdtree'
-
-  " tpope time
-  Plug 'tpope/vim-fugitive'
-  Plug 'tpope/vim-abolish'
-  Plug 'tpope/vim-rails'
-  Plug 'tpope/vim-rhubarb'
-  Plug 'tpope/vim-surround'
-  Plug 'tpope/vim-eunuch'
-  Plug 'tpope/vim-dispatch'
-  Plug 'tpope/vim-commentary'
-  Plug 'tpope/vim-repeat'
-  Plug 'tpope/vim-vinegar'
-  Plug 'tpope/vim-obsession'
-
-  Plug 'vim-ruby/vim-ruby'
+  Plug 'itchyny/lightline.vim'
+  Plug 'mgee/lightline-bufferline'
   Plug 'airblade/vim-gitgutter'
-  Plug 'morhetz/gruvbox'
-  Plug 'scrooloose/nerdcommenter'
-  Plug 'sickill/vim-monokai'
-  Plug 'gf3/molotov'
-  Plug 'sheerun/vim-polyglot'
-  Plug 'mxw/vim-jsx'
+  Plug 'junegunn/goyo.vim'         " Focus Mode (Goyo)
+  Plug 'yuttie/comfortable-motion.vim'
   Plug 'junegunn/rainbow_parentheses.vim'
+
+  " Tmux integration
+  Plug 'christoomey/vim-tmux-navigator'
+  Plug 'benmills/vimux'
+
+  " Editing
+  Plug 'scrooloose/nerdcommenter'
+  Plug 'gcmt/wildfire.vim'
+  Plug 'jceb/vim-orgmode'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'mattn/emmet-vim'
   Plug 'kana/vim-textobj-user'
   Plug 'kana/vim-textobj-line'
   Plug 'terryma/vim-expand-region'
-
-  " Vim UI
-  Plug 'itchyny/lightline.vim'
-  Plug 'mgee/lightline-bufferline'
-  Plug 'junegunn/goyo.vim'         " Focus Mode (Goyo)
-  Plug 'yuttie/comfortable-motion.vim'
-
-  " Tmux integration
-  Plug 'christoomey/vim-tmux-navigator'
-  Plug 'benmills/vimux'
-  Plug 'janko-m/vim-test'
-
-  " Quickfix wizardy
   Plug 'yssl/QFEnter'
+  Plug 'icatalina/vim-case-change'
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'wellle/targets.vim'
+  Plug 'michaeljsmith/vim-indent-object'
+  Plug 'prettier/vim-prettier', {
+    \    'do': 'yarn install',
+    \    'branch': 'release/1.x',
+    \    'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql']
+    \  }
+  let g:prettier#config#config_precedence = 'file-override'
 
-  " Editing
-  Plug 'gcmt/wildfire.vim'
+
 
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
@@ -64,33 +53,38 @@ call plug#begin('~/.vim/bundle')
   Plug 'Shougo/neco-vim'
   Plug 'neoclide/coc-neco'
 
+  " tpope time
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-abolish'
+  Plug 'tpope/vim-rails'
+  Plug 'tpope/vim-rhubarb'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-eunuch'
+  Plug 'tpope/vim-dispatch'
+  Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-vinegar'
+  Plug 'tpope/vim-obsession'
+  Plug 'tpope/vim-scriptease'
+
   " Syntaxes
-  Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}
+  Plug 'vim-ruby/vim-ruby'
+  Plug 'sheerun/vim-polyglot'
   Plug 'roxma/python-support.nvim'
   Plug 'neomake/neomake'
   Plug 'sorin-ionescu/python.vim', { 'for': 'python' }
   Plug 'othree/html5.vim'
   Plug 'jparise/vim-graphql'
   Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-  Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-  Plug 'isRuslan/vim-es6', { 'for': 'javascript' }
   Plug 'avakhov/vim-yaml', { 'for': 'yaml' }
-  Plug 'mtscout6/vim-cjsx', { 'for': 'jsx' }
   Plug 'elmcast/elm-vim', { 'for': 'elm' }
 
-  Plug 'othree/yajs.vim'
-  Plug 'mxw/vim-jsx'
-
-  Plug 'prettier/vim-prettier', {
-    \    'do': 'yarn install',
-    \    'branch': 'release/1.x',
-    \    'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql']
-    \  }
-  let g:prettier#config#config_precedence = 'file-override'
-
+  " Plug 'mxw/vim-jsx'
+  " Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}
+  " Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
   " Misc
-  Plug 'icatalina/vim-case-change'
+  Plug 'janko-m/vim-test'
   Plug 'szw/vim-maximizer'
   Plug 'w0rp/ale'
   Plug 'wincent/terminus'
@@ -106,11 +100,11 @@ call plug#begin('~/.vim/bundle')
   Plug 'lifepillar/vim-gruvbox8'
   Plug 'nightsense/carbonized'
   Plug 'larssmit/vim-getafe'
+  Plug 'sickill/vim-monokai'
+  Plug 'gf3/molotov'
+  Plug 'morhetz/gruvbox'
 
   " Vim Objects
-  Plug 'jiangmiao/auto-pairs'
-  Plug 'wellle/targets.vim'
-  Plug 'michaeljsmith/vim-indent-object'
 
   " Snippets
   " Plug 'SirVer/ultisnips'

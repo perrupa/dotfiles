@@ -19,7 +19,7 @@ set wildignore+=*/smarty/*,*/vendor/*,*/.git/*,*/.hg/*,*/.svn/*,*/.sass-cache/*,
 set clipboard=unnamed
 
 filetype off
-let &runtimepath.=',~/.vim/bundle/ale'
+let &runtimepath.=',~/.config/nvim/bundle/ale'
 filetype plugin on
 
 " Dictionary
@@ -53,8 +53,8 @@ set autowrite
 set incsearch
 
 " Imports
-source ~/.vim/plugins.vim
-source ~/.vim/alias.vim
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/alias.vim
 
 " Theme
 set t_Co=256

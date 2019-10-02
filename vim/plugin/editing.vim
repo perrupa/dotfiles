@@ -51,8 +51,8 @@ inoremap ˚ <C-o><up>
 inoremap ∆ <C-o><down>
 
 " Show trailing whitespace
-set lcs=tab:›\ ,trail:·,eol:¬,nbsp:_
-set fcs=fold:-
+set listchars=tab:›\ ,trail:·,eol:¬,nbsp:_
+set fillchars=fold:-
 nnoremap <silent> <leader>c :set nolist!<CR>
 
 " Search highlighting with bold + underline

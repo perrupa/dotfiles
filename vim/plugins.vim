@@ -84,7 +84,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'reedes/vim-pencil'
 
   " Plug 'mxw/vim-jsx'
-  " Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}
+  Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}
   " Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
   " Misc

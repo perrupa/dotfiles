@@ -1,0 +1,18 @@
+{
+  "eslint.autoFixOnSave": true,
+  "languageserver": {
+    "sorbet": {
+      "args": [
+        "tc",
+        "--lsp"
+      ],
+      "command": "./bin/srb",
+      "cwd": "./",
+      "filetypes": [
+        "ruby"
+      ],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  }
+}

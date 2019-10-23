@@ -52,6 +52,7 @@ inoremap ∆ <C-o><down>
 
 " Show trailing whitespace
 set listchars=tab:›\ ,trail:·,eol:¬,nbsp:_
+set foldlevelstart=99
 set fillchars=fold:-
 nnoremap <silent> <leader>c :set nolist!<CR>
 

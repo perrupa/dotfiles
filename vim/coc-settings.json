@@ -1,18 +1,22 @@
 {
+  "coc.preferences.diagnostic.displayByAle": true,
   "eslint.autoFixOnSave": true,
   "languageserver": {
     "sorbet": {
       "args": [
         "tc",
-        "--lsp"
+        "--lsp",
+        "--enable-all-experimental-lsp-features",
+        "--disable-watchman"
       ],
+      "trace.server": "verbose",
       "command": "./bin/srb",
-      "cwd": "./",
       "filetypes": [
         "ruby"
       ],
-      "initializationOptions": {},
-      "settings": {}
+      "rootPatterns": [
+        "sorbet/config"
+      ]
     }
   }
 }

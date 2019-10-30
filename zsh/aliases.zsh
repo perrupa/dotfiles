@@ -9,7 +9,7 @@ alias gs='git st'
 alias ga='git a'
 alias gc='git commit'
 alias grc='git rebase --continue'
-alias gco='git checkout $(git branch | grep -v "\*" | fzf)'
+alias gco='git checkout $(git br | grep -v "\*" | fzf)'
 
 alias cat='bat' # Better cat
 alias help='tldr' # Better help

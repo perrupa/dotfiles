@@ -26,7 +26,7 @@
   cia = commit --amend -C HEAD
   co = checkout
   cp = cherry-pick
-  br = branch
+  br = branch --sort=-committerdate
   d  = diff --color-words --ignore-all-space
   dc = diff --color-words --staged
 

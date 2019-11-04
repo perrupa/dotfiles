@@ -41,8 +41,7 @@ call plug#begin('~/.vim/bundle')
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
-  Plug 'roman/golden-ratio'
-  " Plug 'gcmt/taboo.vim'
+  Plug 'justincampbell/vim-eighties'
   Plug 'kshenoy/vim-signature'
 
   " Completion

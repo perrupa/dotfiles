@@ -1,4 +1,5 @@
 {
+  "codeLens.enable": true,
   "coc.preferences.diagnostic.displayByAle": true,
   "eslint.autoFixOnSave": true,
   "languageserver": {

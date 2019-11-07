@@ -12,8 +12,10 @@
 [alias]
   # git flags are weird
   branches = branch -a
-  tags = tag -l
-  remotes = remote -v
+  tags     = tag -l
+  remotes  = remote -v
+  stashes  = stash list
+
 
   mybranches = "!f() { if test $# = 0 ; then set -- refs/remotes ; fi ; git for-each-ref --format='%(authordate:relative)\t%(refname:short)\t%(authoremail)' --sort=authordate \"$@\" | sed -ne \"s/\t<$(git config user.email)>//p\" | column -s '\t' -t ; } ; f"
 

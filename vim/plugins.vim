@@ -94,6 +94,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'junegunn/vim-peekaboo'
   Plug 'Asheq/close-buffers.vim'
+  Plug 'dimonomid/auto-pairs-gentle'
 
   " color schemes
   " Plug 'flazz/vim-colorschemes'

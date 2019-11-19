@@ -65,6 +65,8 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-vinegar'
   Plug 'tpope/vim-obsession'
   Plug 'tpope/vim-scriptease'
+  Plug 'tpope/vim-endwise'
+  Plug 'tpope/vim-unimpaired'
 
   " Syntaxes
   Plug 'vim-ruby/vim-ruby'

@@ -26,7 +26,7 @@ filetype plugin on
 set dictionary=/usr/share/dict/words
 
 " Session Management
-" ...?
+" managed through tpope/vim-obsession and ./vim/plugin/sessions.vim
 
 " Indentation
 filetype plugin indent on

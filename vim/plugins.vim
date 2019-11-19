@@ -80,13 +80,8 @@ call plug#begin('~/.vim/bundle')
   Plug 'avakhov/vim-yaml', { 'for': 'yaml' }
   Plug 'elmcast/elm-vim', { 'for': 'elm' }
   Plug 'godlygeek/tabular'
-  " Plug 'plasticboy/vim-markdown'
-  Plug 'gabrielelana/vim-markdown'
   Plug 'reedes/vim-pencil'
-
-  " Plug 'mxw/vim-jsx'
   Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}
-  " Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
   " Misc
   Plug 'janko-m/vim-test'

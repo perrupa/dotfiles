@@ -59,7 +59,7 @@ source ~/.config/nvim/alias.vim
 " Theme
 set t_Co=256
 set background=dark
-colorscheme angr
+colorscheme OceanicNext
 set showtabline=2
 
 set omnifunc=syntaxcomplete#Complete

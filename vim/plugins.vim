@@ -29,14 +29,14 @@ call plug#begin('~/.vim/bundle')
   Plug 'jiangmiao/auto-pairs'
   Plug 'wellle/targets.vim'
   Plug 'michaeljsmith/vim-indent-object'
+
+  " Auto-formatting
   Plug 'prettier/vim-prettier', {
     \    'do': 'yarn install',
     \    'branch': 'release/1.x',
     \    'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql']
     \  }
   let g:prettier#config#config_precedence = 'file-override'
-
-
 
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
@@ -65,7 +65,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-vinegar'
   Plug 'tpope/vim-obsession'
   Plug 'tpope/vim-scriptease'
-  Plug 'tpope/vim-endwise'
   Plug 'tpope/vim-unimpaired'
 
   " Syntaxes

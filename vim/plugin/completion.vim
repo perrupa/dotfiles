@@ -24,13 +24,20 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-function SetupCoc()
-  call coc#util#install()
-  execute 'CocInstall coc-java'
-  execute 'CocInstall coc-css coc-json coc-html'
-  execute 'CocInstall coc-snippets'
-  execute 'CocInstall coc-yaml'
-  execute 'CocInstall coc-tsserver'
-  " CocInstall coc-css coc-json coc-html coc-snippets coc-yaml coc-tsserver
-endfunction
+" coc config
+let g:coc_global_extensions = [
+  \ 'coc-java',
+  \ 'coc-css',
+  \ 'coc-json',
+  \ 'coc-html',
+  \ 'coc-snippets',
+  \ 'coc-yaml',
+  \ 'coc-tsserver',
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-json',
+  \ ]
 

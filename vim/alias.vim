@@ -11,8 +11,8 @@ nnoremap <leader>sf :source <C-r>%<CR>
 noremap ; :
 
 " wrapped line movement
-nnoremap k gk
-nnoremap j gj
+noremap k gk
+noremap j gj
 
 " word-wise H & L
 nnoremap H B

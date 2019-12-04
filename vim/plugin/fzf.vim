@@ -20,8 +20,6 @@ function! Rg(args)
         \ 0, 0)
 endfunction
 
-command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!{.git,node_modules,tags}" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
-
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
@@ -42,6 +40,7 @@ nnoremap ;<space>  :FZFBuffers<CR>
 nnoremap ;b  :FZFBuffers<CR>
 nnoremap ;c  :FZFColors<CR>
 nnoremap ;l  :FZFLines<CR>
+nnoremap ;m  :FZFMarks<CR>
 nnoremap ;t  :FZFBTags<CR>
 nnoremap ;T  :FZFTags<CR>
 nnoremap ;g  :Rg<CR>

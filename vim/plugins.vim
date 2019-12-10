@@ -45,7 +45,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'kshenoy/vim-signature'
 
   " Completion
-  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'othree/csscomplete.vim'
   Plug 'wellle/tmux-complete.vim'

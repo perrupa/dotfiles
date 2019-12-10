@@ -18,7 +18,7 @@ vnoremap <Up> :m '<-2<CR>gv
 vnoremap <Down> :m '>+1<CR>gv
 
 " Yanking in visual mode, stays in visual mode
-vnoremap y ygv
+" vnoremap y ygv
 
 " This causes the left and right arrow keys, as well as h and l, to wrap when used at
 " beginning or end of lines. (  < > are the cursor keys used in normal and visual mode,

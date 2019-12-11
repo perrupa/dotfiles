@@ -4,6 +4,7 @@ set number
 set encoding=utf-8
 set backspace=indent,eol,start
 set wildmenu
+set scrolloff=30
 
 " Arrow keys
 nnoremap <Up> :m .-2<cr>

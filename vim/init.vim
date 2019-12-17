@@ -5,8 +5,8 @@ set lisp " `-` doens't break words + more :)
 set noswapfile
 set t_Co=256
 set lazyredraw
-if has('nvim-0.1.5')        " True color in neovim wasn't added until 0.1.5
-    set termguicolors
+if (has("termguicolors"))
+  set termguicolors
 endif
 
 " Wildignore
@@ -59,8 +59,8 @@ source ~/.config/nvim/alias.vim
 " Theme
 set t_Co=256
 set background=dark
-" colorscheme OceanicNext
-colorscheme ayu
+" colorscheme carbonized-dark
+colorscheme dracula
 set showtabline=2
 
 set omnifunc=syntaxcomplete#Complete

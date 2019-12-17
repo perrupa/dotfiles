@@ -1,5 +1,8 @@
 let g:lightline                  = {}
-let g:lightline.tabline          = {'left': [['buffers']]}
+
+" Upper buffer list
+let g:lightline.colorscheme      = 'dracula'
+let g:lightline.tabline          = {'left': [['buffers']], 'right':[]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
 
@@ -10,12 +13,25 @@ let g:lightline#bufferline#show_number = 2
 
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 
+let g:lightline.active = {}
+let g:lightline.active.left = [
+        \   ['mode', 'paste'],
+        \   ['readonly', 'filename'],
+        \ ]
+
+let g:lightline.active.right = [
+        \   ['filetype'],
+        \ ]
+
 let g:lightline.separator = {
 	\   'left': '', 'right': ''
   \}
 
 " let g:lightline.subseparator = { 'left': '', 'right': '', }
-let g:lightline.subseparator = { 'left': ' ', 'right': ' ', }
+let g:lightline.subseparator = {'left': '', 'right': ''}
+
+" hide duplicate INSERT msg
+set noshowmode
 
 " Go to bufferline #
 nmap <Leader>1 <Plug>lightline#bufferline#go(1)

@@ -1,7 +1,7 @@
 {
   "codeLens.enable": false,
   "coc.preferences.diagnostic.displayByAle": false,
-  "eslint.autoFixOnSave": true,
+  "eslint.autoFixOnSave": false,
   "eslint.quiet": true,
   "languageserver": {
     "sorbet": {

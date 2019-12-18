@@ -58,7 +58,6 @@ source ~/.config/nvim/alias.vim
 
 " Theme
 set t_Co=256
-set background=dark
 " colorscheme carbonized-dark
 colorscheme dracula
 set showtabline=2

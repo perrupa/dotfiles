@@ -51,6 +51,11 @@ inoremap ¬ <C-o>e
 inoremap ˚ <C-o><up>
 inoremap ∆ <C-o><down>
 
+" Bad habits...
+inoremap <C-c> <Esc>
+nnoremap <C-c> <Esc>
+
+
 " Show trailing whitespace
 set listchars=tab:›\ ,trail:·,eol:¬,nbsp:_,extends:…,precedes:…
 set foldlevelstart=99

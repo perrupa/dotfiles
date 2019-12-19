@@ -36,6 +36,7 @@ nnoremap <C-t> :FZFBTags<CR>
 nnoremap <C-S-t> :FZFTags<CR>
 
 nnoremap ;f  :FZF<CR>
+nnoremap ;F  :FZFFiletypes<CR>
 nnoremap ;<space>  :FZFBuffers<CR>
 nnoremap ;b  :FZFBuffers<CR>
 nnoremap ;c  :FZFColors<CR>

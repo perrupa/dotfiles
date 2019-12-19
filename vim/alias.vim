@@ -52,7 +52,8 @@ nnoremap <Leader>sw :execute ":Rg! " . expand("<cword>")<CR>
 nmap // :nohlsearch<CR>
 nnoremap <Leader>nhl :nohlsearch<CR>
 
-nnoremap n nzz " Centers the cursor vertically after jumping to the next result
+" Centers the cursor vertically after jumping to the next result
+nnoremap n nzz
 nnoremap N Nzz
 
 " Rename tabs

@@ -57,9 +57,7 @@ source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/alias.vim
 
 " Theme
-set t_Co=256
-" colorscheme carbonized-dark
-colorscheme dracula
+colorscheme OceanicNext
 set showtabline=2
 
 set omnifunc=syntaxcomplete#Complete

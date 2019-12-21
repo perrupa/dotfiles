@@ -2,6 +2,8 @@
 let g:ale_emit_conflict_warnings = 0
 
 call plug#begin('~/.vim/bundle')
+  Plug 'tweekmonster/startuptime.vim'
+
   " Vim UI
   Plug 'scrooloose/nerdtree'
   Plug 'itchyny/lightline.vim'
@@ -26,9 +28,9 @@ call plug#begin('~/.vim/bundle')
   Plug 'terryma/vim-expand-region'
   Plug 'yssl/QFEnter'
   Plug 'icatalina/vim-case-change'
-  Plug 'jiangmiao/auto-pairs'
   Plug 'wellle/targets.vim'
   Plug 'michaeljsmith/vim-indent-object'
+  Plug 'cohama/lexima.vim'
 
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
@@ -57,7 +59,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-vinegar'
   Plug 'tpope/vim-obsession'
   Plug 'tpope/vim-scriptease'
-  Plug 'tpope/vim-unimpaired'
 
   " Syntaxes
   Plug 'vim-ruby/vim-ruby'
@@ -76,12 +77,10 @@ call plug#begin('~/.vim/bundle')
   " Misc
   Plug 'janko-m/vim-test'
   Plug 'szw/vim-maximizer'
-  Plug 'w0rp/ale'
   Plug 'wincent/terminus'
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'junegunn/vim-peekaboo'
   Plug 'Asheq/close-buffers.vim'
-  Plug 'dimonomid/auto-pairs-gentle'
 
   " color schemes
   " Plug 'flazz/vim-colorschemes'
@@ -100,6 +99,7 @@ call plug#begin('~/.vim/bundle')
   " Snippets
   " Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
+  Plug 'perrupa/close-floating-windows.nvim'
 call plug#end()
 
 " Use ripgrep

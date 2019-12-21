@@ -45,7 +45,6 @@ let g:coc_global_extensions = [
   \ 'coc-yaml',
   \ 'coc-tsserver',
   \ 'coc-snippets',
-  \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint',
   \ 'coc-json',

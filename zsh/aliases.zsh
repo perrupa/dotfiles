@@ -1,9 +1,6 @@
 ## Aliases
 alias e='nvim'
 alias vim='nvim'
-# 🤦
-alias bim='nvim'
-alias cim='nvim'
 
 alias gs='git st'
 alias ga='git a'
@@ -15,4 +12,11 @@ alias cat='bat' # Better cat
 alias help='tldr' # Better help
 
 alias mux="tmuxinator"
+
+# Typos 🤦
+alias bim='nvim'
+alias cim='nvim'
+alias gti='git'
+alias gits='git status'
+alias gist='git status'
 

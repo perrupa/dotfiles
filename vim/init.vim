@@ -57,7 +57,7 @@ source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/alias.vim
 
 " Theme
-colorscheme OceanicNext
+colorscheme onedark
 set showtabline=2
 
 set omnifunc=syntaxcomplete#Complete

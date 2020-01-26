@@ -1,3 +1,15 @@
+" Terminal settings
+set t_Co=256
+set lazyredraw
+if (has("termguicolors"))
+  set termguicolors
+endif
+set mouse=a
+
+" Theme
+colorscheme OceanicNext
+set showtabline=2
+
 " Hide vim's weird ~s
 :hi NonText guifg=bg
 

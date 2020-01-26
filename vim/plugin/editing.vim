@@ -1,10 +1,26 @@
 syntax on
-set cursorline
 set number
 set encoding=utf-8
 set backspace=indent,eol,start
 set wildmenu
 set scrolloff=30
+set omnifunc=syntaxcomplete#Complete
+set lisp " `-` doens't break words + more :)
+
+" Share OSX's clipboard
+set clipboard=unnamed
+
+" Highlight curr line (only active window)
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END
+set cursorline
+
+" Indentation
+filetype plugin indent on
+set expandtab ts=2 shiftwidth=2 softtabstop=2
 
 " Arrow keys
 nnoremap <Up> :m .-2<cr>
@@ -32,6 +48,7 @@ setlocal comments-=://
 setlocal comments+=f://
 
 " Don't confirm when stripping whitespace on save
+autocmd BufEnter * EnableStripWhitespaceOnSave
 let g:strip_whitespace_confirm=0
 
 " keep selection when reindenting

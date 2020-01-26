@@ -31,6 +31,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'wellle/targets.vim'
   Plug 'michaeljsmith/vim-indent-object'
   Plug 'cohama/lexima.vim'
+  Plug 'AndrewRadev/splitjoin.vim'
 
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }

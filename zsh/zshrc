@@ -23,8 +23,8 @@ export ANDROID_HOME=/usr/local/share/android-sdk
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# ZSH_THEME="agnoster"
-ZSH_THEME="dracula/dracula"
+# ZSH_THEME="dracula/dracula"
+ZSH_THEME=""
 DEV_ALLOW_ITERM2_INTEGRATION=1
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/*'"
 
@@ -88,7 +88,9 @@ bindkey '^R' fzf-history-widget
 
 eval "$(pyenv init -)"
 export PATH="/usr/local/opt/libxml2/bin:$PATH"
-
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 export PATH="/usr/local/sbin:$PATH"
+
+
+# Prue prompt
+autoload -U promptinit; promptinit
+prompt pure

@@ -44,8 +44,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'othree/csscomplete.vim'
   Plug 'wellle/tmux-complete.vim'
-  Plug 'Shougo/neco-vim'
-  Plug 'neoclide/coc-neco'
 
   " tpope time
   Plug 'tpope/vim-fugitive'

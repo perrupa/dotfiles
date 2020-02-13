@@ -10,7 +10,7 @@ set lisp " `-` doens't break words + more :)
 " Share OSX's clipboard
 set clipboard=unnamed
 
-" Highlight curr line (only active window)
+" Highlight current line (only active window)
 augroup CursorLine
   au!
   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline

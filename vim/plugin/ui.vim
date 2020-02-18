@@ -11,7 +11,7 @@ colorscheme OceanicNext
 set showtabline=2
 
 " Hide vim's weird ~s
-:hi NonText guifg=bg
+hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
 
 " Panel Sizing via vim-eighties
 let g:eighties_enabled = 1

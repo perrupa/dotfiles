@@ -1,5 +1,20 @@
 " FZF Config
-" https://medium.com/@crashybang/supercharge-vim-with-fzf-and-ripgrep-d4661fc853d2#.7tq6fyynl
+
+" Send FZF results to the quickfix list
+function! s:build_quickfix_list(lines)
+  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+  copen
+  cc
+endfunction
+
+" Select all results with <C-a>
+let $FZF_DEFAULT_OPTS = '--bind ctrl-a:select-all'
+
+let g:fzf_action = {
+  \ 'ctrl-q': function('s:build_quickfix_list'),
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
 
 " prefixes all FZF commands; Buffers -> FZFBuffers
 let g:fzf_command_prefix = 'FZF'
@@ -10,6 +25,31 @@ let g:fzf_buffers_jump = 1
 " grep -> rg
 set grepprg=rg\ --vimgrep
 
+
+" FZF Aliases
+nnoremap <C-p> :FZF<CR>
+nnoremap <C-b> :FZFBuffers<CR>
+nnoremap <C-F> :Rg!<space>
+nnoremap <leader>f :Rg! <Up><CR>
+nnoremap <C-t> :FZFBTags<CR>
+nnoremap <C-S-t> :FZFTags<CR>
+
+";" is the FZF leader
+nnoremap ;f  :FZF<CR>
+nnoremap ;F  :FZFFiletypes<CR>
+nnoremap ;<space>  :FZFBuffers<CR>
+nnoremap ;b  :FZFBuffers<CR>
+nnoremap ;c  :FZFColors<CR>
+nnoremap ;l  :FZFLines<CR>
+nnoremap ;m  :FZFMarks<CR>
+nnoremap ;t  :FZFBTags<CR>
+nnoremap ;T  :FZFTags<CR>
+nnoremap ;g  :Rg<CR>
+
+
+"****************************************
+" Call FZF with Rg
+"****************************************
 " https://medium.com/@crashybang/supercharge-vim-with-fzf-and-ripgrep-d4661fc853d2#.7tq6fyynl
 command! -bang -nargs=* -complete=dir Rg call Rg(<q-args>)
 
@@ -28,29 +68,11 @@ command! -bang -nargs=* Rg
   \   <bang>0
   \ )
 
-" FZF
-nnoremap <C-p> :FZF<CR>
-nnoremap <C-b> :FZFBuffers<CR>
-nnoremap <C-F> :Rg!<space>
-nnoremap <C-t> :FZFBTags<CR>
-nnoremap <C-S-t> :FZFTags<CR>
 
-nnoremap ;f  :FZF<CR>
-nnoremap ;F  :FZFFiletypes<CR>
-nnoremap ;<space>  :FZFBuffers<CR>
-nnoremap ;b  :FZFBuffers<CR>
-nnoremap ;c  :FZFColors<CR>
-nnoremap ;l  :FZFLines<CR>
-nnoremap ;m  :FZFMarks<CR>
-nnoremap ;t  :FZFBTags<CR>
-nnoremap ;T  :FZFTags<CR>
-nnoremap ;g  :Rg<CR>
 
-nnoremap <leader>cs :FZFColors<CR>
-
-" Open last search
-nnoremap <leader>f :Rg <Up><CR>
-
+"****************************************
+" Floating Windows
+"****************************************
 function! FloatingFZF()
   let buf = nvim_create_buf(v:false, v:true)
   call setbufvar(buf, '&signcolumn', 'no')
@@ -71,9 +93,9 @@ function! FloatingFZF()
 
   call nvim_open_win(buf, v:true, opts)
 endfunction
-
+" let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 " Stolen from: https://www.reddit.com/r/neovim/comments/djmehv/im_probably_really_late_to_the_party_but_fzf_in_a/f463fxr/
 " let $FZF_DEFAULT_OPTS=' --color=dark --color=fg:15,bg:-1,hl:1,fg+:#ffffff,bg+:0,hl+:1 --color=info:0,prompt:0,pointer:12,marker:4,spinner:11,header:-1 --layout=reverse  --margin=1,4'
 " let $FZF_DEFAULT_OPTS=' --color=info:13,prompt:13,pointer:12,marker:4,spinner:11,header:-1 --layout=reverse  --margin=1,4'
 
-" let g:fzf_layout = { 'window': 'call FloatingFZF()' }
+

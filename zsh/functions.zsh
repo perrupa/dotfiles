@@ -22,20 +22,35 @@ function fkill() {
 # Tmux section
 function create_personal_tmux_session() {
   SESSION_NAME="Personal"
-  tmux new-session -d -s $SESSION_NAME -c ~/Projects/dotfiles -n 'Dotfiles'
-  tmux new-window -t $SESSION_NAME: -n 'Notes'
-  tmux send-keys 'cd ~/Notes' Enter
-  tmux send-keys "clear" Enter
+
+  tmux list-sessions | grep $SESSION_NAME && $(
+    tmux new-session -d -s $SESSION_NAME -c ~/Projects/dotfiles -n 'Dotfiles'
+  )
+
+  tmux list-windows | grep 'Notes' && $(
+    tmux new-window -t $SESSION_NAME: -n 'Notes'
+    tmux send-keys 'cd ~/Notes' Enter
+    tmux send-keys "clear" Enter
+  )
+
   tmux select-window -t $SESSION_NAME:1
 }
 
 # tmux session creation/loading with FZF
-tm() {
-  local session
-  newsession=${1:-Personal}
-  session=$(tmux list-sessions -F "#{session_name}" | \
-    fzf --query="$1" --select-1 --exit-0) &&
-    tmux attach-session -t "$session" \
-    || $( create_personal_tmux_session && tmux attach-session -t "Personal")
+function tm() {
+  [[ -n "$TMUX" ]] && change="switch-client" || change="attach-session"
+
+  if [ $1 ]; then
+    tmux $change -t "$1" 2>/dev/null || (tmux new-session -d -s $1 && tmux $change -t "$1"); return
+  fi
+
+  session=$( \
+    tmux list-sessions -F "#{session_name}" 2>/dev/null \
+    | fzf --select-1 --exit-0 \
+  )
+
+  [[ -n "$session" ]] && $( \
+    tmux $change -t "$session" \
+  ) || create_personal_tmux_session
 }
 

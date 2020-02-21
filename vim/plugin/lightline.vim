@@ -1,7 +1,7 @@
 let g:lightline                  = {}
 
 " Upper buffer list
-let g:lightline.colorscheme      = 'dracula'
+let g:lightline.colorscheme      = 'OceanicNext'
 let g:lightline.tabline          = {'left': [['buffers']], 'right':[]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}

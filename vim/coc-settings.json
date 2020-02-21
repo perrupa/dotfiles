@@ -1,4 +1,5 @@
 {
+  "suggest.enablePreview": true,
   "codeLens.enable": false,
   "coc.preferences.diagnostic.displayByAle": false,
   "eslint.autoFixOnSave": false,

@@ -57,7 +57,7 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/*'"
 
 
 # CTRL-R - Paste the selected command from history into the command line
-fzf-history-widget() {
+function fzf-history-widget() {
   local selected restore_no_bang_hist
   if selected=$(fc -l 1 | $(__fzfcmd) +s --tac +m -n2..,.. --tiebreak=index --toggle-sort=ctrl-r -q "$LBUFFER"); then
     num=$(echo "$selected" | head -1 | awk '{print $1}' | sed 's/[^0-9]//g')
@@ -71,5 +71,6 @@ fzf-history-widget() {
   fi
   zle redisplay
 }
+
 zle     -N   fzf-history-widget
 bindkey '^R' fzf-history-widget

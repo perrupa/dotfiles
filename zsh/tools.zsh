@@ -1,5 +1,7 @@
-# Functions
+# Shopify's dev tooL
+source /opt/dev/dev.sh
 
+# Functions
 function diff {
   colordiff -u "$@" | less
 }

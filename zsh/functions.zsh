@@ -1,11 +1,5 @@
 # Functions
 
-# runs rails tests with a relative path
-# eg: `t test/models/listing_category_test.rb`
-t () {
-    noglob bundle exec rake test "$@"
-}
-
 function diff {
   colordiff -u "$@" | less
 }

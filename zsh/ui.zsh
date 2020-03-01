@@ -1,11 +1,4 @@
 # OH MY ZSH
-source $ZSH/oh-my-zsh.sh
-
-# Vi mode for zsh input
-bindkey -v
-export KEYTIMEOUT=1
-# Backspace over insert start point
-bindkey "^?" backward-delete-char
 
 # Plugins
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -18,6 +11,7 @@ plugins=(
   osx
   virtualenv
   z
+  zsh-nvm
   # zsh-autosuggestions
   # zsh-completions
   # zsh-syntax-highlighting

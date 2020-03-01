@@ -71,6 +71,3 @@ function fzf-history-widget() {
   fi
   zle redisplay
 }
-
-zle     -N   fzf-history-widget
-bindkey '^R' fzf-history-widget

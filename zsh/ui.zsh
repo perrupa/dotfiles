@@ -18,6 +18,7 @@ plugins=(
 )
 
 # Prue prompt
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
 
+ZSH_THEME="powerlevel10k/powerlevel10k"

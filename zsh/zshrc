@@ -25,9 +25,7 @@ export KEYTIMEOUT=1
 bindkey "^?" backward-delete-char
 
 
-# CTRL-R fzf history
-zle     -N   fzf-history-widget
-bindkey '^R' fzf-history-widget
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

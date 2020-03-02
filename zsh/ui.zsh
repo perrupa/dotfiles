@@ -12,9 +12,9 @@ plugins=(
   virtualenv
   z
   zsh-nvm
-  # zsh-autosuggestions
+  zsh-autosuggestions
   # zsh-completions
-  # zsh-syntax-highlighting
+  zsh-syntax-highlighting
 )
 
 # Prue prompt

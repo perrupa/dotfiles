@@ -1,3 +1,5 @@
+let g:coc_node_path = '/Users/cmarlow/.nvm/versions/node/v10.19.0/bin/node'
+
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'

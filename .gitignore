@@ -2,3 +2,4 @@ vim/bundle/
 vim/plugged/
 vim/.netrwhist
 vim/undodir/
+coc/extensions/node_modules

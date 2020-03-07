@@ -1,24 +1,25 @@
 let g:lightline                  = {}
 
 " Upper buffer list
-let g:lightline.colorscheme      = 'OceanicNext'
+let g:lightline.colorscheme      = 'molotov'
 let g:lightline.tabline          = {'left': [['buffers']], 'right':[]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
+let g:lightline.subseparator     = {'left': '', 'right': ''}
 
 let g:lightline#bufferline#show_number = 2
 let g:lightline#bufferline#number_map = {
-  \ 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴',
-  \ 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹'
+  \ 0: '⓪', 1: '①', 2: '②', 3: '③', 4: '④',
+  \ 5: '⁵', 6: '⁶', 7: '⑦', 8: '⑧', 9: '⑨'
   \ }
 
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 
 let g:lightline.active = {}
-let g:lightline.active.left = [
-        \   ['mode', 'paste'],
-        \   ['readonly', 'filename'],
-        \ ]
+" let g:lightline.active.left = [
+"         \   ['mode', 'paste'],
+"         \   ['readonly', 'filename'],
+"         \ ]
 
 let g:lightline.active.right = [
         \   ['filetype'],
@@ -28,11 +29,9 @@ let g:lightline.separator = {
 	\   'left': '', 'right': ''
   \}
 
-" let g:lightline.subseparator = { 'left': '', 'right': '', }
-let g:lightline.subseparator = {'left': '', 'right': ''}
 
 " hide duplicate INSERT msg
-set noshowmode
+" set noshowmode
 
 " Go to bufferline #
 nmap <Leader>1 <Plug>lightline#bufferline#go(1)

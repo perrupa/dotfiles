@@ -7,7 +7,7 @@ endif
 set mouse=a
 
 " Theme
-colorscheme OceanicNext
+colorscheme molotov
 set showtabline=2
 
 " Hide vim's weird ~s
@@ -18,4 +18,4 @@ let g:eighties_enabled = 1
 let g:eighties_minimum_width = 60
 let g:eighties_extra_width = 5 " Increase this if you want some extra room
 let g:eighties_compute = 1 " Disable this if you just want the minimum + extra
-let g:eighties_bufname_additional_patterns = []
+let g:eighties_bufname_additional_patterns = ['fugitiveblame']

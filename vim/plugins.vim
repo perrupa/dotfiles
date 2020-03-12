@@ -2,15 +2,12 @@
 let g:ale_emit_conflict_warnings = 0
 
 call plug#begin('~/.vim/bundle')
-  Plug 'tweekmonster/startuptime.vim'
-
   " Vim UI
   Plug 'scrooloose/nerdtree'
   Plug 'itchyny/lightline.vim'
   Plug 'mgee/lightline-bufferline'
   Plug 'airblade/vim-gitgutter'
   Plug 'junegunn/goyo.vim'         " Focus Mode (Goyo)
-  Plug 'yuttie/comfortable-motion.vim'
   Plug 'junegunn/rainbow_parentheses.vim'
 
   " Tmux integration
@@ -20,30 +17,27 @@ call plug#begin('~/.vim/bundle')
   " Editing
   Plug 'scrooloose/nerdcommenter'
   Plug 'gcmt/wildfire.vim'
-  Plug 'jceb/vim-orgmode'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'mattn/emmet-vim'
-  Plug 'kana/vim-textobj-user'
-  Plug 'kana/vim-textobj-line'
   Plug 'terryma/vim-expand-region'
   Plug 'yssl/QFEnter'
   Plug 'icatalina/vim-case-change'
   Plug 'wellle/targets.vim'
   Plug 'michaeljsmith/vim-indent-object'
-  Plug 'cohama/lexima.vim'
+  Plug 'cohama/lexima.vim' " auto-close parens
   Plug 'AndrewRadev/splitjoin.vim'
 
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
-  Plug 'justincampbell/vim-eighties'
-  Plug 'kshenoy/vim-signature'
+  Plug 'justincampbell/vim-eighties' " Resizing vertical splits
+  Plug 'kshenoy/vim-signature' " Shows vim-marks in the gutter
+  Plug 'junegunn/vim-peekaboo' " Show registers (and contents) when using completion and macros
 
   " Completion
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'HerringtonDarkholme/yats.vim'
-  Plug 'othree/csscomplete.vim'
-  Plug 'wellle/tmux-complete.vim'
+  Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': './install.sh'}
+  " Plug 'othree/csscomplete.vim'
+  " Plug 'wellle/tmux-complete.vim'
 
   " tpope time
   Plug 'tpope/vim-fugitive'
@@ -52,53 +46,28 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-rhubarb'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-eunuch'
-  Plug 'tpope/vim-dispatch'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-vinegar'
   Plug 'tpope/vim-obsession'
-  Plug 'tpope/vim-scriptease'
 
   " Syntaxes
-  Plug 'vim-ruby/vim-ruby'
   Plug 'sheerun/vim-polyglot'
-  Plug 'roxma/python-support.nvim'
-  Plug 'neomake/neomake'
-  Plug 'sorin-ionescu/python.vim', { 'for': 'python' }
-  Plug 'othree/html5.vim'
-  Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-  Plug 'avakhov/vim-yaml', { 'for': 'yaml' }
-  Plug 'elmcast/elm-vim', { 'for': 'elm' }
-  Plug 'godlygeek/tabular'
-  Plug 'reedes/vim-pencil'
-  Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}
 
   " Misc
-  Plug 'janko-m/vim-test'
   Plug 'szw/vim-maximizer'
-  Plug 'wincent/terminus'
-  Plug 'ntpeters/vim-better-whitespace'
-  Plug 'junegunn/vim-peekaboo'
+  Plug 'ntpeters/vim-better-whitespace' " highlight whitespace violations
   Plug 'Asheq/close-buffers.vim'
 
   " color schemes
-  " Plug 'flazz/vim-colorschemes'
-  Plug 'rafi/awesome-vim-colorschemes'
-  Plug 'dracula/vim'
-  Plug 'szw/seoul256.vim'
-  Plug 'lifepillar/vim-gruvbox8'
-  Plug 'nightsense/carbonized'
-  Plug 'larssmit/vim-getafe'
-  Plug 'sickill/vim-monokai'
   Plug 'gf3/molotov'
-  Plug 'morhetz/gruvbox'
 
-  " Vim Objects
 
   " Snippets
   " Plug 'SirVer/ultisnips'
-  Plug 'honza/vim-snippets'
-  Plug 'perrupa/close-floating-windows.nvim'
+  " Plug 'Shougo/neosnippet.vim'
+  " Plug 'honza/vim-snippets'
+  " Plug 'perrupa/close-floating-windows.nvim'
 call plug#end()
 
 " Use ripgrep

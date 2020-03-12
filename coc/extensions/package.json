@@ -6,9 +6,9 @@
     "coc-java": ">=1.4.8",
     "coc-json": ">=1.2.5",
     "coc-marketplace": ">=1.7.0",
-    "coc-snippets": ">=2.1.21",
-    "coc-tsserver": ">=1.4.10",
-    "coc-ultisnips": ">=1.2.3",
+    "coc-prettier": ">=1.1.11",
+    "coc-snippets": ">=2.1.22",
+    "coc-tsserver": ">=1.4.11",
     "coc-yaml": ">=1.0.4"
   }
 }

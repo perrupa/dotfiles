@@ -1,4 +1,20 @@
-let g:coc_node_path = '/Users/cmarlow/.nvm/versions/node/v10.19.0/bin/node'
+" let g:coc_node_path = '/Users/cmarlow/.nvm/versions/node/v10.19.0/bin/node'
+" let g:coc_node_path = substitute(system('which node'), '\n', '', '')
+
+" coc config
+let g:coc_global_extensions = [
+  \ 'coc-java',
+  \ 'coc-css',
+  \ 'coc-json',
+  \ 'coc-html',
+  \ 'coc-yaml',
+  \ 'coc-snippets',
+  \ 'coc-marketplace',
+  \ 'coc-tsserver',
+  \ 'coc-eslint',
+  \ ]
+
+
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -36,19 +52,4 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
-
-" coc config
-let g:coc_global_extensions = [
-  \ 'coc-java',
-  \ 'coc-css',
-  \ 'coc-json',
-  \ 'coc-html',
-  \ 'coc-snippets',
-  \ 'coc-yaml',
-  \ 'coc-tsserver',
-  \ 'coc-snippets',
-  \ 'coc-tsserver',
-  \ 'coc-eslint',
-  \ 'coc-json',
-  \ ]
 

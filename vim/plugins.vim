@@ -9,6 +9,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'airblade/vim-gitgutter'
   Plug 'junegunn/goyo.vim'         " Focus Mode (Goyo)
   Plug 'junegunn/rainbow_parentheses.vim'
+  Plug 'ryanoasis/vim-devicons'
 
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'

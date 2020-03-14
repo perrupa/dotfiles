@@ -27,32 +27,21 @@ set grepprg=rg\ --vimgrep
 
 
 " FZF Aliases
-nnoremap <C-p> :FZF<CR>
-nnoremap <C-b> :FZFBuffers<CR>
 nnoremap <C-F> :Rg!<space>
 nnoremap <leader>f :Rg! <Up><CR>
-nnoremap <C-t> :FZFBTags<CR>
-nnoremap <C-S-t> :FZFTags<CR>
 
 ";" is the FZF leader
-" nnoremap ;f  :FZF<CR>
 nnoremap ;F  :FZFFiletypes<CR>
-" nnoremap ;<space>  :FZFBuffers<CR>
-" nnoremap ;b  :FZFBuffers<CR>
 nnoremap ;c  :FZFColors<CR>
-" nnoremap ;l  :FZFLines<CR>
-" nnoremap ;m  :FZFMarks<CR>
-" nnoremap ;t  :FZFBTags<CR>
-" nnoremap ;T  :FZFTags<CR>
-" nnoremap ;g  :Rg<CR>
 
 " FzfPreview (yuki-ycino/fzf-preview.vim)
 nnoremap ;f  :FzfPreviewProjectFiles<CR>
 nnoremap ;b  :FzfPreviewAllBuffers<CR>
 nnoremap ;l  :FzfPreviewLines<CR>
 nnoremap ;m  :FzfPreviewMarks<CR>
-nnoremap ;t  :FzfPreviewBufferTags<CR>
 nnoremap ;g  :FzfPreviewProjectGrep<CR>
+nnoremap ;t  :FzfPreviewBufferTags<CR>
+nnoremap <C-t> :FzfPreviewBufferTags<CR>
 
 
 "****************************************

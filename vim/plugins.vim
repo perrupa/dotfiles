@@ -30,6 +30,7 @@ call plug#begin('~/.vim/bundle')
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
+  Plug 'yuki-ycino/fzf-preview.vim'
   Plug 'justincampbell/vim-eighties' " Resizing vertical splits
   Plug 'kshenoy/vim-signature' " Shows vim-marks in the gutter
   Plug 'junegunn/vim-peekaboo' " Show registers (and contents) when using completion and macros

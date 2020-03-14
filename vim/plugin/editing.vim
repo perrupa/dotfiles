@@ -82,8 +82,29 @@ nnoremap <silent> <leader>c :set nolist!<CR>
 " Search highlighting with bold + underline
 highlight Search guibg=guibg guifg=guifg gui=bold,italic,underline
 
-" Wildfire Config
-let g:wildfire_objects = ["iw", "iW", "i'", 'i"', "i>", "i)", "i]", "i}", "it", "ip"]
+" Selection
+map <CR> <Plug>(expand_region_expand)
+
+" +/- to expand/contract
+vmap - <Plug>(expand_region_shrink)
+vmap _ <Plug>(expand_region_shrink)
+vmap + <Plug>(expand_region_expand)
+vmap = <Plug>(expand_region_expand)
+
+" Include word expanding with `terryma/vim-expand-region`
+" Default settings. (NOTE: Remove comments in dictionary before sourcing)
+let g:expand_region_text_objects = {
+    \ 'iw'  :0,
+    \ 'iW'  :0,
+    \ 'i"'  :0,
+    \ 'i''' :0,
+    \ 'i]'  :1,
+    \ 'ib'  :1,
+    \ 'iB'  :1,
+    \ 'il'  :0,
+    \ 'ip'  :0,
+    \ }
+
 
 " Maintain undo history between sessions
 set undofile

@@ -3,3 +3,4 @@ vim/plugged/
 vim/.netrwhist
 vim/undodir/
 coc/extensions/node_modules
+coc/extensions/db.json

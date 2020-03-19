@@ -67,6 +67,7 @@ call plug#begin('~/.vim/bundle')
 
   " Snippets
   " Plug 'SirVer/ultisnips'
+  Plug 'Shougo/neosnippet-snippets'
   Plug 'Shougo/neosnippet.vim'
   " Plug 'honza/vim-snippets'
   " Plug 'perrupa/close-floating-windows.nvim'

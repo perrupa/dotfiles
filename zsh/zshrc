@@ -18,14 +18,13 @@ antigen apply
 
 source $DOTFILES/zsh/variables.zsh
 source $DOTFILES/zsh/paths.zsh
-source $DOTFILES/zsh/aliases.zsh
-source $DOTFILES/zsh/tools.zsh
 source $DOTFILES/zsh/nvm.zsh
 source $DOTFILES/zsh/ui.zsh
 
-
 source "$ZSH/oh-my-zsh.sh"
 
+source $DOTFILES/zsh/aliases.zsh
+source $DOTFILES/zsh/tools.zsh
 
 # Vi mode for zsh input
 bindkey -v

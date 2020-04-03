@@ -4,3 +4,4 @@ vim/.netrwhist
 vim/undodir/
 coc/extensions/node_modules
 coc/extensions/db.json
+coc/snippets-mru

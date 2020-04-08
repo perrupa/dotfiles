@@ -17,7 +17,6 @@ call plug#begin('~/.vim/bundle')
 
   " Editing
   Plug 'scrooloose/nerdcommenter'
-  " Plug 'gcmt/wildfire.vim'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'mattn/emmet-vim'
   Plug 'terryma/vim-expand-region'
@@ -38,8 +37,6 @@ call plug#begin('~/.vim/bundle')
 
   " Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': './install.sh'}
-  " Plug 'othree/csscomplete.vim'
-  " Plug 'wellle/tmux-complete.vim'
 
   " tpope time
   Plug 'tpope/vim-fugitive'
@@ -85,9 +82,6 @@ augroup rainbow_parenthesis_config
   let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
   let g:rainbow#blacklist = ['#F4CF86', '#FFFFFF']
 augroup END
-
-" Don't GoldenRatio NERDtree/non-modifiables
-let g:golden_ratio_exclude_nonmodifiable = 1
 
 " Prevent <C-F> remapping
 let g:comfortable_motion_no_default_key_mappings = 1

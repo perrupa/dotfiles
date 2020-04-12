@@ -19,6 +19,6 @@ alias mux="tmuxinator"
 alias bim='nvim'
 alias cim='nvim'
 alias gti='git'
-alias gits='git status'
-alias gist='git status'
+alias gits='git st'
+alias gist='git st'
 

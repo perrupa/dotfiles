@@ -34,6 +34,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'justincampbell/vim-eighties' " Resizing vertical splits
   Plug 'kshenoy/vim-signature' " Shows vim-marks in the gutter
   Plug 'junegunn/vim-peekaboo' " Show registers (and contents) when using completion and macros
+  Plug 'wsdjeg/vim-fetch' " Allows opening files at linenumber e.g. `main.js:13`
 
   " Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': './install.sh'}

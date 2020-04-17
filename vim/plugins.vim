@@ -62,7 +62,6 @@ call plug#begin('~/.vim/bundle')
   " color schemes
   Plug 'gf3/molotov'
 
-
   " Snippets
   " Plug 'SirVer/ultisnips'
   Plug 'Shougo/neosnippet-snippets'

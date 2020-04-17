@@ -61,6 +61,7 @@ call plug#begin('~/.vim/bundle')
 
   " color schemes
   Plug 'gf3/molotov'
+  Plug 'nanotech/jellybeans.vim'
 
   " Snippets
   " Plug 'SirVer/ultisnips'

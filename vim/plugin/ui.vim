@@ -1,11 +1,15 @@
 " Terminal settings
 set t_Co=256
 set lazyredraw
-set mouse=a
 set termguicolors
 
 " Theme
-colorscheme molotov
+" colorscheme molotov
+colorscheme jellybeans
+
+set mouse=a
+
+" Show tabline for active buffer list
 set showtabline=2
 
 " Wide tree for deep repos

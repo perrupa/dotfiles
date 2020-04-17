@@ -18,6 +18,7 @@ alias mux="tmuxinator"
 # Typos 🤦
 alias bim='nvim'
 alias cim='nvim'
+alias gitt='git'
 alias gti='git'
 alias gits='git st'
 alias gist='git st'

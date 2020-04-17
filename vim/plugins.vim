@@ -68,6 +68,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'Shougo/neosnippet.vim'
   " Plug 'honza/vim-snippets'
   " Plug 'perrupa/close-floating-windows.nvim'
+  Plug 'perrupa/hide-tildes.vim'
 call plug#end()
 
 " Use ripgrep

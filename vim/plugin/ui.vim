@@ -1,10 +1,8 @@
 " Terminal settings
 set t_Co=256
 set lazyredraw
-if (has("termguicolors"))
-  set termguicolors
-endif
 set mouse=a
+set termguicolors
 
 " Theme
 colorscheme molotov
@@ -12,9 +10,6 @@ set showtabline=2
 
 " Wide tree for deep repos
 let g:NERDTreeWinSize=50
-
-" Hide vim's weird ~s
-hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
 
 " Panel Sizing via vim-eighties
 let g:eighties_enabled = 1

@@ -2,8 +2,7 @@
   "suggest.enablePreview": true,
   "codeLens.enable": false,
   "tsserver.enableJavascript": true,
-  "coc.preferences.diagnostic.displayByAle": false,
-  "eslint.autoFixOnSave": false,
+  "eslint.autoFixOnSave": true,
   "eslint.quiet": true,
   "languageserver": {
     "sorbet": {

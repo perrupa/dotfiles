@@ -36,3 +36,21 @@ it('${1}', () => {
 });
 endsnippet
 
+
+snippet describe "jest describe block" b
+describe('${1:Subject}', () => {
+	it('${2:acts}', () => {
+		const subject = mount();
+
+		expect(subject).toBeTruthy();
+	});
+});
+endsnippet
+
+snippet useI18n "const [i18n] = useI18n();" b
+const [i18n] = useI18n${1}();
+endsnippet
+
+snippet ()= "Lambda () => {}" A
+() => {${1}}
+endsnippet

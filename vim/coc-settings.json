@@ -5,9 +5,9 @@
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
   "eslint.quiet": false,
-  "eslint.autoFixOnSave": true,
+  "eslint.autoFixOnSave": false,
   "coc.preferences.formatOnSaveFiletypes": [
-    "css", "scss", "markdown", "javascript", "javascriptreact", "typescript", "typescriptreact"
+    "json", "css", "scss", "markdown", "javascript", "javascriptreact", "typescript", "typescriptreact"
   ],
   "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "prettier.tslintIntegration": true,

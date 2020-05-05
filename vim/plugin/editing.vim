@@ -91,7 +91,7 @@ vmap + <Plug>(expand_region_expand)
 vmap = <Plug>(expand_region_expand)
 
 " Include word expanding with `terryma/vim-expand-region`
-" Default settings. (NOTE: Remove comments in dictionary before sourcing)
+" Default settings.
 let g:expand_region_text_objects = {
     \ 'iw'  :0,
     \ 'iW'  :0,
@@ -102,7 +102,14 @@ let g:expand_region_text_objects = {
     \ 'iB'  :1,
     \ 'il'  :0,
     \ 'ip'  :0,
+    \ 'if'  :0,
     \ }
+
+" Function objects
+xmap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap if <Plug>(coc-funcobj-i)
+omap af <Plug>(coc-funcobj-a)
 
 
 " Maintain undo history between sessions

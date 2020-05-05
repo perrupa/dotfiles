@@ -7,6 +7,7 @@
     "coc-json": ">=1.2.5",
     "coc-marketplace": ">=1.7.0",
     "coc-prettier": ">=1.1.12",
+    "coc-scssmodules": ">=0.2.0",
     "coc-snippets": ">=2.1.26",
     "coc-tsserver": ">=1.5.1",
     "coc-yaml": ">=1.0.4"

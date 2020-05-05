@@ -38,7 +38,7 @@ nnoremap ;c  :FZFColors<CR>
 nnoremap ;f  :FzfPreviewDirectoryFiles<CR>
 " nnoremap ;b  :FzfPreviewAllBuffers<CR>
 nnoremap ;b  :FZFBuffers<CR>
-nnoremap ;l  :FzfPreviewLines<CR>
+nnoremap ;l  :FzfPreviewBufferLines<CR>
 nnoremap ;m  :FzfPreviewMarks<CR>
 nnoremap ;g  :FzfPreviewProjectGrep<CR>
 nnoremap ;t  :FzfPreviewBufferTags<CR>

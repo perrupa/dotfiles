@@ -4,7 +4,6 @@ set encoding=utf-8
 set backspace=indent,eol,start
 set wildmenu
 set scrolloff=30
-set omnifunc=syntaxcomplete#Complete
 set lisp " `-` doens't break words + more :)
 
 " Share OSX's clipboard

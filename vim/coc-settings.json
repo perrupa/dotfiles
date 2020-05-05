@@ -2,8 +2,15 @@
   "suggest.enablePreview": true,
   "codeLens.enable": false,
   "tsserver.enableJavascript": true,
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+  "eslint.quiet": false,
   "eslint.autoFixOnSave": true,
-  "eslint.quiet": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css", "scss", "markdown", "javascript", "javascriptreact", "typescript", "typescriptreact"
+  ],
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "prettier.tslintIntegration": true,
   "languageserver": {
     "sorbet": {
       "args": [

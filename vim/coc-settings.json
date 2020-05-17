@@ -11,22 +11,4 @@
   ],
   "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "prettier.tslintIntegration": true,
-  "languageserver": {
-    "sorbet": {
-      "args": [
-        "tc",
-        "--lsp",
-        "--enable-all-experimental-lsp-features",
-        "--disable-watchman"
-      ],
-      "trace.server": "verbose",
-      "command": "./bin/srb",
-      "filetypes": [
-        "ruby"
-      ],
-      "rootPatterns": [
-        "sorbet/config"
-      ]
-    }
-  }
 }

@@ -4,7 +4,7 @@
     "coc-eslint": ">=1.2.6",
     "coc-html": ">=1.2.4",
     "coc-java": ">=1.4.10",
-    "coc-json": ">=1.2.5",
+    "coc-json": ">=1.2.6",
     "coc-marketplace": ">=1.7.0",
     "coc-prettier": ">=1.1.12",
     "coc-scssmodules": ">=0.2.0",

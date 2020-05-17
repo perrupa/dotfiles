@@ -4,6 +4,7 @@ let g:ale_emit_conflict_warnings = 0
 call plug#begin('~/.vim/bundle')
   " Vim UI
   Plug 'scrooloose/nerdtree'
+  Plug 'justinmk/vim-dirvish'
   Plug 'itchyny/lightline.vim'
   Plug 'mgee/lightline-bufferline'
   Plug 'airblade/vim-gitgutter'
@@ -48,7 +49,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-repeat'
-  Plug 'tpope/vim-vinegar'
   Plug 'tpope/vim-obsession'
 
   " Syntaxes

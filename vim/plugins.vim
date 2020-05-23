@@ -3,7 +3,6 @@ let g:ale_emit_conflict_warnings = 0
 
 call plug#begin('~/.vim/bundle')
   " Vim UI
-  Plug 'scrooloose/nerdtree'
   Plug 'justinmk/vim-dirvish'
   Plug 'itchyny/lightline.vim'
   Plug 'mgee/lightline-bufferline'
@@ -18,7 +17,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'benmills/vimux'
 
   " Editing
-  Plug 'scrooloose/nerdcommenter'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'mattn/emmet-vim'
   Plug 'terryma/vim-expand-region'

@@ -7,8 +7,30 @@
   "eslint.quiet": false,
   "eslint.autoFixOnSave": false,
   "coc.preferences.formatOnSaveFiletypes": [
-    "json", "css", "scss", "markdown", "javascript", "javascriptreact", "typescript", "typescriptreact"
+    "json",
+    "css",
+    "scss",
+    "markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
   ],
-  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "prettier.tslintIntegration": true,
+
+  // coc-explorer
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "x": "open:split",
+    "v": "open:vsplit"
+  }
 }

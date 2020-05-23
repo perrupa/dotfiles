@@ -23,6 +23,7 @@ nnoremap Y y$
 
 " Buffers
 nnoremap <C-w> :q<CR>
+nnoremap <leader>n :enew<CR>
 nnoremap <leader>bd :bdelete<CR>
 nnoremap <leader>BD :bdelete!<CR>
 nnoremap <C-s> :wa<CR>
@@ -67,10 +68,6 @@ set splitright
 
 " Registers
 nnoremap <leader>@ :registers<CR>
-
-" NERD Tree
-nnoremap <Leader>kb :NERDTreeToggle<CR>
-nnoremap <Leader>kf :NERDTreeFind<CR>
 
 " Comments
 nnoremap <C-_> :Commentary<CR> " vim sees ctrl+/ as ctrl+_ for some reason

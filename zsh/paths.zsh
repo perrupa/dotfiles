@@ -10,6 +10,9 @@ export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:$HOME/.config/bin"
 
+# Personal scripts
+export PATH="$PATH:$DOTFILES/bin"
+
 # JS
 export PATH="$HOME/.yarn/bin:$PATH"
 

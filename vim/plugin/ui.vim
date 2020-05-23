@@ -3,6 +3,10 @@ set t_Co=256
 set lazyredraw
 set termguicolors
 
+" Splits
+set splitbelow
+set splitright
+
 " Theme
 " colorscheme molotov
 colorscheme jellybeans

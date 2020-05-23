@@ -51,24 +51,15 @@ nnoremap <Leader>sw :execute ":Rg! " . expand("<cword>")<CR>
 " vnoremap <Leader>s :execute ":Rg! " . expand("<cword>")<CR>
 
 nmap // :nohlsearch<CR>
-nnoremap <Leader>nhl :nohlsearch<CR>
 
 " Centers the cursor vertically after jumping to the next result
 nnoremap n nzz
 nnoremap N Nzz
 
-" Rename tabs
-nnoremap g, :TabooRename<space>
-
-nnoremap grt :GoldenRatioToggle<CR>
-
-" Splits
-set splitbelow
-set splitright
-
 " Registers
 nnoremap <leader>@ :registers<CR>
 
 " Comments
-nnoremap <C-_> :Commentary<CR> " vim sees ctrl+/ as ctrl+_ for some reason
+" vim sees ctrl+/ as ctrl+_ for some reason
+nnoremap <C-_> :Commentary<CR>
 vnoremap <C-_> :Commentary<CR>gv " Comments out selection, keeping it selected

@@ -6,6 +6,10 @@ set wildmenu
 set scrolloff=30
 set lisp " `-` doens't break words + more :)
 
+" Vimwiki settings
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+
+
 " Share OSX's clipboard
 set clipboard=unnamed
 

@@ -10,6 +10,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/goyo.vim'         " Focus Mode (Goyo)
   Plug 'junegunn/rainbow_parentheses.vim'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'vimwiki/vimwiki'
   Plug 'voldikss/vim-floaterm'
 
   " Tmux integration

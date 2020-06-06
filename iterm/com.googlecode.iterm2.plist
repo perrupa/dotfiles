@@ -1791,7 +1791,7 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>-2560 78 2560 1417 -2560 78 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-2560 541 1090 954 -2560 78 2560 1417 </string>
+	<string>0 623 1090 954 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>1280 0 1280 1577 0 0 2560 1577 </string>
 	<key>NeverWarnAboutShortLivedSessions_AD168FF4-E287-4943-BB9C-B4B6E4CD8E6E</key>
@@ -2405,7 +2405,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FuraCodeNerdFontComplete-Regular 15</string>
+			<string>FuraCodeNerdFontComplete-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prevent Opening in a Tab</key>
@@ -3862,6 +3862,7 @@
 		<string>3.3.20190809-nightly</string>
 		<string>3.3.20200221-nightly</string>
 		<string>3.3.20200106-nightly</string>
+		<string>3.3.20200529-nightly</string>
 		<string>3.3.20190929-nightly</string>
 		<string>3.3.20200207-nightly</string>
 		<string>3.3.20200514-nightly</string>
@@ -3897,6 +3898,7 @@
 		<string>3.3.20200427-nightly</string>
 		<string>3.3.20191113-nightly</string>
 		<string>3.3.20191226-nightly</string>
+		<string>3.3.20200530-nightly</string>
 		<string>3.3.20190909-nightly</string>
 		<string>3.3.20191101-nightly</string>
 		<string>3.3.20191214-nightly</string>
@@ -3928,9 +3930,10 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>MesloLGS NF</string>
+		<string>NotoMono Nerd Font</string>
+		<string>Monoisome</string>
 		<string>FuraCode Nerd Font</string>
-		<string>Iosevka Nerd Font Mono</string>
+		<string>RobotoMono Nerd Font</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -3952,9 +3955,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {2560, 1600}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{251, 862}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -3963,9 +3966,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>2F7A085A-4FDF-49FD-9904-51C46883B0CA</string>
 	<key>NoSyncLastOSVersion</key>
-	<string>Version 10.15.4 (Build 19E287)</string>
+	<string>Version 10.15.5 (Build 19F96)</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>323</integer>
+	<integer>331</integer>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
 	<key>NoSyncPermissionToShowTip</key>
@@ -5357,13 +5360,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-27T13:49:09Z</date>
+	<date>2020-06-03T16:04:57Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
@@ -5387,7 +5390,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.20200523-nightly</string>
+	<string>3.3.20200530-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>3</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

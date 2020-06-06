@@ -9,7 +9,12 @@ set splitright
 
 " Theme
 " colorscheme molotov
-colorscheme jellybeans
+" colorscheme jellybeans
+
+let ayucolor="mirage" " for mirage version of theme
+" let ayucolor="dark"   " for dark version of theme
+
+colorscheme ayu
 
 set mouse=a
 

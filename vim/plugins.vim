@@ -8,7 +8,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'mgee/lightline-bufferline'
   Plug 'airblade/vim-gitgutter'
   Plug 'junegunn/goyo.vim'         " Focus Mode (Goyo)
-  Plug 'junegunn/rainbow_parentheses.vim'
+  Plug 'kien/rainbow_parentheses.vim'
   Plug 'ryanoasis/vim-devicons'
   Plug 'vimwiki/vimwiki'
   Plug 'voldikss/vim-floaterm'

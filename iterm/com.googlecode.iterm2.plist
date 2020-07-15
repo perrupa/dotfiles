@@ -1789,7 +1789,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>282 1085 592 584 0 0 3008 1669 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-2560 78 2560 1417 -2560 78 2560 1417 </string>
+	<string>3 4 1434 868 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 623 1090 954 0 0 2560 1577 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -3827,6 +3827,7 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.20191115-nightly</string>
+		<string>3.3.20200604-nightly</string>
 		<string>3.3.20190829-nightly</string>
 		<string>3.3.20200323-nightly</string>
 		<string>3.3.20200301-nightly</string>
@@ -3908,6 +3909,7 @@
 		<string>3.3.20191118-nightly</string>
 		<string>3.3.20200112-nightly</string>
 		<string>3.3.20200225-nightly</string>
+		<string>3.3.20200607-nightly</string>
 		<string>3.3.20200326-nightly</string>
 		<string>3.3.20200304-nightly</string>
 		<string>3.3.20191125-nightly</string>
@@ -3966,9 +3968,13 @@
 	<key>NoSyncInstallationId</key>
 	<string>2F7A085A-4FDF-49FD-9904-51C46883B0CA</string>
 	<key>NoSyncLastOSVersion</key>
-	<string>Version 10.15.5 (Build 19F96)</string>
+	<string>Version 10.15.5 (Build 19F101)</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>331</integer>
+	<integer>344</integer>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
 	<key>NoSyncPermissionToShowTip</key>
@@ -5360,13 +5366,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-03T16:04:57Z</date>
+	<date>2020-06-22T02:11:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
@@ -5390,7 +5396,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.20200530-nightly</string>
+	<string>3.3.20200607-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>3</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

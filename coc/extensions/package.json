@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "coc-css": ">=1.2.3",
+    "coc-css": ">=1.2.4",
     "coc-eslint": ">=1.2.7",
-    "coc-explorer": ">=0.7.11",
+    "coc-explorer": ">=0.7.14",
     "coc-html": ">=1.2.4",
     "coc-java": ">=1.4.11",
     "coc-json": ">=1.2.6",
@@ -10,7 +10,7 @@
     "coc-prettier": ">=1.1.14",
     "coc-scssmodules": ">=0.2.0",
     "coc-snippets": ">=2.1.28",
-    "coc-tsserver": ">=1.5.1",
+    "coc-tsserver": ">=1.5.2",
     "coc-yaml": ">=1.0.4"
   }
 }

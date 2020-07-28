@@ -1,9 +1,10 @@
-" let g:coc_node_path = '/Users/cmarlow/.nvm/versions/node/v10.19.0/bin/node'
-" let g:coc_node_path = substitute(system('which node'), '\n', '', '')
+" CoC config
 
-" coc config
+" Node path
+" let g:coc_node_path = substitute(system('which node'), '\n', '', '')
+let g:coc_node_path = "/Users/cmarlow/.nvm/versions/node/v13.14.0/bin/node"
+
 let g:coc_global_extensions = [
-  \ 'coc-java',
   \ 'coc-css',
   \ 'coc-json',
   \ 'coc-html',
@@ -13,8 +14,6 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-eslint',
   \ ]
-
-let g:coc_node_path = "/Users/cmarlow/.nvm/versions/node/v10.19.0/bin/node"
 
 function! s:check_back_space() abort
   let col = col('.') - 1

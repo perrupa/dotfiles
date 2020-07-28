@@ -31,7 +31,7 @@ nnoremap <Leader>m :MaximizerToggle<CR>
 nnoremap <Leader>z :MaximizerToggle<CR>
 nnoremap <C-\> :edit %:h<CR>
 
-function! MySwitch()
+function! PreviousBuffer()
   if expand('#')==""
     silent! bnext
   else
@@ -39,7 +39,7 @@ function! MySwitch()
   endif
 endfu
 
-noremap <Leader><Leader> :call MySwitch()<CR>
+noremap <Leader><Leader> :call PreviousBuffer()<CR>
 
 " Tab navigation
 nnoremap gt :tabnext<CR>
@@ -48,6 +48,7 @@ nnoremap gT :tabprevious<CR>
 " Searching
 nnoremap <Leader>sW :execute ":Rg! " . expand("<cWORD>")<CR>
 nnoremap <Leader>sw :execute ":Rg! " . expand("<cword>")<CR>
+" nnoremap <Leader>sf :execute ":FZFFiles " . expand("<cword>")<CR>
 " vnoremap <Leader>s :execute ":Rg! " . expand("<cword>")<CR>
 
 nmap // :nohlsearch<CR>

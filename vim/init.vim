@@ -12,9 +12,6 @@ set wildignore+=*/smarty/*,*/vendor/*,*/.git/*,*/.hg/*,*/.svn/*,*/.sass-cache/*,
 set autoread
 set autowrite
 
-" Search
-set incsearch
-
 " Imports
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/alias.vim

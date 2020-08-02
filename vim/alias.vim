@@ -35,18 +35,6 @@ noremap <Leader><Leader> :call PreviousBuffer()<CR>
 nnoremap gt :tabnext<CR>
 nnoremap gT :tabprevious<CR>
 
-" Searching
-nnoremap <Leader>sW :execute ":Rg! " . expand("<cWORD>")<CR>
-nnoremap <Leader>sw :execute ":Rg! " . expand("<cword>")<CR>
-" nnoremap <Leader>sf :execute ":FZFFiles " . expand("<cword>")<CR>
-" vnoremap <Leader>s :execute ":Rg! " . expand("<cword>")<CR>
-
-nmap // :nohlsearch<CR>
-
-" Centers the cursor vertically after jumping to the next result
-nnoremap n nzz
-nnoremap N Nzz
-
 " Registers
 nnoremap <leader>@ :registers<CR>
 

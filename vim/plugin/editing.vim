@@ -9,7 +9,6 @@ set lisp " `-` doens't break words + more :)
 " Vimwiki settings
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
-
 " Share OSX's clipboard
 set clipboard=unnamed
 
@@ -25,9 +24,12 @@ set cursorline
 filetype plugin indent on
 set expandtab ts=2 shiftwidth=2 softtabstop=2
 
+" Yank Consistency
+nnoremap Y y$
+
 " Arrow keys
 nnoremap <Up> :m .-2<cr>
-nnoremap <Down> ddp
+nnoremap <Down> :m .+1<cr>
 nnoremap <Left> <<
 nnoremap <Right> >>
 
@@ -37,8 +39,9 @@ vnoremap <Right> >gv
 vnoremap <Up> :m '<-2<CR>gv
 vnoremap <Down> :m '>+1<CR>gv
 
-" Yanking in visual mode, stays in visual mode
-" vnoremap y ygv
+" wrapped line movement
+noremap k gk
+noremap j gj
 
 " This causes the left and right arrow keys, as well as h and l, to wrap when used at
 " beginning or end of lines. (  < > are the cursor keys used in normal and visual mode,
@@ -75,15 +78,11 @@ inoremap ∆ <C-o><down>
 inoremap <C-c> <Esc>
 nnoremap <C-c> <Esc>
 
-
 " Show trailing whitespace
 set listchars=tab:›\ ,trail:·,eol:¬,nbsp:_,extends:…,precedes:…
 set foldlevelstart=99
 set fillchars=fold:-
 nnoremap <silent> <leader>c :set nolist!<CR>
-
-" Search highlighting with bold + underline
-highlight Search guibg=guibg guifg=guifg gui=bold,italic,underline
 
 " Selection
 map <CR> <Plug>(expand_region_expand)
@@ -114,7 +113,6 @@ xmap if <Plug>(coc-funcobj-i)
 xmap af <Plug>(coc-funcobj-a)
 omap if <Plug>(coc-funcobj-i)
 omap af <Plug>(coc-funcobj-a)
-
 
 " Maintain undo history between sessions
 set undofile

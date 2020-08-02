@@ -7,19 +7,9 @@ let mapleader = " "
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<CR>
 nnoremap <leader>sf :source <C-r>%<CR>
 
-" remap ; to :
-noremap ; :
-
-" wrapped line movement
-noremap k gk
-noremap j gj
-
 " word-wise H & L
 nnoremap H B
 nnoremap L E
-
-" Yank Consistency
-nnoremap Y y$
 
 " Buffers
 nnoremap <C-w> :q<CR>

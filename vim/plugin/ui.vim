@@ -28,3 +28,5 @@ let g:eighties_extra_width = 5 " Increase this if you want some extra room
 let g:eighties_compute = 1 " Disable this if you just want the minimum + extra
 let g:eighties_bufname_additional_patterns = ['fugitiveblame']
 
+" Search highlighting with bold + underline
+highlight Search guibg=guibg guifg=guifg gui=bold,italic,underline

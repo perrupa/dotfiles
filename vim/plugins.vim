@@ -24,9 +24,10 @@ call plug#begin('~/.vim/bundle')
   Plug 'yssl/QFEnter'
   Plug 'icatalina/vim-case-change'
   Plug 'wellle/targets.vim'
-  Plug 'michaeljsmith/vim-indent-object'
   Plug 'cohama/lexima.vim' " auto-close parens
-  Plug 'AndrewRadev/splitjoin.vim'
+  Plug 'kana/vim-textobj-user'
+  Plug 'michaeljsmith/vim-indent-object'
+  Plug 'kana/vim-textobj-line'
 
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }

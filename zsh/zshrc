@@ -16,6 +16,10 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
 
+# Enable auto-completion
+autoload -Uz compinit
+compinit
+
 source $DOTFILES/zsh/variables.zsh
 source $DOTFILES/zsh/paths.zsh
 source $DOTFILES/zsh/nvm.zsh

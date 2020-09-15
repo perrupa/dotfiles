@@ -21,7 +21,7 @@
 	<key>CheckTestRelease</key>
 	<true/>
 	<key>Command</key>
-	<string>tmPersonal</string>
+	<string>bash</string>
 	<key>CopySelection</key>
 	<false/>
 	<key>Custom Color Presets</key>
@@ -1789,9 +1789,9 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>282 1085 592 584 0 0 3008 1669 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 1417 0 0 2560 1417 </string>
+	<string>2570 742 1580 1254 2560 -531 1600 2537 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1280 0 1280 1417 0 0 2560 1417 </string>
+	<string>2570 743 1580 1253 2560 -531 1600 2537 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>1280 0 1280 1577 0 0 2560 1577 </string>
 	<key>NeverWarnAboutShortLivedSessions_AD168FF4-E287-4943-BB9C-B4B6E4CD8E6E</key>
@@ -2405,7 +2405,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FuraCodeNerdFontComplete-Regular 14</string>
+			<string>MesloLGSNer-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prevent Opening in a Tab</key>
@@ -3860,6 +3860,7 @@
 		<string>3.3.20200308-nightly</string>
 		<string>3.3.20191016-nightly</string>
 		<string>3.3.20191107-nightly</string>
+		<string>3.4.20200719-nightly</string>
 		<string>3.3.20200120-nightly</string>
 		<string>3.3.20200430-nightly</string>
 		<string>3.3.20200315-nightly</string>
@@ -3893,6 +3894,7 @@
 		<string>3.3.20200228-nightly</string>
 		<string>3.3.20200403-nightly</string>
 		<string>3.3.20200422-nightly</string>
+		<string>3.4.20200718-nightly</string>
 		<string>3.3.20200307-nightly</string>
 		<string>3.3.20200504-nightly</string>
 		<string>3.3.20191106-nightly</string>
@@ -3937,10 +3939,10 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>MesloLGS NF</string>
 		<string>NotoMono Nerd Font</string>
 		<string>Monoisome</string>
 		<string>FuraCode Nerd Font</string>
-		<string>RobotoMono Nerd Font</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -3962,9 +3964,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1600}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{251, 862}</string>
+		<string>{268, 764}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -3973,9 +3975,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>2F7A085A-4FDF-49FD-9904-51C46883B0CA</string>
 	<key>NoSyncLastOSVersion</key>
-	<string>Version 10.15.6 (Build 19G73)</string>
+	<string>Version 10.15.6 (Build 19G2021)</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>356</integer>
+	<integer>369</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5371,7 +5373,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-18T16:21:31Z</date>
+	<date>2020-08-20T03:47:20Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -5401,7 +5403,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.4.20200713-nightly</string>
+	<string>3.4.20200719-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>3</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

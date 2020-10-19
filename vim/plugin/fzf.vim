@@ -35,7 +35,7 @@ nnoremap ;F  :FZFFiletypes<CR>
 nnoremap ;c  :FZFColors<CR>
 
 " FzfPreview (yuki-ycino/fzf-preview.vim)
-nnoremap ;f  :FzfPreviewGitFiles<CR>
+nnoremap ;f  :FzfPreviewDirectoryFiles<CR>
 nnoremap ;b  :FzfPreviewAllBuffers<CR>
 " nnoremap ;b  :FZFBuffers<CR>
 nnoremap ;l  :FzfPreviewBufferLines<CR>

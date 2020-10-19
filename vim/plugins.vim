@@ -67,11 +67,13 @@ call plug#begin('~/.vim/bundle')
   Plug 'szw/vim-maximizer'
   Plug 'ntpeters/vim-better-whitespace' " highlight whitespace violations
   Plug 'Asheq/close-buffers.vim'
+  Plug 'wellle/context.vim'
 
   " color schemes
   Plug 'gf3/molotov'
   Plug 'nanotech/jellybeans.vim'
   Plug 'ayu-theme/ayu-vim'
+  Plug 'rakr/vim-one'
 
   " Snippets
   " Plug 'SirVer/ultisnips'

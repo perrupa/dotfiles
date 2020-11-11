@@ -16,6 +16,7 @@ call plug#begin('~/.vim/bundle')
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'benmills/vimux'
+  Plug 'Shopify/shadowenv.vim'
 
   " Editing
   Plug 'terryma/vim-multiple-cursors'
@@ -67,7 +68,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'szw/vim-maximizer'
   Plug 'ntpeters/vim-better-whitespace' " highlight whitespace violations
   Plug 'Asheq/close-buffers.vim'
-  Plug 'wellle/context.vim'
+  " Plug 'wellle/context.vim'
 
   " color schemes
   Plug 'gf3/molotov'

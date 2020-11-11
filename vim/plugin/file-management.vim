@@ -11,7 +11,8 @@ function! FernInit() abort
 
   nmap <buffer> <CR> <Plug>(fern-my-open-expand-collapse)
   nmap <buffer> <2-LeftMouse> <Plug>(fern-my-open-expand-collapse)
-  nmap <buffer> N <Plug>(fern-action-new-file)
+  nmap <buffer> n <Plug>(fern-action-new-file)
+  nmap <buffer> N <Plug>(fern-action-new-dir)
   nmap <buffer> K <Plug>(fern-action-new-dir)
   nmap <buffer> D <Plug>(fern-action-remove)
   nmap <buffer> R <Plug>(fern-action-reload)

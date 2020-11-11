@@ -22,10 +22,11 @@ let g:lightline.active = {}
 
 let g:lightline.active.right = [
         \   ['filetype'],
+        \   [ 'syntastic', 'lineinfo', "line('.') . '/' . line('$')" ]
         \ ]
 
 let g:lightline.separator = {
-	\   'left': '', 'right': ''
+  \   'left': '', 'right': ''
   \}
 
 

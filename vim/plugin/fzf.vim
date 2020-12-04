@@ -34,15 +34,11 @@ nnoremap <leader>f :Rg! <Up><CR>
 nnoremap ;F  :FZFFiletypes<CR>
 nnoremap ;c  :FZFColors<CR>
 
-" FzfPreview (yuki-ycino/fzf-preview.vim)
-nnoremap ;f  :FzfPreviewDirectoryFiles<CR>
-nnoremap ;b  :FzfPreviewAllBuffers<CR>
-" nnoremap ;b  :FZFBuffers<CR>
-nnoremap ;l  :FzfPreviewBufferLines<CR>
-nnoremap ;m  :FzfPreviewMarks<CR>
-nnoremap ;g  :FzfPreviewProjectGrep<CR>
-nnoremap ;t  :FzfPreviewBufferTags<CR>
-nnoremap <C-t> :FzfPreviewBufferTags<CR>
+nnoremap ;f  :FZFFiles<CR>
+nnoremap ;b  :FZFBuffers<CR>
+nnoremap ;l  :FZFBLines<CR>
+nnoremap ;L  :FZFLines<CR>
+nnoremap ;m  :FZFMarks<CR>
 
 
 "****************************************

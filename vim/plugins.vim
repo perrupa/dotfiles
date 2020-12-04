@@ -10,8 +10,9 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/goyo.vim'         " Focus Mode (Goyo)
   Plug 'kien/rainbow_parentheses.vim'
   Plug 'ryanoasis/vim-devicons'
-  Plug 'vimwiki/vimwiki'
+  " Plug 'vimwiki/vimwiki'
   Plug 'voldikss/vim-floaterm'
+  " Plug 'nvim-treesitter/nvim-treesitter'
 
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'
@@ -21,8 +22,8 @@ call plug#begin('~/.vim/bundle')
   " Editing
   Plug 'terryma/vim-multiple-cursors'
   Plug 'mattn/emmet-vim'
+  Plug 'yssl/QFEnter' "Quickfix <CR> behavior
   Plug 'terryma/vim-expand-region'
-  Plug 'yssl/QFEnter'
   Plug 'icatalina/vim-case-change'
   Plug 'wellle/targets.vim'
   Plug 'cohama/lexima.vim' " auto-close parens
@@ -34,7 +35,6 @@ call plug#begin('~/.vim/bundle')
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
-  Plug 'yuki-ycino/fzf-preview.vim', { 'do': ':FzfPreviewInstall' }
   Plug 'justincampbell/vim-eighties' " Resizing vertical splits
   Plug 'kshenoy/vim-signature' " Shows vim-marks in the gutter
   Plug 'junegunn/vim-peekaboo' " Show registers (and contents) when using completion and macros
@@ -71,10 +71,9 @@ call plug#begin('~/.vim/bundle')
   " Plug 'wellle/context.vim'
 
   " color schemes
-  Plug 'gf3/molotov'
-  Plug 'nanotech/jellybeans.vim'
+  " Plug 'gf3/molotov'
   Plug 'ayu-theme/ayu-vim'
-  Plug 'rakr/vim-one'
+  " Plug 'rakr/vim-one'
 
   " Snippets
   " Plug 'SirVer/ultisnips'

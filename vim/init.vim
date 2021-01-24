@@ -13,6 +13,7 @@ set autoread
 set autowrite
 
 " Imports
+source ~/.config/nvim/autoload/plug.vim
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/alias.vim
 

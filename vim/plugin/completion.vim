@@ -2,7 +2,7 @@
 
 " Node path
 " let g:coc_node_path = substitute(system('which node'), '\n', '', '')
-let g:coc_node_path = "/Users/cmarlow/.nvm/versions/node/v13.14.0/bin/node"
+let g:coc_node_path = "/Users/cmarlow/.nvm/versions/node/v12.13.0/bin/node"
 
 let g:coc_global_extensions = [
   \ 'coc-css',

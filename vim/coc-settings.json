@@ -5,7 +5,7 @@
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
   "eslint.quiet": false,
-  "eslint.autoFixOnSave": false,
+  "eslint.autoFixOnSave": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "json",
     "css",
@@ -16,18 +16,5 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.filetypes": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
   "prettier.tslintIntegration": true,
-  "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": false,
-  "explorer.keyMappings": {
-    "<cr>": ["expandable?", "expand", "open"],
-    "x": "open:split",
-    "v": "open:vsplit"
-  }
 }

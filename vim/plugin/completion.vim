@@ -13,6 +13,7 @@ let g:coc_global_extensions = [
   \ 'coc-marketplace',
   \ 'coc-tsserver',
   \ 'coc-eslint',
+  \ 'coc-prettier',
   \ ]
 
 function! s:check_back_space() abort

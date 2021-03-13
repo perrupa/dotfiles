@@ -8,6 +8,7 @@
   "eslint.autoFixOnSave": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "json",
+    "graphql",
     "css",
     "scss",
     "markdown",

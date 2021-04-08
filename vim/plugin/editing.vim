@@ -21,6 +21,7 @@ augroup END
 set cursorline
 
 " Indentation
+set smartindent
 filetype plugin indent on
 set expandtab ts=2 shiftwidth=2 softtabstop=2
 

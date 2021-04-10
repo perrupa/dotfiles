@@ -71,9 +71,10 @@ call plug#begin('~/.vim/bundle')
   " Plug 'wellle/context.vim'
 
   " color schemes
-  " Plug 'gf3/molotov'
+  Plug 'gf3/molotov'
   Plug 'ayu-theme/ayu-vim'
-  " Plug 'rakr/vim-one'
+  Plug 'rakr/vim-one'
+  Plug 'rafi/awesome-vim-colorschemes'
 
   " Snippets
   " Plug 'SirVer/ultisnips'

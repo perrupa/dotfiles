@@ -1707,6 +1707,8 @@
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>IRMemory</key>
+	<integer>4</integer>
 	<key>NeverWarnAboutShortLivedSessions_AD168FF4-E287-4943-BB9C-B4B6E4CD8E6E</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_AD168FF4-E287-4943-BB9C-B4B6E4CD8E6E_selection</key>
@@ -3785,11 +3787,15 @@
 	<key>RunJobsInServers</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
+	<key>TerminalMargin</key>
+	<integer>10</integer>
+	<key>TerminalVMargin</key>
+	<integer>10</integer>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Paste History</string>

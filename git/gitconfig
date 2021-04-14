@@ -6,6 +6,14 @@
   # https://github.com/blog/180-local-github-config
   user = perrupa
 
+[branch]
+  # latest changed branches first
+  sort = -committerdate
+
+[pull]
+  # No more accidental merges
+	ff = only
+
 [push]
   default = simple
 
@@ -64,9 +72,6 @@
 	insteadOf = ssh://git@github.com/Shopify/
 	insteadOf = ssh://git@github.com/shopify/
 [credential]
-	helper = 
 	helper = store --file /opt/dev/var/private/git_credential_store
-[pull]
-	ff = only
 [hub]
 	protocol = https

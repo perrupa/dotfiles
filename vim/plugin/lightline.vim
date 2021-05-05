@@ -1,4 +1,5 @@
 let g:lightline                  = {}
+let g:lightline.colorscheme      = 'ayu_mirage'
 
 " Upper buffer list
 let g:lightline.tabline          = {'left': [['buffers']], 'right':[]}
@@ -14,24 +15,28 @@ let g:lightline#bufferline#number_map = {
 
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 
+let g:lightline.component_function = {
+      \   'gitbranch': 'FugitiveHead'
+      \ }
+
 let g:lightline.active = {}
-" let g:lightline.active.left = [
-"         \   ['mode', 'paste'],
-"         \   ['readonly', 'filename'],
-"         \ ]
+let g:lightline.active.left = [
+        \   ['mode', 'paste'],
+        \   ['readonly', 'filename'],
+        \ ]
 
 let g:lightline.active.right = [
         \   ['filetype'],
-        \   [ 'syntastic', 'lineinfo', "line('.') . '/' . line('$')" ]
+        \   ['gitbranch'],
+        \   [ 'syntastic', 'lineinfo', "line('.') . '/' . line('$')" ],
         \ ]
 
 let g:lightline.separator = {
   \   'left': '', 'right': ''
   \}
 
-
 " hide duplicate INSERT msg
-" set noshowmode
+set noshowmode
 
 " Go to bufferline #
 nmap <Leader>1 <Plug>lightline#bufferline#go(1)

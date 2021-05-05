@@ -8,10 +8,8 @@ set splitbelow
 set splitright
 
 " Theme
+let ayucolor="mirage"
 colorscheme ayu
-" colorscheme molotov
-" colorscheme jellybeans
-" colorscheme one
 
 set mouse=a
 

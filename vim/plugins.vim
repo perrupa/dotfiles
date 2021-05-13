@@ -31,6 +31,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'michaeljsmith/vim-indent-object'
   Plug 'kana/vim-textobj-line'
   Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
+  Plug 'blueyed/vim-diminactive'
 
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
@@ -79,6 +80,7 @@ call plug#begin('~/.vim/bundle')
   " Snippets
   Plug 'Shougo/neosnippet-snippets'
   Plug 'Shougo/neosnippet.vim'
+  Plug 'honza/vim-snippets'
   Plug 'perrupa/hide-tildes.vim'
 call plug#end()
 

@@ -2,7 +2,7 @@
 alias e='nvim'
 alias vim='nvim'
 
-alias ls=colorls
+# alias ls=colorls
 
 alias gs='git st'
 alias ga='git a'

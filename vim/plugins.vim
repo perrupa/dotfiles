@@ -57,6 +57,9 @@ call plug#begin('~/.vim/bundle')
   Plug 'tpope/vim-obsession'
 
   " Syntaxes
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'nvim-treesitter/playground'
+
   Plug 'sheerun/vim-polyglot'
   Plug 'pangloss/vim-javascript'
   Plug 'leafgarland/typescript-vim'

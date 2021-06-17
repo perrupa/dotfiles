@@ -30,6 +30,8 @@ function! PreviousBuffer()
 endfu
 
 noremap <Leader><Leader> :call PreviousBuffer()<CR>
+noremap <Leader>j :bprevious<CR>
+noremap <Leader>k :bnext<CR>
 
 " Tab navigation
 nnoremap gt :tabnext<CR>

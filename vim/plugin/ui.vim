@@ -12,6 +12,7 @@ let ayucolor="mirage"
 colorscheme ayu
 
 set mouse=a
+set scrolloff=5
 
 " Show tabline for active buffer list
 set showtabline=2

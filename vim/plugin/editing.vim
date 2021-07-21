@@ -3,7 +3,6 @@ set number
 set encoding=utf-8
 set backspace=indent,eol,start
 set wildmenu
-set scrolloff=30
 set lisp " `-` doens't break words + more :)
 
 " Vimwiki settings

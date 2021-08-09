@@ -5,6 +5,7 @@ export DOTFILES=~/Projects/dotfiles
 # User executables
 export PATH="$PATH:/bin"
 export PATH="$PATH:/usr/bin"
+export PATH="$PATH:~/bin"
 export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/usr/local/sbin"

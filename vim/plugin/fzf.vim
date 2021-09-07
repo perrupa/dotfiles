@@ -40,7 +40,6 @@ nnoremap ;l  :FZFBLines<CR>
 nnoremap ;L  :FZFLines<CR>
 nnoremap ;m  :FZFMarks<CR>
 
-
 "****************************************
 " Call FZF with Rg
 "****************************************

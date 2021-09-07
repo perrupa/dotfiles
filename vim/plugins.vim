@@ -1,6 +1,4 @@
 " Plugins
-let g:ale_emit_conflict_warnings = 0
-
 call plug#begin('~/.vim/bundle')
   " Vim UI
   Plug 'justinmk/vim-dirvish'
@@ -41,6 +39,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'junegunn/vim-peekaboo' " Show registers (and contents) when using completion and macros
   Plug 'wsdjeg/vim-fetch' " Allows opening files at linenumber e.g. `main.js:13`
   Plug 'lambdalisue/fern.vim'
+  Plug 'folke/trouble.nvim'
 
   " Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': './install.sh'}

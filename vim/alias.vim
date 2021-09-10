@@ -44,3 +44,7 @@ nnoremap <leader>@ :registers<CR>
 " vim sees ctrl+/ as ctrl+_ for some reason
 nnoremap <C-_> :Commentary<CR>
 vnoremap <C-_> :Commentary<CR>gv " Comments out selection, keeping it selected
+
+" Yank current filename
+command! Yankfname let @* = expand("%")
+nnoremap <C-G> :Yankfname<CR> <C-G>

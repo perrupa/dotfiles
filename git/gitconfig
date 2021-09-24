@@ -32,8 +32,8 @@
   t =! clear && git status # support typos like `gits t`
   st =! clear && git status
   a  = add
-  ci = commit -v
-  cia = commit --amend -C HEAD
+  ci = commit -v --no-verify
+  cia = commit --no-verify --amend -C HEAD
   co = checkout
   cp = cherry-pick
   br = branch --sort=-committerdate
@@ -74,5 +74,5 @@
 [hub]
 	protocol = https
 [credential]
-	helper = 
+	helper =
 	helper = store --file /opt/dev/var/private/git_credential_store

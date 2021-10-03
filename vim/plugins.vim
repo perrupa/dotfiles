@@ -2,15 +2,12 @@
 call plug#begin('~/.vim/bundle')
   " Vim UI
   Plug 'justinmk/vim-dirvish'
-  Plug 'itchyny/lightline.vim'
-  Plug 'mgee/lightline-bufferline'
   Plug 'airblade/vim-gitgutter'
   Plug 'junegunn/goyo.vim'         " Focus Mode (Goyo)
   Plug 'kien/rainbow_parentheses.vim'
   Plug 'ryanoasis/vim-devicons'
   " Plug 'vimwiki/vimwiki'
   Plug 'voldikss/vim-floaterm'
-  " Plug 'nvim-treesitter/nvim-treesitter'
 
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'
@@ -40,6 +37,8 @@ call plug#begin('~/.vim/bundle')
   Plug 'wsdjeg/vim-fetch' " Allows opening files at linenumber e.g. `main.js:13`
   Plug 'lambdalisue/fern.vim'
   Plug 'folke/trouble.nvim'
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'romgrk/barbar.nvim'
 
   " Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': './install.sh'}

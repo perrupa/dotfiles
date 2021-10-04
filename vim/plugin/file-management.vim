@@ -42,3 +42,35 @@ nnoremap <silent>    <Leader>7 :BufferGoto 7<CR>
 nnoremap <silent>    <Leader>8 :BufferGoto 8<CR>
 nnoremap <silent>    <Leader>9 :BufferLast<CR>
 
+" Barbar config (romgrk/barbar.nvim)
+
+" NOTE: If barbar's option dict isn't created yet, create it
+let bufferline = get(g:, 'bufferline', {})
+
+" New tabs are opened next to the currently selected tab.
+" Enable to insert them in buffer number order.
+let bufferline.add_in_buffer_number_order = v:false
+
+" Enable/disable icons
+" if set to 'buffer_number', will show buffer number in the tabline
+" if set to 'numbers', will show buffer index in the tabline
+" if set to 'both', will show buffer index and icons in the tabline
+let bufferline.icons = 'both'
+
+" Sets the icon's highlight group.
+" If false, will use nvim-web-devicons colors
+let bufferline.icon_custom_colors = v:false
+
+" Configure icons on the bufferline.
+let bufferline.icon_separator_active = '▎'
+let bufferline.icon_separator_inactive = '▎'
+let bufferline.icon_close_tab = ''
+let bufferline.icon_close_tab_modified = '●'
+let bufferline.icon_pinned = '車'
+
+" Sets the maximum padding width with which to surround each tab.
+" let bufferline.maximum_padding = 4
+let bufferline.maximum_padding = 2
+
+" Sets the maximum buffer name length.
+let bufferline.maximum_length = 30

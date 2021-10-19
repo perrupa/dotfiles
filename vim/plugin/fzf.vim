@@ -14,7 +14,8 @@ let g:fzf_action = {
   \ 'ctrl-q': function('s:build_quickfix_list'),
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
-  \ 'ctrl-v': 'vsplit' }
+  \ 'ctrl-v': 'vsplit',
+  \ }
 
 " prefixes all FZF commands; Buffers -> FZFBuffers
 let g:fzf_command_prefix = 'FZF'
@@ -39,6 +40,7 @@ nnoremap ;b  :FZFBuffers<CR>
 nnoremap ;l  :FZFBLines<CR>
 nnoremap ;L  :FZFLines<CR>
 nnoremap ;m  :FZFMarks<CR>
+nnoremap ;;  :copen<CR>
 
 "****************************************
 " Call FZF with Rg

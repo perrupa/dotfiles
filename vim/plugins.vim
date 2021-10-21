@@ -15,7 +15,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'Shopify/shadowenv.vim'
 
   " Editing
-  Plug 'terryma/vim-multiple-cursors'
+  Plug 'mg979/vim-visual-multi'
   Plug 'mattn/emmet-vim'
   Plug 'yssl/QFEnter' "Quickfix <CR> behavior
   Plug 'terryma/vim-expand-region'

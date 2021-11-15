@@ -8,7 +8,7 @@ plugins=(
   fzf
   git
   github
-  osx
+  macos
   virtualenv
   z
 )

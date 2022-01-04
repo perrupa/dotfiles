@@ -39,7 +39,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'folke/trouble.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'romgrk/barbar.nvim'
-  Plug 'famiu/feline.nvim'
+  Plug 'feline-nvim/feline.nvim', { 'branch': 'develop' }
 
   " Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': './install.sh'}

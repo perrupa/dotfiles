@@ -63,8 +63,8 @@ vnoremap < <gv
 
 " Option + hjkl
 " hjkl = ˙∆˚¬
-noremap ˙ ^
-noremap ¬ $
+noremap ˙ B
+noremap ¬ E
 noremap ˚ {
 noremap ∆ }
 

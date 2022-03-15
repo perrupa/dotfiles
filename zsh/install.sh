@@ -8,5 +8,5 @@ echo "Bootstrapping Zsh"
 echo "Script location: ${CURR_DIR}"
 
 for file in $files; do
-  ln -s $CURR_DIR/$file  ~/.$file
+  ln -sf $CURR_DIR/$file  ~/.$file
 done

@@ -10,3 +10,7 @@ if [ "$SPIN" ]; then
   sh spin-bootstrap.sh
 fi
 
+# Install vim plugins
+nvim -c "PlugInstall" -c "+CocInstall -sync" -c "qall"
+
+

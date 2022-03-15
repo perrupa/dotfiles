@@ -27,6 +27,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'kana/vim-textobj-line'
   Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
   Plug 'blueyed/vim-diminactive'
+  Plug 'editorconfig/editorconfig-vim'
 
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }

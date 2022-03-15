@@ -1,6 +1,7 @@
 [user]
   email = christopher.marlow@shopify.com
   name = Chris Marlow
+	signingkey = 2F967E7337922B916DAC44773E0D5897E584E18B
 
 [github]
   # https://github.com/blog/180-local-github-config
@@ -50,7 +51,6 @@
   excludesfile = ~/.gitignore_global
   pager = diff-so-fancy | less --tabs=2 -RFX
   editor = nvim
-	commitGraph = true
 
 [color "diff-highlight"]
   oldNormal = red bold
@@ -60,19 +60,13 @@
 
 [rerere]
   enabled = true
-[diff]
-	algorithm = patience
-[protocol]
-	version = 2
-[gc]
-	writeCommitGraph = true
-[url "https://github.com/Shopify/"]
-	insteadOf = git@github.com:Shopify/
-	insteadOf = git@github.com:shopify/
-	insteadOf = ssh://git@github.com/Shopify/
-	insteadOf = ssh://git@github.com/shopify/
 [hub]
 	protocol = https
-[credential]
-	helper =
-	helper = store --file /opt/dev/var/private/git_credential_store
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[gpg]
+	program = /opt/dev/bin/gpg-auto-pin
+[commit]
+	gpgSign = true
+[include]
+	path = /Users/cmarlow/.config/dev/gitconfig

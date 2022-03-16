@@ -1,16 +1,15 @@
 echo "Bootstrapping..."
 
 # Setup dotfile symlinks
-sh ./zsh/install.sh
-sh ./vim/install.sh
 sh ./git/install.sh
+sh ./vim/install.sh
 
-# Spin specific setup
 if [ "$SPIN" ]; then
+  # Spin specific setup
   sh spin-bootstrap.sh
+else
+  # Non-spin setup
+  sh ./zsh/install.sh
+  touch ~/this-is-not-spin.txt
 fi
-
-# Install vim plugins
-nvim -c "PlugInstall" -c "+CocInstall -sync" -c "qall"
-
 

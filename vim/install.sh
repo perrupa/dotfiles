@@ -6,3 +6,6 @@ echo "linking ~/.vim"
 ln -sf $CURR_DIR/  ~/.vim
 ln -sf $CURR_DIR/  ~/.config/nvim
 ln -sf $CURR_DIR/init.vim  ~/.vimrc
+
+# Install vim plugins
+# nvim -c "PlugInstall" -c "+CocInstall -sync" -c "qall"

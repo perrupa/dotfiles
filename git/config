@@ -1,7 +1,6 @@
 [user]
   email = christopher.marlow@shopify.com
   name = Chris Marlow
-	signingkey = 2F967E7337922B916DAC44773E0D5897E584E18B
 
 [github]
   # https://github.com/blog/180-local-github-config
@@ -48,8 +47,8 @@
   lgo = log #typos are for suckers
 
 [core]
-  excludesfile = ~/.gitignore_global
-  pager = diff-so-fancy | less --tabs=2 -RFX
+  excludesfile = ~/.config/git/gitignore_global
+  pager = less --tabs=2 -RFX
   editor = nvim
 
 [color "diff-highlight"]
@@ -64,9 +63,5 @@
 	protocol = https
 [credential "https://dev.azure.com"]
 	useHttpPath = true
-[gpg]
-	program = /opt/dev/bin/gpg-auto-pin
-[commit]
-	gpgSign = true
 [include]
-	path = /Users/cmarlow/.config/dev/gitconfig
+	path = ~/.config/dev/gitconfig

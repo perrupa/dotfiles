@@ -1,5 +1,5 @@
 # Constants
-export ZSH="/Users/cmarlow/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 export SHELL='zsh'
 export EDITOR='nvim'

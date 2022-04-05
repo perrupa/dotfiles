@@ -2,7 +2,7 @@
 command! Greview :Git! diff --staged
 nnoremap <Leader>gs :Git<CR>   " Status
 nnoremap <Leader>ga :Gwrite<CR>    " Add
-nnoremap <Leader>gc :Gcommit<CR>   " Commit
+nnoremap <Leader>gc :Git commit<CR>   " Commit
 nnoremap <Leader>gd :Gdiff<CR>     " Diff
 nnoremap <Leader>gr :Greview<CR>   " Diff
 nnoremap <Leader>gt :call OpenTig()<CR>

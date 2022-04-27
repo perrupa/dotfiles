@@ -51,7 +51,7 @@ command! -bang -nargs=* -complete=dir Rg call Rg(<q-args>)
 function! Rg(args)
   let l:escaped_args = escape(a:args, '|#%')
   call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings '
-        \ .'--ignore-case --hidden --glob "!{.git,node_modules,tags}" --color=always "'.l:escaped_args.'"| tr -d "\017"',
+        \ .'--ignore-case --hidden --glob "!{.git,node_modules,tags,.rbi}" --color=always "'.l:escaped_args.'"| tr -d "\017"',
         \ 0, 0)
 endfunction
 

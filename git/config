@@ -15,7 +15,8 @@
 	ff = only
 
 [push]
-  default = simple
+  default = current
+	autoSetupRemote = true
 
 [alias]
   # git flags are weird

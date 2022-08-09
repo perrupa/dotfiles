@@ -85,7 +85,7 @@ set fillchars=fold:-
 nnoremap <silent> <leader>c :set nolist!<CR>
 
 " Selection
-map <CR> <Plug>(expand_region_expand)
+nnoremap <CR> <Plug>(expand_region_expand)
 
 " +/- to expand/contract
 vmap - <Plug>(expand_region_shrink)

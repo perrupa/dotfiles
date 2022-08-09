@@ -68,7 +68,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'jparise/vim-graphql'
 
   " Misc
-  Plug 'leafOfTree/vim-vue-plugin'
   Plug 'szw/vim-maximizer'
   Plug 'ntpeters/vim-better-whitespace' " highlight whitespace violations
   Plug 'Asheq/close-buffers.vim'

@@ -1,5 +1,7 @@
 # Shopify's dev tooL
-source /opt/dev/dev.sh
+if [ -f /opt/dev/dev.sh ]; then
+  source /opt/dev/dev.sh
+fi
 
 # Functions
 function diff {

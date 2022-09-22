@@ -86,6 +86,7 @@ nnoremap <silent> <leader>c :set nolist!<CR>
 
 " Selection
 nnoremap <CR> <Plug>(expand_region_expand)
+vnoremap <CR> <Plug>(expand_region_expand)
 
 " +/- to expand/contract
 vmap - <Plug>(expand_region_shrink)

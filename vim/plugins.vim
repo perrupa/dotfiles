@@ -70,6 +70,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'szw/vim-maximizer'
   Plug 'ntpeters/vim-better-whitespace' " highlight whitespace violations
   Plug 'Asheq/close-buffers.vim'
+  Plug 'shopify/spin-hud'
   " Plug 'wellle/context.vim'
 
   " color schemes

@@ -12,7 +12,6 @@ call plug#begin('~/.vim/bundle')
   " Tmux integration
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'benmills/vimux'
-  Plug 'Shopify/shadowenv.vim'
 
   " Editing
   Plug 'mg979/vim-visual-multi'
@@ -32,7 +31,8 @@ call plug#begin('~/.vim/bundle')
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
-  Plug 'justincampbell/vim-eighties' " Resizing vertical splits
+  Plug 'beauwilliams/focus.nvim'
+
   Plug 'kshenoy/vim-signature' " Shows vim-marks in the gutter
   Plug 'junegunn/vim-peekaboo' " Show registers (and contents) when using completion and macros
   Plug 'wsdjeg/vim-fetch' " Allows opening files at linenumber e.g. `main.js:13`
@@ -40,7 +40,6 @@ call plug#begin('~/.vim/bundle')
   Plug 'folke/trouble.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'romgrk/barbar.nvim'
-  Plug 'itchyny/lightline.vim'
 
   " Completion
   Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': './install.sh'}
@@ -98,6 +97,3 @@ augroup rainbow_parenthesis_config
   let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
   let g:rainbow#blacklist = ['#F4CF86', '#FFFFFF']
 augroup END
-
-" Prevent <C-F> remapping
-let g:comfortable_motion_no_default_key_mappings = 1

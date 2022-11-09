@@ -31,7 +31,7 @@ call plug#begin('~/.vim/bundle')
   " File Management/Organization
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do':'./intall.bin' }
   Plug 'junegunn/fzf.vim'
-  Plug 'beauwilliams/focus.nvim'
+  " Plug 'beauwilliams/focus.nvim'
 
   Plug 'kshenoy/vim-signature' " Shows vim-marks in the gutter
   Plug 'junegunn/vim-peekaboo' " Show registers (and contents) when using completion and macros
@@ -58,7 +58,6 @@ call plug#begin('~/.vim/bundle')
   " Syntaxes
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-treesitter/playground'
-
   Plug 'sheerun/vim-polyglot'
   Plug 'pangloss/vim-javascript'
   Plug 'leafgarland/typescript-vim'
@@ -70,7 +69,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'szw/vim-maximizer'
   Plug 'ntpeters/vim-better-whitespace' " highlight whitespace violations
   Plug 'Asheq/close-buffers.vim'
-  Plug 'shopify/spin-hud'
+  " Plug 'shopify/spin-hud'
   " Plug 'wellle/context.vim'
 
   " color schemes

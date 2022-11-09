@@ -24,9 +24,8 @@ highlight Search guibg=guibg guifg=guifg gui=bold,italic,underline
 let g:lightline = {'colorscheme': 'ayu'}
 
 " Hide the command bars
-lua vim.o.ls = 0
-lua vim.o.ch = 0
+" lua vim.o.ls = 0
+" lua vim.o.ch = 0
 
 " Vim split resizing via 'beauwilliams/focus.nvim'
-lua require("focus").setup()
-
+" lua require("focus").setup()

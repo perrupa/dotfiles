@@ -42,6 +42,17 @@ call plug#begin('~/.vim/bundle')
   Plug 'romgrk/barbar.nvim'
 
   " Completion
+  Plug 'williamboman/nvim-lsp-installer'
+  Plug 'hrsh7th/cmp-buffer'
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
+  Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+  Plug 'hrsh7th/nvim-cmp'
+  Plug 'jose-elias-alvarez/null-ls.nvim'
+  Plug 'onsails/lspkind.nvim'
+  Plug 'williamboman/mason-lspconfig.nvim'
+  Plug 'williamboman/mason.nvim'
+  Plug 'neovim/nvim-lspconfig'
 
 
   " tpope time

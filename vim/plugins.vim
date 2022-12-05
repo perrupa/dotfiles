@@ -42,7 +42,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'romgrk/barbar.nvim'
 
   " Completion
-  Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': './install.sh'}
+
 
   " tpope time
   Plug 'tpope/vim-fugitive'

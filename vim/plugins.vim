@@ -89,7 +89,9 @@ call plug#begin('~/.vim/bundle')
   Plug 'rakr/vim-one'
   Plug 'rafi/awesome-vim-colorschemes'
 
+
   " Snippets
+  Plug 'SirVer/ultisnips'
   Plug 'Shougo/neosnippet-snippets'
   Plug 'Shougo/neosnippet.vim'
   Plug 'honza/vim-snippets'

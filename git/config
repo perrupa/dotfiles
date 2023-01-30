@@ -69,3 +69,6 @@
 	path = ~/.config/dev/gitconfig
 [init]
 	defaultBranch = main
+[credential]
+	helper =
+	helper = /usr/local/bin/git-credential-manager-core

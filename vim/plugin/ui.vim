@@ -29,3 +29,7 @@ let g:lightline = {'colorscheme': 'ayu'}
 
 " Vim split resizing via 'beauwilliams/focus.nvim'
 " lua require("focus").setup()
+
+" File tree (Fern.vim)
+let g:fern#renderer = "nerdfont"
+

@@ -36,7 +36,9 @@ call plug#begin('~/.vim/bundle')
   Plug 'kshenoy/vim-signature' " Shows vim-marks in the gutter
   Plug 'junegunn/vim-peekaboo' " Show registers (and contents) when using completion and macros
   Plug 'wsdjeg/vim-fetch' " Allows opening files at linenumber e.g. `main.js:13`
-  Plug 'lambdalisue/fern.vim'
+  Plug 'lambdalisue/fern.vim' " Tree plugin
+  Plug 'lambdalisue/nerdfont.vim'
+  Plug 'lambdalisue/fern-renderer-nerdfont.vim'
   Plug 'folke/trouble.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'romgrk/barbar.nvim'

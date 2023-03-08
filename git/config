@@ -40,6 +40,7 @@
   br = branch --sort=-committerdate
   d  = diff --color-words --ignore-all-space
   dc = diff --color-words --staged
+  rc = rebase --continue
 
   ll = -c core.pager='less -p^commit.*$' log -p
   lg  = log --graph --decorate
@@ -66,3 +67,5 @@
 	useHttpPath = true
 [include]
 	path = ~/.config/dev/gitconfig
+[init]
+	defaultBranch = main

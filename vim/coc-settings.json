@@ -25,5 +25,6 @@
       "args": ["server", "-m", "stream"],
       "filetypes": ["typescript", "typescriptreact", "graphql"]
     }
-  }
+  },
+  "snippets.ultisnips.pythonPrompt": false
 }

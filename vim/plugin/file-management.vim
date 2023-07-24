@@ -41,4 +41,3 @@ nnoremap <silent>    <Leader>6 :BufferGoto 6<CR>
 nnoremap <silent>    <Leader>7 :BufferGoto 7<CR>
 nnoremap <silent>    <Leader>8 :BufferGoto 8<CR>
 nnoremap <silent>    <Leader>9 :BufferLast<CR>
-

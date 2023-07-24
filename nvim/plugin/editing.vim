@@ -42,4 +42,3 @@ vmap _ <Plug>(expand_region_shrink)
 vmap + <Plug>(expand_region_expand)
 vmap = <Plug>(expand_region_expand)
 
-

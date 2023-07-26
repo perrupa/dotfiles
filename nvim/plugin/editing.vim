@@ -1,3 +1,5 @@
+set clipboard=unnamedplus
+
 set lisp " `-` doens't break words + more :)
 
 " Fast jumps

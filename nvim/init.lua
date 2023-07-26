@@ -34,6 +34,7 @@ require('lazy').setup({
   'terryma/vim-expand-region',
   'lambdalisue/fern.vim',
   'icatalina/vim-case-change',
+  'romgrk/barbar.nvim',
 
   {
     -- LSP Configuration & Plugins

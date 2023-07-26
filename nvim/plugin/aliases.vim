@@ -1,6 +1,6 @@
 " Buffers
-nnoremap H bprev<CR>
-nnoremap L bnext<CR>
+nnoremap H :bprev<CR>
+nnoremap L :bnext<CR>
 nnoremap <C-w> :q<CR>
 nnoremap <leader>n :enew<CR>
 nnoremap <leader>bd :bdelete<CR>

@@ -13,7 +13,7 @@ set scrolloff=5
 " Show tabline for active buffer list
 set showtabline=2
 
-colorscheme nordic
+colorscheme one
 
 " Search highlighting with bold + underline
 highlight Search guibg=guibg guifg=guifg gui=bold,italic,underline

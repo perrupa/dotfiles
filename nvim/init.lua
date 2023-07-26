@@ -32,9 +32,22 @@ require('lazy').setup({
   'tpope/vim-rhubarb',
   'christoomey/vim-tmux-navigator',
   'terryma/vim-expand-region',
-  'lambdalisue/fern.vim',
   'icatalina/vim-case-change',
+  'vim-test/vim-test',
+  'benmills/vimux',
+
+  -- UI
   'romgrk/barbar.nvim',
+
+  -- colorschemes
+  'gf3/molotov',
+  'ayu-theme/ayu-vim',
+  'rakr/vim-one',
+  'rafi/awesome-vim-colorschemes',
+  'navarasu/onedark.nvim',
+  'AlexvZyl/nordic.nvim',
+  "folke/tokyonight.nvim",
+
 
   {
     -- LSP Configuration & Plugins
@@ -61,6 +74,7 @@ require('lazy').setup({
       'saadparwaiz1/cmp_luasnip',
       'hrsh7th/cmp-nvim-lsp',
       'rafamadriz/friendly-snippets',
+      'hrsh7th/cmp-buffer',
     },
   },
 
@@ -86,24 +100,6 @@ require('lazy').setup({
     },
   },
 
-  {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'onedark'
-    end,
-  },
-
-  {
-    'AlexvZyl/nordic.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-        require 'nordic'.load()
-    end
-  },
-
   -- Nvimtree (File Explorer)
   {
     'nvim-tree/nvim-tree.lua',
@@ -119,19 +115,11 @@ require('lazy').setup({
     -- See `:help lualine.txt`
     opts = {
       options = {
-        icons_enabled = false,
-        theme = 'onedark',
+        icons_enabled = true,
         component_separators = '|',
         section_separators = '',
       },
     },
-  },
-
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
   },
 
   -- Fuzzy Finder (files, lsp, etc)
@@ -158,6 +146,15 @@ require('lazy').setup({
     },
     build = ':TSUpdate',
   },
+  {
+    "baliestri/aura-theme",
+    lazy = false,
+    priority = 1000,
+    config = function(plugin)
+      vim.opt.rtp:append(plugin.dir .. "/packages/neovim")
+      vim.cmd([[colorscheme aura-dark]])
+    end
+  }
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
@@ -415,6 +412,7 @@ mason_lspconfig.setup_handlers {
 -- See `:help cmp`
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
+local cmp_buffer = require('cmp_buffer')
 require('luasnip.loaders.from_vscode').lazy_load()
 luasnip.config.setup {}
 
@@ -454,7 +452,13 @@ cmp.setup {
     end, { 'i', 's' }),
   },
   sources = {
+    { name = 'buffer' },
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
   },
+  sorting = {
+    comparators = {
+      function(...) return cmp_buffer:compare_locality(...) end,
+    }
+  }
 }

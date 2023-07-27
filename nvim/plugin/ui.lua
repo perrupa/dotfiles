@@ -1,5 +1,5 @@
--- Barbar config (romgrk/barbar.nvim)
 
+-- Barbar config (romgrk/barbar.nvim)
 -- disable auto-setup
 vim.g.barbar_auto_setup = false
 

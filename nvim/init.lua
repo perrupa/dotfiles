@@ -31,8 +31,6 @@ require('lazy').setup({
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
   'christoomey/vim-tmux-navigator',
-  'terryma/vim-expand-region',
-  'icatalina/vim-case-change',
   'vim-test/vim-test',
   'benmills/vimux',
 
@@ -48,6 +46,10 @@ require('lazy').setup({
   'AlexvZyl/nordic.nvim',
   "folke/tokyonight.nvim",
 
+  -- Editing
+  'ntpeters/vim-better-whitespace',
+  'terryma/vim-expand-region',
+  'icatalina/vim-case-change',
 
   {
     -- LSP Configuration & Plugins

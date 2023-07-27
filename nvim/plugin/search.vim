@@ -2,8 +2,11 @@ set incsearch
 
 " Searching under word
 " s: results in FZF
-nnoremap <Leader>sw :execute ":Rg! " . expand("<cword>")<CR>
-nnoremap <Leader>sW :execute ":Rg! " . expand("<cWORD>")<CR>
+nnoremap <Leader>sw :execute ":Ag " . expand("<cword>")<CR>
+nnoremap <Leader>sW :execute ":Ag " . expand("<cWORD>")<CR>
+
+" Ctrl + F: the OG search mapping
+nnoremap <C-f> :Ag 
 
 " S: results in Grepper
 nnoremap <Leader>Sw :Grepper -cword -noprompt<CR>

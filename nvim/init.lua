@@ -41,7 +41,7 @@ require('lazy').setup({
 
   -- colorschemes
   'gf3/molotov',
-  'ayu-theme/ayu-vim',
+  'shatur/neovim-ayu',
   'rakr/vim-one',
   'rafi/awesome-vim-colorschemes',
   'navarasu/onedark.nvim',
@@ -137,6 +137,7 @@ require('lazy').setup({
       return vim.fn.executable 'make' == 1
     end,
   },
+  { "kelly-lin/telescope-ag", dependencies = { "nvim-telescope/telescope.nvim" } },
 
   {
     -- Highlight, edit, and navigate code

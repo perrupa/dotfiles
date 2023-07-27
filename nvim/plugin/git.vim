@@ -11,5 +11,3 @@ function! OpenTig()
   terminal tig
   normal A
 endfu
-
-" map <C-^> :call OpenTig()<CR>

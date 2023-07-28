@@ -5,11 +5,19 @@ set backspace=indent,eol,start
 set wildmenu
 set lisp " `-` doens't break words + more :)
 
+" Detect and show filechanges on open buffers
+set autoread
+set autowrite
+
 " Vimwiki settings
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 " Share OSX's clipboard
 set clipboard=unnamed
+
+" Yank current filename
+command! Yankfname let @* = expand("%")
+nnoremap <C-G> :Yankfname<CR> <C-G>
 
 " Highlight current line (only active window)
 augroup CursorLine

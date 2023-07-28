@@ -2,6 +2,7 @@
 set t_Co=256
 set lazyredraw
 set termguicolors
+set number
 
 " Splits
 set splitbelow

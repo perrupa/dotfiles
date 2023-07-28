@@ -50,6 +50,7 @@ require('lazy').setup({
   'ntpeters/vim-better-whitespace',
   'terryma/vim-expand-region',
   'icatalina/vim-case-change',
+  'mg979/vim-visual-multi',
 
   {
     -- LSP Configuration & Plugins
@@ -244,6 +245,8 @@ end, { desc = '[/] Fuzzily search in current buffer' })
 
 vim.keymap.set('n', ';f', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
 vim.keymap.set('n', ';b', require('telescope.builtin').buffers, { desc = '[B]uffers' })
+vim.keymap.set('n', ';F', require('telescope.builtin').filetypes, { desc = 'Set [F]iletype' })
+vim.keymap.set('n', ';c', require('telescope.builtin').colorscheme, { desc = '[C]olorscheme' })
 vim.keymap.set('n', ';gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
 vim.keymap.set('n', ';sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })

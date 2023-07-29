@@ -8,7 +8,7 @@ nnoremap <Leader>sw :execute ":Ag " . expand("<cword>")<CR>
 nnoremap <Leader>sW :execute ":Ag " . expand("<cWORD>")<CR>
 
 " Ctrl + F: the OG search mapping
-nnoremap <C-f> :Ag
+nnoremap <C-f> :Ag<space>
 
 " S: results in Grepper
 " nnoremap <Leader>Sw :Grepper -cword -noprompt<CR>

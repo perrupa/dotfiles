@@ -71,4 +71,4 @@
 	defaultBranch = main
 [credential]
 	helper =
-	helper = /usr/local/bin/git-credential-manager-core
+	helper = /usr/local/bin/git-credential-manager

@@ -117,12 +117,6 @@ let g:expand_region_text_objects = {
     \ 'if'  :0,
     \ }
 
-" Function objects
-xmap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap if <Plug>(coc-funcobj-i)
-omap af <Plug>(coc-funcobj-a)
-
 " Maintain undo history between sessions
 set undofile
 set undodir=~/.vim/undodir

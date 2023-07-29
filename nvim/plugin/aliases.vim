@@ -19,7 +19,7 @@ endfu
 noremap <Leader><Leader> :call PreviousBuffer()<CR>
 
 " File Tree
-nnoremap <Leader>e :NvimTreeToggle<CR>
+nnoremap <Leader>e :NvimTreeFindFileToggle<CR>
 
 " Maximize current buffer
 nnoremap <Leader>m :MaximizerToggle<CR>

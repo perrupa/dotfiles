@@ -36,6 +36,7 @@ require('lazy').setup({
 
   -- UI
   'romgrk/barbar.nvim',
+  'Asheq/close-buffers.vim',
 
   -- colorschemes
   'gf3/molotov',

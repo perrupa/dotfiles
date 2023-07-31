@@ -4,6 +4,7 @@ set encoding=utf-8
 set backspace=indent,eol,start
 set wildmenu
 set lisp " `-` doens't break words + more :)
+set noswapfile
 
 " Detect and show filechanges on open buffers
 set autoread

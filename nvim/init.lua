@@ -246,6 +246,7 @@ end, { desc = '[/] Fuzzily search in current buffer' })
 
 vim.keymap.set('n', ';f', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
 vim.keymap.set('n', ';b', require('telescope.builtin').buffers, { desc = '[B]uffers' })
+vim.keymap.set('n', ';d', require('telescope.builtin').diagnostics, { desc = '[D]iagnostics' })
 vim.keymap.set('n', ';F', require('telescope.builtin').filetypes, { desc = 'Set [F]iletype' })
 vim.keymap.set('n', ';c', require('telescope.builtin').colorscheme, { desc = '[C]olorscheme' })
 vim.keymap.set('n', ';gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })

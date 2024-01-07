@@ -33,7 +33,7 @@ require('lazy').setup({
   'benmills/vimux',
 
   -- UI
-  'kyazdani42/nvim-web-devicons',
+  'nvim-tree/nvim-web-devicons',
   'romgrk/barbar.nvim',
   'Asheq/close-buffers.vim',
 
@@ -78,6 +78,7 @@ require('lazy').setup({
       'hrsh7th/cmp-nvim-lsp',
       'rafamadriz/friendly-snippets',
       'hrsh7th/cmp-buffer',
+      'evanleck/vim-svelte',
     },
   },
 
@@ -103,7 +104,14 @@ require('lazy').setup({
     },
   },
 
-  -- File Explorer (tree)
+  -- Nvimtree (File Explorer)
+  -- {
+  --   'nvim-tree/nvim-tree.lua',
+  --   lazy = true,
+  --   dependencies = {
+  --     'nvim-tree/nvim-web-devicons',
+  --   },
+  -- },
   {'lambdalisue/fern.vim'},
 
   {

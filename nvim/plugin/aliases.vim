@@ -19,16 +19,17 @@ endfu
 noremap <Leader><Leader> :call PreviousBuffer()<CR>
 
 " File Tree
-nnoremap <Leader>e :NvimTreeFindFileToggle<CR>
+" nnoremap <Leader>e :NvimTreeFindFileToggle<CR>
 
 " Maximize current buffer
 nnoremap <Leader>m :MaximizerToggle<CR>
 nnoremap <Leader>z :MaximizerToggle<CR>
 
 " Comments
-"   vim sees ctrl+/ as ctrl+_ for some reason
+" vim sees ctrl+/ as ctrl+_ for some reason
 nnoremap <C-_> :Commentary<CR>
-vnoremap <C-_> :Commentary<CR>gv " Comments out selection, keeping it selected
+" keep visual selection when commenting
+vnoremap <C-_> :Commentary<CR>gv
 
 " Yank current filename
 command! Yankfname let @* = expand("%")

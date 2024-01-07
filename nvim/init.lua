@@ -28,13 +28,12 @@ require('lazy').setup({
   'tpope/vim-repeat',
   'tpope/vim-sleuth',
   'tpope/vim-obsession',
-  'tpope/vim-fugitive',
-  'tpope/vim-rhubarb',
   'christoomey/vim-tmux-navigator',
   'vim-test/vim-test',
   'benmills/vimux',
 
   -- UI
+  'kyazdani42/nvim-web-devicons',
   'romgrk/barbar.nvim',
   'Asheq/close-buffers.vim',
 
@@ -104,14 +103,8 @@ require('lazy').setup({
     },
   },
 
-  -- Nvimtree (File Explorer)
-  {
-    'nvim-tree/nvim-tree.lua',
-    lazy = true,
-    dependencies = {
-      'nvim-tree/nvim-web-devicons',
-    },
-  },
+  -- File Explorer (tree)
+  {'lambdalisue/fern.vim'},
 
   {
     -- Set lualine as statusline
@@ -252,6 +245,7 @@ vim.keymap.set('n', ';c', require('telescope.builtin').colorscheme, { desc = '[C
 vim.keymap.set('n', ';gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
 vim.keymap.set('n', ';sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
+vim.keymap.set('v', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', ';sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
 vim.keymap.set('n', ';sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', ';a', '<cmd>lua vim.lsp.buf.code_action()<CR>', { desc = 'Code [A]ctions' })
@@ -400,7 +394,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Ensure the servers above are installed
-local mason_lspconfig = require 'mason-lspconfig'
+local mason_lspconfig = require('mason-lspconfig')
 
 mason_lspconfig.setup {
   ensure_installed = vim.tbl_keys(servers),
@@ -418,8 +412,8 @@ mason_lspconfig.setup_handlers {
 
 -- [[ Configure nvim-cmp ]]
 -- See `:help cmp`
-local cmp = require 'cmp'
-local luasnip = require 'luasnip'
+local cmp = require('cmp')
+local luasnip = require('luasnip')
 local cmp_buffer = require('cmp_buffer')
 require('luasnip.loaders.from_vscode').lazy_load()
 luasnip.config.setup {}

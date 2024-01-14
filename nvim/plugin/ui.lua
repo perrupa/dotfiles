@@ -11,7 +11,7 @@ require'barbar'.setup {
     -- Configure the base icons on the bufferline.
     buffer_index = true,
     buffer_number = false,
-    button = '',
+    button = '×',
     inactive = {button = '×'},
     modified = {button = '●'},
     pinned = {button = '車', filename = true, separator = {right = ''}},

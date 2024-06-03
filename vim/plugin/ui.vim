@@ -8,7 +8,6 @@ set splitbelow
 set splitright
 
 " Theme
-let ayucolor="mirage"
 colorscheme ayu
 
 set mouse=a

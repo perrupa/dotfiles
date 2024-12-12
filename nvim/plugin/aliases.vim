@@ -3,6 +3,7 @@ nnoremap H :BufferPrevious<CR>
 nnoremap L :BufferNext<CR>
 nnoremap <C-w> :q<CR>
 nnoremap <leader>n :enew<CR>
+nnoremap <leader>x :close<CR>
 nnoremap <leader>bd :bdelete<CR>
 nnoremap <leader>BD :bdelete!<CR>
 nnoremap <C-s> :wa<CR>

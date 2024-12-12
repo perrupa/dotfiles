@@ -37,6 +37,3 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
--- Code actions
-require("telescope").load_extension("ui-select")
-

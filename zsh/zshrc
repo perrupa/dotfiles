@@ -11,9 +11,6 @@ export DOTFILES=~/src/github.com/perrupa/dotfiles/
 source ~/.config/zsh/antigen.zsh
 antigen theme romkatv/powerlevel10k
 antigen bundle git
-antigen bundle pip
-antigen bundle command-not-found
-antigen bundle lukechilds/zsh-nvm
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
@@ -28,8 +25,6 @@ source $DOTFILES/zsh/paths.zsh
 source $DOTFILES/zsh/nvm.zsh
 source $DOTFILES/zsh/plugins.zsh
 
-source "$ZSH/oh-my-zsh.sh"
-
 source $DOTFILES/zsh/aliases.zsh
 source $DOTFILES/zsh/tools.zsh
 
@@ -42,9 +37,6 @@ bindkey "^?" backward-delete-char
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # Nix
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
 
@@ -52,4 +44,5 @@ if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile
 
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

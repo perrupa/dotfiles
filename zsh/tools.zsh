@@ -4,10 +4,6 @@ if [ -f /opt/dev/dev.sh ]; then
 fi
 
 # Functions
-function diff {
-  colordiff -u "$@" | less
-}
-
 function fkill() {
   pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
 
@@ -51,25 +47,6 @@ function tm() {
     tmux $change -t "$session" \
   )
 }
-
-# tmux session creation/loading with FZF
-function tm_old() {
-  [[ -n "$TMUX" ]] && change="switch-client" || change="attach-session"
-
-  if [ $1 ]; then
-    tmux $change -t "$1" 2>/dev/null || (tmux new-session -d -s $1 && tmux $change -t "$1"); return
-  fi
-
-  session=$( \
-    tmux list-sessions -F "#{session_name}" 2>/dev/null \
-    | fzf --select-1 --exit-0 \
-  )
-
-  [[ -n "$session" ]] && $( \
-    tmux $change -t "$session" \
-  ) || create_personal_tmux_session
-}
-
 
 # FZF -- Fuzzy file finder
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/*'"

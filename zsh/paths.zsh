@@ -26,3 +26,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Android SDK
 export ANDROID_HOME=/usr/local/share/android-sdk
 
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+

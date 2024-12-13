@@ -10,10 +10,7 @@ alias gc='git commit'
 alias grc='git rebase --continue'
 alias gco='git checkout $(git br | grep -v "\*" | fzf)'
 
-alias cat='bat' # Better cat
 alias help='tldr' # Better help
-
-alias mux="tmuxinator"
 
 # Typos 🤦
 alias bim='nvim'

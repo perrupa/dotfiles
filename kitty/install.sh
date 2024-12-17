@@ -5,4 +5,3 @@ echo "linking ~/.config/kitty"
 
 ln -sf $CURR_DIR/  ~/.config/kitty
 
-

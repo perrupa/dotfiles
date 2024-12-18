@@ -23,8 +23,6 @@ compinit
 source $DOTFILES/zsh/variables.zsh
 source $DOTFILES/zsh/paths.zsh
 source $DOTFILES/zsh/nvm.zsh
-source $DOTFILES/zsh/plugins.zsh
-
 source $DOTFILES/zsh/aliases.zsh
 source $DOTFILES/zsh/tools.zsh
 

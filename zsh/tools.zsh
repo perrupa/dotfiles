@@ -49,5 +49,7 @@ function tm() {
 }
 
 # FZF -- Fuzzy file finder
+source <(fzf --zsh)
+
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/*'"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

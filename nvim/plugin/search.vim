@@ -4,11 +4,11 @@ set grepprg=rg\ --vimgrep
 set incsearch
 
 " Searching under word
-nnoremap <Leader>sw :execute ":Ag " . expand("<cword>")<CR>
-nnoremap <Leader>sW :execute ":Ag " . expand("<cWORD>")<CR>
+nnoremap <Leader>sw :FzfLua grep_cword <CR>
+nnoremap <Leader>sW :FzfLua grep_cWORD <CR>
 
 " Ctrl + F: the OG search mapping
-nnoremap <C-f> :Ag<space>
+nnoremap <C-f> :FzfLua grep <CR>
 
 " S: results in Grepper
 " nnoremap <Leader>Sw :Grepper -cword -noprompt<CR>

@@ -121,3 +121,14 @@ let g:expand_region_text_objects = {
 " Maintain undo history between sessions
 set undofile
 set undodir=~/.vim/undodir
+
+" Quickfix list commands
+nnoremap ]q :cnext<CR>
+nnoremap [q :cprevious<CR>
+nnoremap cn :cnext<CR>
+nnoremap cp :cprevious<CR>
+
+augroup QuickFix
+  au FileType qf map <buffer> <CR> <CR>
+augroup END
+

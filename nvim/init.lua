@@ -31,6 +31,7 @@ require('lazy').setup({
   'christoomey/vim-tmux-navigator',
   'vim-test/vim-test',
   'benmills/vimux',
+  'romainl/vim-qf',
 
   -- UI
   'nvim-tree/nvim-web-devicons',
@@ -125,7 +126,7 @@ require('lazy').setup({
     "ibhagwan/fzf-lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      require("fzf-lua").setup({})
+      require("fzf-lua").setup({ "telescope" })
     end
   },
 
@@ -208,6 +209,8 @@ vim.keymap.set('n', ';f', require('fzf-lua').files, { desc = '[S]earch [F]iles' 
 vim.keymap.set('n', ';b', require('fzf-lua').buffers, { desc = '[B]uffers' })
 vim.keymap.set('n', ';d', require('fzf-lua').diagnostics_document, { desc = '[D]iagnostics' })
 vim.keymap.set('n', ';F', require('fzf-lua').filetypes, { desc = 'Set [F]iletype' })
+vim.keymap.set('n', ';a', require('fzf-lua').lsp_code_actions, { desc = 'Code [A]ctions' })
+vim.keymap.set('n', ';q', require('fzf-lua').quickfix, { desc = '[Q]uickfix' })
 vim.keymap.set('n', ';c', require('fzf-lua').colorschemes, { desc = '[C]olorscheme' })
 vim.keymap.set('n', ';gf', require('fzf-lua').git_files, { desc = 'Search [G]it [F]iles' })
 vim.keymap.set('n', ';sh', require('fzf-lua').helptags, { desc = '[S]earch [H]elp' })

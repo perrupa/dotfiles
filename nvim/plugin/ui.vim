@@ -4,6 +4,9 @@ set lazyredraw
 set termguicolors
 set number
 
+" Exit :terminal mode w/ escape
+tnoremap <Esc> <C-\><C-n>
+
 " Splits
 set splitbelow
 set splitright

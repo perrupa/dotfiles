@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export DOTFILES=~/src/github.com/perrupa/dotfiles/
+export DOTFILES=~/dotfiles/
 
 # zsh plugin manager
 source ~/.config/zsh/antigen.zsh

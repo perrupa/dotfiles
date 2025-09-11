@@ -53,6 +53,9 @@ require('lazy').setup({
   'icatalina/vim-case-change',
   'mg979/vim-visual-multi',
 
+  -- Languages/Syntaxes
+  'isobit/vim-caddyfile',
+
   {
     -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',

@@ -9,6 +9,8 @@ export PATH="$PATH:/usr/sbin"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:$HOME/.config/bin"
+export PATH="/Users/cmarlow/.local/bin:$PATH"
+source $HOME/.local/bin/env
 
 # Personal scripts
 export PATH="$PATH:$DOTFILES/bin"

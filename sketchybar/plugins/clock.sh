@@ -4,6 +4,5 @@
 # the item invoking this script:
 # https://felixkratz.github.io/SketchyBar/config/events#events-and-scripting
 
-sketchybar --set "$NAME" label="$(date '+%b %m — %I:%M %p')" \
-  click_script="aerospace workspace $sid" \
-
+sketchybar --set "$NAME" label="$(date '+%b %d — %I:%M %p')" \
+  click_script="open -a Calendar"

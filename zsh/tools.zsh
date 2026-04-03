@@ -53,3 +53,6 @@ source <(fzf --zsh)
 
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/*'"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Init Zoxide for file searching
+eval "$(zoxide init zsh)"

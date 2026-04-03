@@ -13,6 +13,10 @@ if command -v eza >/dev/null 2>&1; then
   alias l="$LS_COMMAND -lbF --git"
 fi
 
+if command -v zoxide >/dev/null 2>&1; then
+  alias cd="z"
+fi
+
 alias gs='git st'
 alias ga='git a'
 alias gc='git commit'
